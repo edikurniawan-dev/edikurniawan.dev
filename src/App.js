@@ -1,22 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import Router from './router/Index';
+import React from 'react';
+import Navbar from './components/Navbar';
 
-function App() {
+import './tailwind.css';
+
+const App = () => {
     return (
-        <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>Personal Website</p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer">
-                    GitHub
-                </a>
-            </header>
+        <div>
+            <Navbar />
+            <Router />
         </div>
     );
-}
+};
 
 export default App;
