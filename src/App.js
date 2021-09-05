@@ -6,9 +6,11 @@ import './tailwind.css';
 
 const App = () => {
     return (
-        <div>
-            <Navbar />
-            <Router />
+        <div className="bg-white">
+            <div className="container mx-auto max-w-6xl">
+                <Navbar />
+                <Router />
+            </div>
         </div>
     );
 };
