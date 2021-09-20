@@ -7,6 +7,9 @@ module.exports = {
                 poppins: "'Poppins', 'sans-serif'",
                 hind: "'Hind', 'sans-serif'",
             },
+            colors: {
+                'blue-light': '#10A2E9',
+            },
         },
     },
     variants: {
