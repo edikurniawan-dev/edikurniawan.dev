@@ -3,24 +3,32 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-        <div className="flex justify-between items-center py-7 text-blue-light">
+        <div className="flex justify-between items-center py-7">
             <div className="">
                 <NavLink exact to="/">
                     <svg
-                        className="h-14"
-                        viewBox="0 0 503 302"
+                        className="h-16"
+                        viewBox="0 0 340 340"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
-                            fillRule="evenodd"
-                            clipRule="evenodd"
-                            d="M142.5 0H0V85H142.5C165.972 85 185 65.972 185 42.5C185 19.028 165.972 0 142.5 0ZM460.5 108C437.028 108 418 127.028 418 150.5V302H503V150.5C503 127.028 483.972 108 460.5 108ZM418 42.5C418 19.028 437.028 0 460.5 0C483.972 0 503 19.028 503 42.5C503 65.972 483.972 85 460.5 85C437.028 85 418 65.972 418 42.5ZM294 0H209V302H294C349.229 302 394 257.229 394 202V100C394 44.7715 349.229 0 294 0ZM0 108H142.5C165.972 108 185 127.028 185 150.5C185 173.972 165.972 193 142.5 193H0V108ZM142.5 217H0V302H142.5C165.972 302 185 282.972 185 259.5C185 236.028 165.972 217 142.5 217Z"
-                            fill="currentColor"
+                            d="M0 260H300C322.091 260 340 277.909 340 300V300C340 322.091 322.091 340 300 340H0V260Z"
+                            fill="#4E47E5"
+                        />
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M40 0H0V40V80V190C0 212.091 17.9086 230 40 230C44.5521 230 48.9267 229.24 53.0035 227.839L311.902 148.203L311.901 148.2C328.181 143.133 340 127.947 340 110V40C340 17.9086 322.091 0 300 0H40ZM80 80V135.836L260 80.4688V80H80Z"
+                            fill="#10A2E9"
                         />
                     </svg>
                 </NavLink>
             </div>
-            <ul className="flex items-center space-x-7 font-poppins text-lg tracking-tight">
+            {/* <ul className="flex items-center space-x-7 font-poppins text-lg tracking-tight"> */}
+            <ul className="flex items-center space-x-7 font-poppins text-lg tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-blue-light">
+                <li>
+                    <NavLink to="/about-me">About Me</NavLink>
+                </li>
                 <li>
                     <NavLink to="/portfolio">Skill</NavLink>
                 </li>
@@ -33,9 +41,7 @@ const Navbar = () => {
                 <li>
                     <NavLink to="/portfolio">Resume</NavLink>
                 </li>
-                <li>
-                    <NavLink to="/contact">Contact</NavLink>
-                </li>
+
                 <li>
                     <button className="">
                         <div className="bg-gray-700 rounded-full px-3 py-2 flex items-center justify-center text-white space-x-2">
