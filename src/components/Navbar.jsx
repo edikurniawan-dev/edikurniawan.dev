@@ -6,10 +6,12 @@ import Logo from '../images/logo.svg';
 const Navbar = () => {
     const [icon, setIcon] = useState('fas fa-moon fa-lg');
     const [iconWordmark, setIconWordmark] = useState('Dark');
+    const [colorBgIcon, setColorBgIcon] = useState('bg-gray-700 rounded-full');
 
     const handleClick = () => {
         setIcon(!icon);
         setIconWordmark(!iconWordmark);
+        setColorBgIcon(!colorBgIcon);
     };
     return (
         <div className="flex justify-between items-center py-7">
@@ -36,8 +38,14 @@ const Navbar = () => {
                 </li>
 
                 <li>
-                    <button className="" onClick={handleClick}>
-                        <div className="bg-gray-700 rounded-full px-3 py-2 flex items-center justify-center text-white space-x-2">
+                    <button
+                        className={
+                            colorBgIcon
+                                ? 'bg-gray-700 rounded-full'
+                                : 'bg-blue-light rounded-full'
+                        }
+                        onClick={handleClick}>
+                        <div className=" px-3 py-2 flex items-center justify-center text-white space-x-2">
                             <i
                                 className={
                                     icon
