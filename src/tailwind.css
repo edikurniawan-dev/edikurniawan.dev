@@ -22468,8 +22468,8 @@ video {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-.font-poppins {
-  font-family: 'Poppins', 'sans-serif';
+.font-ubuntu {
+  font-family: 'Ubuntu', 'sans-serif';
 }
 
 .font-hind {
@@ -54226,8 +54226,8 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
-  .sm\:font-poppins {
-    font-family: 'Poppins', 'sans-serif';
+  .sm\:font-ubuntu {
+    font-family: 'Ubuntu', 'sans-serif';
   }
 
   .sm\:font-hind {
@@ -85628,8 +85628,8 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
-  .md\:font-poppins {
-    font-family: 'Poppins', 'sans-serif';
+  .md\:font-ubuntu {
+    font-family: 'Ubuntu', 'sans-serif';
   }
 
   .md\:font-hind {
@@ -117030,8 +117030,8 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
-  .lg\:font-poppins {
-    font-family: 'Poppins', 'sans-serif';
+  .lg\:font-ubuntu {
+    font-family: 'Ubuntu', 'sans-serif';
   }
 
   .lg\:font-hind {
@@ -148432,8 +148432,8 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
-  .xl\:font-poppins {
-    font-family: 'Poppins', 'sans-serif';
+  .xl\:font-ubuntu {
+    font-family: 'Ubuntu', 'sans-serif';
   }
 
   .xl\:font-hind {
@@ -179834,8 +179834,8 @@ video {
     font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
-  .\32xl\:font-poppins {
-    font-family: 'Poppins', 'sans-serif';
+  .\32xl\:font-ubuntu {
+    font-family: 'Ubuntu', 'sans-serif';
   }
 
   .\32xl\:font-hind {
