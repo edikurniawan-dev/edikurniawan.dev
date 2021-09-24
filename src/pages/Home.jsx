@@ -7,6 +7,7 @@ import Linkedin from '../images/logo/linkedin.svg';
 import Telegram from '../images/logo/telegram.svg';
 import Twitter from '../images/logo/twitter.svg';
 import Whatsapp from '../images/logo/whatsapp.svg';
+import Gmail from '../images/logo/gmail.svg';
 
 import GithubGray from '../images/logo/github-gray.svg';
 import InstagramGray from '../images/logo/instagram-gray.svg';
@@ -14,75 +15,52 @@ import LinkedinGray from '../images/logo/linkedin-gray.svg';
 import TelegramGray from '../images/logo/telegram-gray.svg';
 import TwitterGray from '../images/logo/twitter-gray.svg';
 import WhatsappGray from '../images/logo/whatsapp-gray.svg';
+import GmailGray from '../images/logo/gmail-gray.svg';
 
 const Home = () => {
     return (
-        <div className="">
+        <main className="flex flex-col pt-8">
             <div className="flex items-center justify-between">
-                <div className="text-gray-700 space-y-4">
-                    <h1 className="font-hind font-bold text-4xl">
+                <div className="font-hind w-2/3 text-gray-600 space-y-4">
+                    <h1 className=" font-semibold text-3xl">
                         Welcome to my personal site
                     </h1>
                     <div className="flex items-baseline">
-                        <h1 className="font-hind font-bold text-4xl">
+                        <h1 className="font-bold text-3xl">
                             Hi, my name is&nbsp;
                         </h1>
-                        <h1 className="font-poppins text-indigo-600 text-5xl underline">
-                            Edi&nbsp;
-                        </h1>
-                        <h1 className="font-poppins text-blue-light text-5xl underline">
-                            Kurniawan
+                        <h1 className="ml-2 text-blue-600 text-5xl font-ubuntu hover:text-blue-600">
+                            Edi Kurniawan
                         </h1>
                     </div>
                     <div className="flex items-baseline">
-                        <h1 className="font-hind font-bold text-4xl">
-                            I'm a&nbsp;
-                        </h1>
-                        <h1 className="font-poppins text-indigo-600 text-5xl underline">
-                            Web&nbsp;
-                        </h1>
-                        <h1 className="font-poppins text-blue-light text-5xl underline">
-                            Developer
+                        <h1 className="font-bold text-3xl">I'm a&nbsp;</h1>
+                        <h1 className="ml-2 font-ubuntu text-blue-light text-5xl ">
+                            Web Developer
                         </h1>
                     </div>
-                    <div className="flex items-center space-x-6 font-hind font-semibold text-lg pt-10">
+                    <div className="flex items-center space-x-6 text-lg pt-10">
                         <a
                             href="https://github.com/edikurniawan-dev"
-                            className="text-blue-light py-3 px-12 rounded-full border-2 border-blue-light hover:bg-blue-light hover:text-white">
+                            className="text-blue-600 pt-3 pb-2 px-10 rounded-full border-2 border-blue-600 hover:bg-blue-600 hover:text-white">
                             <i className="fas fa-file-download"></i>
                             &nbsp;&nbsp; Resume
                         </a>
                         <a
                             href="https://github.com/edikurniawan-dev"
-                            className="text-blue-light py-3 px-12 rounded-full border-2 border-blue-light hover:bg-blue-light hover:text-white">
+                            className="text-white pt-3 pb-2 px-10 rounded-full border-2 border-blue-light bg-blue-light hover:bg-white hover:text-blue-light">
                             <i className="fas fa-file-download"></i>
                             &nbsp;&nbsp; Portfolio
                         </a>
                     </div>
                 </div>
-                <div className="w-1/2">
-                    <div className="flex justify-end">
-                        <img src={Myfoto} className="h-auto" alt="" />
-                    </div>
+                <div className="w-1/3">
+                    <img src={Myfoto} className="h-auto" alt="" />
                 </div>
             </div>
-            <div className="py-12 px-16 rounded-full shadow-2xl">
-                <div className="flex items-center space-x-20 h-7">
-                    <a
-                        href="https://github.com/edikurniawan-dev"
-                        target="_blank"
-                        rel="noreferrer">
-                        <img
-                            src={GithubGray}
-                            alt=""
-                            className=""
-                            onMouseOver={(e) => (e.currentTarget.src = Github)}
-                            onMouseLeave={(e) =>
-                                (e.currentTarget.src = GithubGray)
-                            }
-                        />
-                    </a>
 
+            <div className="py-10 px-16 rounded-full shadow-2xl">
+                <div className="flex items-center space-x-16">
                     <a
                         href="https://www.linkedin.com/in/edikurniawan-dev/"
                         target="_blank"
@@ -96,6 +74,21 @@ const Home = () => {
                             }
                             onMouseLeave={(e) =>
                                 (e.currentTarget.src = LinkedinGray)
+                            }
+                        />
+                    </a>
+
+                    <a
+                        href="https://github.com/edikurniawan-dev"
+                        target="_blank"
+                        rel="noreferrer">
+                        <img
+                            src={GithubGray}
+                            alt=""
+                            className=""
+                            onMouseOver={(e) => (e.currentTarget.src = Github)}
+                            onMouseLeave={(e) =>
+                                (e.currentTarget.src = GithubGray)
                             }
                         />
                     </a>
@@ -165,9 +158,23 @@ const Home = () => {
                             }
                         />
                     </a>
+                    <a
+                        href="mailto:edikurniawan.dev@gmail.com"
+                        target="_blank"
+                        rel="noreferrer">
+                        <img
+                            src={GmailGray}
+                            alt=""
+                            className=""
+                            onMouseOver={(e) => (e.currentTarget.src = Gmail)}
+                            onMouseLeave={(e) =>
+                                (e.currentTarget.src = GmailGray)
+                            }
+                        />
+                    </a>
                 </div>
             </div>
-        </div>
+        </main>
     );
 };
 
