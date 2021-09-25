@@ -6,7 +6,7 @@ import './tailwind.css';
 
 const App = () => {
     return (
-        <div className="container mx-auto flex-col px-16">
+        <div className="container mb-12 mx-auto flex-col px-16">
             <Navbar />
             <Router />
         </div>
