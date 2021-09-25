@@ -14,7 +14,7 @@ const Navbar = () => {
         setColorBgIcon(!colorBgIcon);
     };
     return (
-        <header className="sticky top-0 z-50 bg-white">
+        <header className="sticky mb-8 top-0 z-50 bg-white">
             <nav className="flex justify-between items-center text-lg py-4">
                 <NavLink exact to="/">
                     <img src={Logo} alt="" className="h-12" />
