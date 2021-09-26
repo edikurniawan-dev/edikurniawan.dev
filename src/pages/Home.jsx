@@ -19,7 +19,7 @@ import GmailGray from '../images/logo/gmail-gray.svg';
 
 const Home = () => {
     return (
-        <main className="flex flex-col pt-8">
+        <main className="flex flex-col">
             <div className="flex items-center justify-between">
                 <div className="font-hind w-2/3 text-gray-600 space-y-4">
                     <h1 className=" font-semibold text-3xl">
@@ -41,13 +41,13 @@ const Home = () => {
                     </div>
                     <div className="flex items-center space-x-6 text-lg pt-10">
                         <a
-                            href="https://github.com/edikurniawan-dev"
+                            href="#0"
                             className="text-blue-600 pt-3 pb-2 px-10 rounded-full border-2 border-blue-600 hover:bg-blue-600 hover:text-white">
                             <i className="fas fa-file-download"></i>
                             &nbsp;&nbsp; Resume
                         </a>
                         <a
-                            href="https://github.com/edikurniawan-dev"
+                            href="#0"
                             className="text-white pt-3 pb-2 px-10 rounded-full border-2 border-blue-light bg-blue-light hover:bg-white hover:text-blue-light">
                             <i className="fas fa-file-download"></i>
                             &nbsp;&nbsp; Portfolio
