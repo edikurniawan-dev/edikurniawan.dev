@@ -28,16 +28,16 @@ const Home = () => {
                             from clients such as React and Laravel.
                         </p>
                     </div>
-                    <div className="flex justify-center md:justify-start space-x-6 font-medium text-lg pt-5 md:pt-10">
+                    <div className="flex justify-center md:justify-start space-x-6 font-medium text-base md:text-lg pt-5 md:pt-10">
                         <a
                             href="#0"
-                            className="text-dark bg-gray py-2 px-8 border-2 border-dark hover:bg-dark hover:text-light">
+                            className="text-dark bg-gray py-2 px-5 md:px-8 border-2 border-dark hover:bg-dark hover:text-light">
                             <i className="fas fa-file-download"></i>
                             &nbsp; Resume
                         </a>
                         <a
                             href="#0"
-                            className="text-white bg-dark py-2 px-8 border-2 border-dark hover:bg-light hover:text-dark">
+                            className="text-white bg-dark py-2 px-5 md:px-8 border-2 border-dark hover:bg-light hover:text-dark">
                             <i className="fas fa-file-download"></i>
                             &nbsp; Portfolio
                         </a>
@@ -48,7 +48,9 @@ const Home = () => {
                 </div>
             </div>
             <div className="space-y-4 flex flex-col items-center">
-                <span className="text-lg font-bold">Connect with me:</span>
+                <span className="text-base-mg:text-lg font-bold">
+                    Connect with me:
+                </span>
                 <div className="space-x-4">
                     <a
                         href="https://www.linkedin.com/in/edikurniawan-dev/"

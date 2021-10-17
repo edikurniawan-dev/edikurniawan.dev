@@ -33,11 +33,11 @@ const Navbar = () => {
                         <NavLink exact to="/">
                             <img src={Logo} alt="" className="h-10 md:h-12" />
                         </NavLink>
-                        <NavLink
+                        {/* <NavLink
                             className="block md:hidden text-xs text-light text-center"
                             to="/">
                             Home
-                        </NavLink>
+                        </NavLink> */}
                     </li>
                     <li>
                         <NavLink
@@ -45,7 +45,7 @@ const Navbar = () => {
                             to="/skill">
                             <i className="fas fa-tools fa-3x"></i>
                         </NavLink>
-                        <NavLink className="block" to="/skill">
+                        <NavLink className="hidden md:block" to="/skill">
                             Skill
                         </NavLink>
                     </li>
@@ -55,7 +55,7 @@ const Navbar = () => {
                             to="/experience">
                             <i className="fas fa-briefcase fa-3x"></i>
                         </NavLink>
-                        <NavLink className="block" to="/experience">
+                        <NavLink className="hidden md:block" to="/experience">
                             Experience
                         </NavLink>
                     </li>
@@ -65,7 +65,7 @@ const Navbar = () => {
                             to="/portfolio">
                             <i className="fas fa-image fa-3x"></i>
                         </NavLink>
-                        <NavLink className="block" to="/portfolio">
+                        <NavLink className="hidden md:block" to="/portfolio">
                             Portfolio
                         </NavLink>
                     </li>
@@ -75,7 +75,7 @@ const Navbar = () => {
                             to="/resume">
                             <i class="fas fa-id-card fa-3x"></i>
                         </NavLink>
-                        <NavLink className="block" to="/resume">
+                        <NavLink className="hidden md:block" to="/resume">
                             Resume
                         </NavLink>
                     </li>
@@ -85,7 +85,7 @@ const Navbar = () => {
                             to="/contact">
                             <i class="fas fa-phone fa-3x"></i>
                         </NavLink>
-                        <NavLink className="block" to="/contact">
+                        <NavLink className="hidden md:block" to="/contact">
                             Contact
                         </NavLink>
                     </li>
@@ -115,9 +115,9 @@ const Navbar = () => {
                                 </p>
                             </div>
                         </button>
-                        <span className="block md:hidden text-xs">
+                        {/* <span className="block md:hidden text-xs">
                             {iconWordmark ? 'Dark' : 'Light'}
-                        </span>
+                        </span> */}
                     </li>
                 </ul>
             </nav>
