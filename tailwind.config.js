@@ -3,12 +3,14 @@ module.exports = {
     darkMode: false, // or 'media' or 'class'
     theme: {
         extend: {
-            fontFamily: {
-                ubuntu: "'Ubuntu', 'sans-serif'",
-                hind: "'Hind', 'sans-serif'",
+            screens: {
+                xs: '475px',
             },
             colors: {
-                'blue-light': '#10A2E9',
+                black: '#0A0A23',
+                dark: '#1b1b32',
+                light: '#f5f6f7',
+                gray: '#d0d0d5',
             },
         },
     },
