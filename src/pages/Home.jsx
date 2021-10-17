@@ -1,176 +1,106 @@
 import React from 'react';
-import Myfoto from '../images/me.png';
-
-import Github from '../images/logo/github.svg';
-import Instagram from '../images/logo/instagram.svg';
-import Linkedin from '../images/logo/linkedin.svg';
-import Telegram from '../images/logo/telegram.svg';
-import Twitter from '../images/logo/twitter.svg';
-import Whatsapp from '../images/logo/whatsapp.svg';
-import Gmail from '../images/logo/gmail.svg';
-
-import GithubGray from '../images/logo/github-gray.svg';
-import InstagramGray from '../images/logo/instagram-gray.svg';
-import LinkedinGray from '../images/logo/linkedin-gray.svg';
-import TelegramGray from '../images/logo/telegram-gray.svg';
-import TwitterGray from '../images/logo/twitter-gray.svg';
-import WhatsappGray from '../images/logo/whatsapp-gray.svg';
-import GmailGray from '../images/logo/gmail-gray.svg';
+import Myfoto from '../images/me1.png';
 
 const Home = () => {
     return (
-        <main className="flex flex-col">
-            <div className="flex items-center justify-between">
-                <div className="font-hind w-2/3 text-gray-600 space-y-4">
-                    <h1 className=" font-semibold text-3xl">
-                        Welcome to my personal site
-                    </h1>
-                    <div className="flex items-baseline">
-                        <h1 className="font-bold text-3xl">
-                            Hi, my name is&nbsp;
+        <main className="pt-5 md:pt-10">
+            <div className="grid grid-cols-1 md:grid-cols-3">
+                <div className="flex md:hidden justify-center w-full mb-5">
+                    <img src={Myfoto} className="w-1/2" alt="" />
+                </div>
+                <div className="font-mono flex flex-col md:col-span-2 pb-8 md:pb-16 justify-end text-dark md:space-y-5 pr-0 md:pr-20 xl:pr-40">
+                    <div className="space-y-0 md:space-y-4">
+                        <h1 className="text-xl md:text-2xl font-bold">
+                            Hello I'm
                         </h1>
-                        <h1 className="ml-2 text-blue-600 text-5xl font-ubuntu hover:text-blue-600">
+                        <h1 className="text-4xl md:text-5xl font-bold">
                             Edi Kurniawan
                         </h1>
-                    </div>
-                    <div className="flex items-baseline">
-                        <h1 className="font-bold text-3xl">I'm a&nbsp;</h1>
-                        <h1 className="ml-2 font-ubuntu text-blue-light text-5xl ">
+                        <h1 className="text-xl md:text-2xl font-bold">
                             Web Developer
                         </h1>
+                        <p className="text-base md:text-lg font-sans tracking-wider">
+                            I am a hard worker with experience as a web
+                            developer. I love coding so I study every day to
+                            improve my skills regarding web development. My
+                            experience is related to web development for about 1
+                            year using several technologies to build websites
+                            from clients such as React and Laravel.
+                        </p>
                     </div>
-                    <div className="flex items-center space-x-6 text-lg pt-10">
+                    <div className="flex justify-center md:justify-start space-x-6 font-medium text-lg pt-5 md:pt-10">
                         <a
                             href="#0"
-                            className="text-blue-600 pt-3 pb-2 px-10 rounded-full border-2 border-blue-600 hover:bg-blue-600 hover:text-white">
+                            className="text-dark bg-gray py-2 px-8 border-2 border-dark hover:bg-dark hover:text-light">
                             <i className="fas fa-file-download"></i>
-                            &nbsp;&nbsp; Resume
+                            &nbsp; Resume
                         </a>
                         <a
                             href="#0"
-                            className="text-white pt-3 pb-2 px-10 rounded-full border-2 border-blue-light bg-blue-light hover:bg-white hover:text-blue-light">
+                            className="text-white bg-dark py-2 px-8 border-2 border-dark hover:bg-light hover:text-dark">
                             <i className="fas fa-file-download"></i>
-                            &nbsp;&nbsp; Portfolio
+                            &nbsp; Portfolio
                         </a>
                     </div>
                 </div>
-                <div className="w-1/3">
-                    <img src={Myfoto} className="h-auto" alt="" />
+                <div className="hidden md:block justify-self-end w-full">
+                    <img src={Myfoto} className="" alt="" />
                 </div>
             </div>
-
-            <div className="py-10 px-16 rounded-full shadow-2xl">
-                <div className="flex items-center space-x-16">
+            <div className="space-y-4 flex flex-col items-center">
+                <span className="text-lg font-bold">Connect with me:</span>
+                <div className="space-x-4">
                     <a
                         href="https://www.linkedin.com/in/edikurniawan-dev/"
                         target="_blank"
                         rel="noreferrer">
-                        <img
-                            src={LinkedinGray}
-                            alt=""
-                            className=""
-                            onMouseOver={(e) =>
-                                (e.currentTarget.src = Linkedin)
-                            }
-                            onMouseLeave={(e) =>
-                                (e.currentTarget.src = LinkedinGray)
-                            }
-                        />
+                        <i
+                            style={{
+                                paddingLeft: '9.5px',
+                                paddingRight: '9.5px',
+                                paddingTop: '8px',
+                                paddingBottom: '8px',
+                            }}
+                            className="border-2 border-dark  bg-dark text-white hover:bg-light hover:text-dark fab fa-linkedin-in fa-2x"></i>
                     </a>
-
                     <a
                         href="https://github.com/edikurniawan-dev"
                         target="_blank"
                         rel="noreferrer">
-                        <img
-                            src={GithubGray}
-                            alt=""
-                            className=""
-                            onMouseOver={(e) => (e.currentTarget.src = Github)}
-                            onMouseLeave={(e) =>
-                                (e.currentTarget.src = GithubGray)
-                            }
-                        />
+                        <i
+                            style={{
+                                paddingLeft: '8px',
+                                paddingRight: '8px',
+                                paddingTop: '8px',
+                                paddingBottom: '8px',
+                            }}
+                            className="border-2 border-dark bg-dark text-white hover:bg-light hover:text-dark fab fa-github fa-2x"></i>
                     </a>
-
                     <a
                         href="https://twitter.com/edikurnia_dev"
                         target="_blank"
                         rel="noreferrer">
-                        <img
-                            src={TwitterGray}
-                            alt=""
-                            className=""
-                            onMouseOver={(e) => (e.currentTarget.src = Twitter)}
-                            onMouseLeave={(e) =>
-                                (e.currentTarget.src = TwitterGray)
-                            }
-                        />
+                        <i
+                            style={{
+                                paddingLeft: '7.5px',
+                                paddingRight: '7.5px',
+                                paddingTop: '8px',
+                                paddingBottom: '8px',
+                            }}
+                            className="border-2 border-dark bg-dark text-white hover:bg-light hover:text-dark fab fa-twitter fa-2x"></i>
                     </a>
-
                     <a
                         href="https://www.instagram.com/edi.kurniawan27/"
                         target="_blank"
                         rel="noreferrer">
-                        <img
-                            src={InstagramGray}
-                            alt=""
-                            className=""
-                            onMouseOver={(e) =>
-                                (e.currentTarget.src = Instagram)
-                            }
-                            onMouseLeave={(e) =>
-                                (e.currentTarget.src = InstagramGray)
-                            }
-                        />
-                    </a>
-
-                    <a
-                        href="https://t.me/edikurniawan_dev"
-                        target="_blank"
-                        rel="noreferrer">
-                        <img
-                            src={TelegramGray}
-                            alt=""
-                            className=""
-                            onMouseOver={(e) =>
-                                (e.currentTarget.src = Telegram)
-                            }
-                            onMouseLeave={(e) =>
-                                (e.currentTarget.src = TelegramGray)
-                            }
-                        />
-                    </a>
-
-                    <a
-                        href="https://wa.me/6281350400660"
-                        target="_blank"
-                        rel="noreferrer">
-                        <img
-                            src={WhatsappGray}
-                            alt=""
-                            className=""
-                            onMouseOver={(e) =>
-                                (e.currentTarget.src = Whatsapp)
-                            }
-                            onMouseLeave={(e) =>
-                                (e.currentTarget.src = WhatsappGray)
-                            }
-                        />
-                    </a>
-                    <a
-                        href="mailto:edikurniawan.dev@gmail.com"
-                        target="_blank"
-                        rel="noreferrer">
-                        <img
-                            src={GmailGray}
-                            alt=""
-                            className=""
-                            onMouseOver={(e) => (e.currentTarget.src = Gmail)}
-                            onMouseLeave={(e) =>
-                                (e.currentTarget.src = GmailGray)
-                            }
-                        />
+                        <i
+                            style={{
+                                paddingLeft: '9.5px',
+                                paddingRight: '9.5px',
+                                paddingTop: '8px',
+                                paddingBottom: '8px',
+                            }}
+                            className="border-2 border-dark bg-dark text-white hover:bg-light hover:text-dark fab fa-instagram fa-2x"></i>
                     </a>
                 </div>
             </div>

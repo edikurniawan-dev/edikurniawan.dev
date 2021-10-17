@@ -2,8 +2,10 @@ import React from 'react';
 
 const Resume = () => {
     return (
-        <main className="">
-            <h1 className="font-ubuntu text-3xl text-blue-light">Resume</h1>
+        <main className="flex flex-col pt-10">
+            <h1 className="font-mono text-3xl text-dark font-bold underline">
+                Resume
+            </h1>
             <br />
         </main>
     );
