@@ -140,8 +140,8 @@ const Contact = () => {
                             </a>
                         </div>
                     </div>
+                    <hr />
                 </div>
-                <hr />
                 <form className="flex flex-col space-y-8 font-bold">
                     <div className="flex flex-col space-y-2">
                         <label>Name</label>
