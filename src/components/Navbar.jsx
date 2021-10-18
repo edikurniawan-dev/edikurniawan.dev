@@ -31,58 +31,28 @@ const Navbar = () => {
                         <NavLink exact to="/">
                             <img src={Logo} alt="" className="h-10 md:h-12" />
                         </NavLink>
-                        <NavLink
-                            className="block md:hidden text-xs text-light text-center"
-                            to="/">
-                            Home
-                        </NavLink>
                     </li>
                     <li>
-                        <NavLink
-                            className="block md:hidden text-center"
-                            to="/skill">
-                            <i className="fas fa-tools fa-2x"></i>
-                        </NavLink>
                         <NavLink className="block" to="/skill">
                             Skill
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink
-                            className="block md:hidden text-center"
-                            to="/experience">
-                            <i className="fas fa-briefcase fa-2x"></i>
-                        </NavLink>
                         <NavLink className="block" to="/experience">
                             Experience
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink
-                            className="block md:hidden text-center"
-                            to="/portfolio">
-                            <i className="fas fa-image fa-2x"></i>
-                        </NavLink>
                         <NavLink className="block" to="/portfolio">
                             Portfolio
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink
-                            className="block md:hidden text-center"
-                            to="/resume">
-                            <i class="fas fa-id-card fa-2x"></i>
-                        </NavLink>
                         <NavLink className="block" to="/resume">
                             Resume
                         </NavLink>
                     </li>
                     <li>
-                        <NavLink
-                            className="block md:hidden text-center"
-                            to="/contact">
-                            <i class="fas fa-phone fa-2x"></i>
-                        </NavLink>
                         <NavLink className="block" to="/contact">
                             Contact
                         </NavLink>
@@ -178,10 +148,8 @@ const Navbar = () => {
                         Contact
                     </NavLink>
                 </div>
-
-                {/* </ul> */}
             </div>
-            <div className="fixed top-0 right-0">
+            <div className="fixed md:hidden top-0 right-0">
                 <div
                     className="flex flex-col items-center"
                     onClick={handleClick}>

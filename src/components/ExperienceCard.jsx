@@ -20,7 +20,7 @@ const ExperienceCard = (props) => {
                     </div>
                 </div>
             </div>
-            <div className="bg-dark text-white text-lg w-10 h-10 absolute left-1/2 -translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+            <div className="bg-dark text-white text-lg w-10 h-10 absolute left-1/2 -translate-y-6 md:-translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
                 {props.number}
             </div>
         </div>

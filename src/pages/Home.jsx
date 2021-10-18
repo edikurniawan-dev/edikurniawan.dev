@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <main className="pt-5 md:pt-10">
             <div className="grid grid-cols-1 md:grid-cols-3">
-                <div className="flex md:hidden justify-center w-full mb-5">
+                <div className="flex md:hidden justify-center w-full mb-8">
                     <img src={Myfoto} className="w-2/3" alt="" />
                 </div>
                 <div className="font-mono flex flex-col md:col-span-2 pb-8 md:pb-16 justify-end text-dark md:space-y-5 pr-0 md:pr-20 xl:pr-40">
@@ -19,7 +19,7 @@ const Home = () => {
                         <h1 className="text-xl md:text-2xl font-bold">
                             Web Developer
                         </h1>
-                        <p className="text-base md:text-lg font-sans tracking-wider">
+                        <p className="text-base pt-2 md:pt-0 md:text-lg font-sans tracking-wider">
                             I am a hard worker with experience as a web
                             developer. I love coding so I study every day to
                             improve my skills regarding web development. My

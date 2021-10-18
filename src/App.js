@@ -13,7 +13,7 @@ const App = () => {
             <div className="md:container mx-6 md:mx-auto flex-grow px-0 md:px-16">
                 <Router />
             </div>
-            <div className="mb-32 md:mb-0"></div>
+            <div className="mb-24 md:mb:10"></div>
         </div>
     );
 };

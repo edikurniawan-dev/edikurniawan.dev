@@ -4,11 +4,11 @@ import SkillCard from '../components/SkillCard';
 const Skill = () => {
     return (
         <main className="flex flex-col pt-10">
-            <h1 className="font-mono text-3xl text-dark font-bold underline">
+            <h1 className="font-mono text-2xl md:text-3xl text-dark font-bold underline">
                 Skill
             </h1>
             <br />
-            <div className="grid grid-cols-3 lg:grid-cols-6 gap-5 md:gap-10">
+            <div className="grid grid-cols-2 lg:grid-cols-6 gap-7 md:gap-10">
                 <SkillCard icon="fab fa-html5" iconName="HTML" />
                 <SkillCard icon="fab fa-css3-alt" iconName="CSS" />
                 <SkillCard icon="fab fa-js" iconName="Javascript" />
@@ -21,9 +21,9 @@ const Skill = () => {
                 <SkillCard icon="fab fa-elementor" iconName="Elementor" />
                 <SkillCard icon="fas fa-database" iconName="MySQL" />
 
-                <div className="h-44 bg-gray hover:bg-dark text-dark hover:text-light">
-                    <div className="h-full pt-6 flex flex-col justify-between items-center border-2 border-dark">
-                        <div className="text-8xl">
+                <div className="bg-gray hover:bg-dark text-dark hover:text-light">
+                    <div className="h-full pt-3 md:pt-6 flex flex-col justify-between items-center border-2 border-dark">
+                        <div className="text-6xl md:text-8xl px-8">
                             <svg
                                 width="1.3em"
                                 height="1em"
@@ -38,7 +38,7 @@ const Skill = () => {
                                 />
                             </svg>
                         </div>
-                        <span className="pb-5 pt-2 text-lg font-mono">
+                        <span className="pb-2 md:pb-5 pt-2 text-lg font-mono">
                             TailwindCSS
                         </span>
                     </div>
