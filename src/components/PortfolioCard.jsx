@@ -7,7 +7,7 @@ const PortfolioCard = (props) => {
             <img src={props.image} alt="" className="border-2" />
 
             <div className="bg-dark hover:bg-opacity-90 opacity-0 hover:opacity-100 duration-300 absolute inset-0 z-10 flex flex-col justify-center items-center text-white text-center">
-                <a href="#0">
+                <a href={props.link} target="_blank" rel="noreferrer">
                     <h1 className="text-xl md:text-2xl font-mono font-bold pb-2 md:pb-5 hover:underline">
                         {props.title}
                     </h1>

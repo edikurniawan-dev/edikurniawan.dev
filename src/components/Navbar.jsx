@@ -90,64 +90,48 @@ const Navbar = () => {
                 </ul>
             </nav>
 
-            {/* grid navbar */}
+            {/* grid navbar for phone*/}
             <div className="grid md:hidden grid-cols-6 text-light pt-2 pb-1">
-                <div className="flex flex-col items-center md:hidden">
-                    <NavLink exact to="/">
-                        <img src={Logo} alt="" style={{ height: '34px' }} />
-                    </NavLink>
-                    <NavLink className="block md:hidden text-xs" to="/">
-                        Home
-                    </NavLink>
-                </div>
-                <div className="flex flex-col items-center md:hidden">
-                    <NavLink className="block md:hidden" to="/skill">
-                        <i className="fas fa-tools fa-2x"></i>
-                    </NavLink>
-                    <NavLink className="block md:hidden text-xs" to="/skill">
-                        Skill
-                    </NavLink>
-                </div>
-                <div className="flex flex-col items-center md:hidden">
-                    <NavLink className="block md:hidden" to="/experience">
-                        <i className="fas fa-briefcase fa-2x"></i>
-                    </NavLink>
-                    <NavLink
-                        className="block md:hidden text-xs"
-                        to="/experience">
-                        Experience
-                    </NavLink>
-                </div>
-                <div className="flex flex-col items-center md:hidden">
-                    <NavLink className="block md:hidden" to="/portfolio">
-                        <i className="fas fa-image fa-2x"></i>
-                    </NavLink>
-                    <NavLink
-                        className="block md:hidden text-xs"
-                        to="/portfolio">
-                        Portfolio
-                    </NavLink>
-                </div>
-                <div className="flex flex-col items-center md:hidden">
-                    <NavLink
-                        className="block md:hidden text-center"
-                        to="/resume">
-                        <i class="fas fa-id-card fa-2x"></i>
-                    </NavLink>
-                    <NavLink className="block md:hidden text-xs" to="/resume">
-                        Resume
-                    </NavLink>
-                </div>
-                <div className="flex flex-col items-center md:hidden">
-                    <NavLink
-                        className="block md:hidden text-center"
-                        to="/contact">
-                        <i class="fas fa-phone fa-2x"></i>
-                    </NavLink>
-                    <NavLink className="block md:hidden text-xs" to="/contact">
-                        Contact
-                    </NavLink>
-                </div>
+                <NavLink
+                    className="flex flex-col items-center justify-end md:hidden"
+                    exact
+                    to="/">
+                    <img src={Logo} alt="" style={{ height: '34px' }} />
+                    <span className="text-xs">Home</span>
+                </NavLink>
+
+                <NavLink
+                    className="flex flex-col items-center justify-end md:hidden"
+                    to="/skill">
+                    <i className="fas fa-tools fa-2x"></i>
+                    <span className="text-xs">Skill</span>
+                </NavLink>
+                <NavLink
+                    className="flex flex-col items-center justify-end md:hidden"
+                    to="/experience">
+                    <i className="fas fa-briefcase fa-2x"></i>
+                    <span className="text-xs">Experience</span>
+                </NavLink>
+                <NavLink
+                    className="flex flex-col items-center justify-end md:hidden"
+                    to="/portfolio">
+                    <i className="fas fa-image fa-2x"></i>
+                    <span className="text-xs">Portfolio</span>
+                </NavLink>
+
+                <NavLink
+                    className="flex flex-col items-center justify-end md:hidden"
+                    to="/resume">
+                    <i class="fas fa-id-card fa-2x"></i>
+                    <span className="text-xs">Resume</span>
+                </NavLink>
+
+                <NavLink
+                    className="flex flex-col items-center justify-end md:hidden"
+                    to="/contact">
+                    <i class="fas fa-phone fa-2x"></i>
+                    <span className="text-xs">Contact</span>
+                </NavLink>
             </div>
             <div className="fixed md:hidden top-0 right-0">
                 <div

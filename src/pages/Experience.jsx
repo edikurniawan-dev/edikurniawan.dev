@@ -3,7 +3,7 @@ import ExperienceCard from '../components/ExperienceCard';
 
 const Experience = () => {
     return (
-        <main className="flex flex-col pt-10">
+        <main className="flex flex-col pt-5 md:pt-10">
             <h1 className="font-mono text-2xl md:text-3xl text-dark font-bold underline">
                 Experience
             </h1>

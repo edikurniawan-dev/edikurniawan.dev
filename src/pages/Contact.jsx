@@ -2,14 +2,14 @@ import React from 'react';
 
 const Contact = () => {
     return (
-        <main className="flex flex-col pt-10">
+        <main className="flex flex-col pt-5 md:pt-10">
             <h1 className="font-mono text-2xl md:text-3xl text-dark font-bold underline">
                 Contact
             </h1>
             <br />
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 font-mono text-base md:text-lg">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 font-sans tracking-wider text-base md:text-lg">
                 <div className="flex flex-col justify-between">
-                    <span className="font-sans tracking-wider pb-5">
+                    <span className=" pb-5">
                         Contact me if you want to talk more about web
                         development via social media or the form bellow
                     </span>
@@ -18,7 +18,8 @@ const Contact = () => {
                             <a
                                 href="https://wa.me/6281350400660"
                                 target="_blank"
-                                rel="noreferrer">
+                                rel="noreferrer"
+                                className="text-2xl md:text-3xl">
                                 <i
                                     style={{
                                         paddingLeft: '9px',
@@ -26,7 +27,7 @@ const Contact = () => {
                                         paddingTop: '8px',
                                         paddingBottom: '8px',
                                     }}
-                                    className="border-2 border-dark bg-dark text-white hover:bg-light hover:text-dark fab fa-whatsapp fa-2x"></i>
+                                    className="border-2 border-dark bg-dark text-white hover:bg-light hover:text-dark fab fa-whatsapp"></i>
                             </a>
                             <h1>+6281350400660</h1>
                         </div>
@@ -34,7 +35,8 @@ const Contact = () => {
                             <a
                                 href="https://t.me/edikurniawan_dev"
                                 target="_blank"
-                                rel="noreferrer">
+                                rel="noreferrer"
+                                className="text-2xl md:text-3xl">
                                 <i
                                     style={{
                                         paddingLeft: '9px',
@@ -42,7 +44,7 @@ const Contact = () => {
                                         paddingTop: '8px',
                                         paddingBottom: '8px',
                                     }}
-                                    className="border-2 border-dark bg-dark text-white hover:bg-light hover:text-dark fab fa-telegram-plane fa-2x"></i>
+                                    className="border-2 border-dark bg-dark text-white hover:bg-light hover:text-dark fab fa-telegram-plane"></i>
                             </a>
                             <h1>+6281350400660</h1>
                         </div>
@@ -51,7 +53,8 @@ const Contact = () => {
                             <a
                                 href="mailto:edikurniawan.dev@gmail.com"
                                 target="_blank"
-                                rel="noreferrer">
+                                rel="noreferrer"
+                                className="text-2xl md:text-3xl">
                                 <i
                                     style={{
                                         paddingLeft: '7px',
@@ -59,7 +62,7 @@ const Contact = () => {
                                         paddingTop: '8px',
                                         paddingBottom: '8px',
                                     }}
-                                    className="border-2 border-dark  bg-dark text-white hover:bg-light hover:text-dark fa fa-envelope fa-2x"></i>
+                                    className="border-2 border-dark  bg-dark text-white hover:bg-light hover:text-dark fa fa-envelope"></i>
                             </a>
                             <span>edikurniawan.dev@gmail.com</span>
                         </div>
@@ -68,7 +71,8 @@ const Contact = () => {
                             <a
                                 href="https://www.google.com/maps/place/Bandar+Lampung,+Kota+Bandar+Lampung,+Lampung/@-5.4068534,105.2817431,13z/data=!4m5!3m4!1s0x2e40da46f3aa6fbf:0x3039d80b220cc40!8m2!3d-5.3971396!4d105.2667887"
                                 target="_blank"
-                                rel="noreferrer">
+                                rel="noreferrer"
+                                className="text-2xl md:text-3xl">
                                 <i
                                     style={{
                                         paddingLeft: '11.5px',
@@ -76,20 +80,21 @@ const Contact = () => {
                                         paddingTop: '8px',
                                         paddingBottom: '8px',
                                     }}
-                                    className="border-2 border-dark bg-dark text-white hover:bg-light hover:text-dark fa fa-map-marker-alt fa-2x"></i>
+                                    className="border-2 border-dark bg-dark text-white hover:bg-light hover:text-dark fa fa-map-marker-alt"></i>
                             </a>
                             <span>Bandar Lampung, Lampung</span>
                         </div>
                     </div>
-                    <div className="pt-10 space-y-4 flex flex-col items-center">
-                        <span className="text-lg font-bold">
+                    <div className="pt-10 pb-4 space-y-4 flex flex-col items-center">
+                        <span className="text-base md:text-lg font-bold font-mono">
                             Connect with me:
                         </span>
                         <div className="space-x-4">
                             <a
                                 href="https://www.linkedin.com/in/edikurniawan-dev/"
                                 target="_blank"
-                                rel="noreferrer">
+                                rel="noreferrer"
+                                className="text-2xl md:text-3xl">
                                 <i
                                     style={{
                                         paddingLeft: '9.5px',
@@ -97,12 +102,13 @@ const Contact = () => {
                                         paddingTop: '8px',
                                         paddingBottom: '8px',
                                     }}
-                                    className="border-2 border-dark  bg-dark text-white hover:bg-light hover:text-dark fab fa-linkedin-in fa-2x"></i>
+                                    className="border-2 border-dark  bg-dark text-white hover:bg-light hover:text-dark fab fa-linkedin-in"></i>
                             </a>
                             <a
                                 href="https://github.com/edikurniawan-dev"
                                 target="_blank"
-                                rel="noreferrer">
+                                rel="noreferrer"
+                                className="text-2xl md:text-3xl">
                                 <i
                                     style={{
                                         paddingLeft: '8px',
@@ -110,12 +116,13 @@ const Contact = () => {
                                         paddingTop: '8px',
                                         paddingBottom: '8px',
                                     }}
-                                    className="border-2 border-dark bg-dark text-white hover:bg-light hover:text-dark fab fa-github fa-2x"></i>
+                                    className="border-2 border-dark bg-dark text-white hover:bg-light hover:text-dark fab fa-github"></i>
                             </a>
                             <a
                                 href="https://twitter.com/edikurnia_dev"
                                 target="_blank"
-                                rel="noreferrer">
+                                rel="noreferrer"
+                                className="text-2xl md:text-3xl">
                                 <i
                                     style={{
                                         paddingLeft: '7.5px',
@@ -123,12 +130,13 @@ const Contact = () => {
                                         paddingTop: '8px',
                                         paddingBottom: '8px',
                                     }}
-                                    className="border-2 border-dark bg-dark text-white hover:bg-light hover:text-dark fab fa-twitter fa-2x"></i>
+                                    className="border-2 border-dark bg-dark text-white hover:bg-light hover:text-dark fab fa-twitter"></i>
                             </a>
                             <a
                                 href="https://www.instagram.com/edi.kurniawan27/"
                                 target="_blank"
-                                rel="noreferrer">
+                                rel="noreferrer"
+                                className="text-2xl md:text-3xl">
                                 <i
                                     style={{
                                         paddingLeft: '9.5px',
@@ -136,7 +144,7 @@ const Contact = () => {
                                         paddingTop: '8px',
                                         paddingBottom: '8px',
                                     }}
-                                    className="border-2 border-dark bg-dark text-white hover:bg-light hover:text-dark fab fa-instagram fa-2x"></i>
+                                    className="border-2 border-dark bg-dark text-white hover:bg-light hover:text-dark fab fa-instagram"></i>
                             </a>
                         </div>
                     </div>

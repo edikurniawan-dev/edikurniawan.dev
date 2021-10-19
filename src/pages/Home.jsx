@@ -48,14 +48,15 @@ const Home = () => {
                 </div>
             </div>
             <div className="space-y-4 flex flex-col items-center">
-                <span className="text-base-mg:text-lg font-bold">
+                <span className="text-base md:text-lg font-bold font-mono">
                     Connect with me:
                 </span>
                 <div className="space-x-4">
                     <a
                         href="https://www.linkedin.com/in/edikurniawan-dev/"
                         target="_blank"
-                        rel="noreferrer">
+                        rel="noreferrer"
+                        className="text-2xl md:text-3xl">
                         <i
                             style={{
                                 paddingLeft: '9.5px',
@@ -63,12 +64,13 @@ const Home = () => {
                                 paddingTop: '8px',
                                 paddingBottom: '8px',
                             }}
-                            className="border-2 border-dark  bg-dark text-white hover:bg-light hover:text-dark fab fa-linkedin-in fa-2x"></i>
+                            className="border-2 border-dark  bg-dark text-white hover:bg-light hover:text-dark fab fa-linkedin-in"></i>
                     </a>
                     <a
                         href="https://github.com/edikurniawan-dev"
                         target="_blank"
-                        rel="noreferrer">
+                        rel="noreferrer"
+                        className="text-2xl md:text-3xl">
                         <i
                             style={{
                                 paddingLeft: '8px',
@@ -76,12 +78,13 @@ const Home = () => {
                                 paddingTop: '8px',
                                 paddingBottom: '8px',
                             }}
-                            className="border-2 border-dark bg-dark text-white hover:bg-light hover:text-dark fab fa-github fa-2x"></i>
+                            className="border-2 border-dark bg-dark text-white hover:bg-light hover:text-dark fab fa-github"></i>
                     </a>
                     <a
                         href="https://twitter.com/edikurnia_dev"
                         target="_blank"
-                        rel="noreferrer">
+                        rel="noreferrer"
+                        className="text-2xl md:text-3xl">
                         <i
                             style={{
                                 paddingLeft: '7.5px',
@@ -89,12 +92,13 @@ const Home = () => {
                                 paddingTop: '8px',
                                 paddingBottom: '8px',
                             }}
-                            className="border-2 border-dark bg-dark text-white hover:bg-light hover:text-dark fab fa-twitter fa-2x"></i>
+                            className="border-2 border-dark bg-dark text-white hover:bg-light hover:text-dark fab fa-twitter"></i>
                     </a>
                     <a
                         href="https://www.instagram.com/edi.kurniawan27/"
                         target="_blank"
-                        rel="noreferrer">
+                        rel="noreferrer"
+                        className="text-2xl md:text-3xl">
                         <i
                             style={{
                                 paddingLeft: '9.5px',
@@ -102,7 +106,7 @@ const Home = () => {
                                 paddingTop: '8px',
                                 paddingBottom: '8px',
                             }}
-                            className="border-2 border-dark bg-dark text-white hover:bg-light hover:text-dark fab fa-instagram fa-2x"></i>
+                            className="border-2 border-dark bg-dark text-white hover:bg-light hover:text-dark fab fa-instagram"></i>
                     </a>
                 </div>
             </div>
