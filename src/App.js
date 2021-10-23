@@ -6,7 +6,7 @@ import './tailwind.css';
 
 const App = () => {
     return (
-        <div className="flex flex-col h-full bg-light">
+        <div className="flex flex-col">
             <div className="bg-black md:sticky md:top-0 z-50 fixed bottom-0 inset-x-0">
                 <Navbar />
             </div>
