@@ -4,7 +4,7 @@ import ExperienceCard from '../components/ExperienceCard';
 const Experience = () => {
     return (
         <main className="flex flex-col pt-5 md:pt-10">
-            <h1 className="font-mono text-2xl md:text-3xl text-dark font-bold underline">
+            <h1 className="font-mono text-2xl md:text-3xl text-dark dark:text-light font-bold underline">
                 Experience
             </h1>
             <br />
@@ -13,7 +13,7 @@ const Experience = () => {
                 <div className="py-0 md:py-3 sm:mx-auto w-full px-0 md:px-2">
                     <div className="relative text-gray-700 space-y-16 md:space-y-0">
                         {/* line vertical */}
-                        <div className="hidden md:block w-1 bg-dark opacity-50 absolute h-full left-1/2 transform -translate-x-1/2"></div>
+                        <div className="hidden md:block w-1 bg-dark dark:bg-light opacity-50 absolute h-full left-1/2 transform -translate-x-1/2"></div>
 
                         <ExperienceCard
                             place="flex justify-start w-full mx-auto items-center"

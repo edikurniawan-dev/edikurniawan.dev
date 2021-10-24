@@ -4,7 +4,7 @@ import SkillCard from '../components/SkillCard';
 const Skill = () => {
     return (
         <main className="flex flex-col pt-5 md:pt-10">
-            <h1 className="font-mono text-2xl md:text-3xl text-dark font-bold underline">
+            <h1 className="font-mono text-2xl md:text-3xl text-dark dark:text-light font-bold underline">
                 Skill
             </h1>
             <br />
@@ -22,7 +22,7 @@ const Skill = () => {
                 <SkillCard icon="fas fa-database" iconName="MySQL" />
 
                 <div className="bg-gray hover:bg-dark text-dark hover:text-light">
-                    <div className="h-full pt-3 md:pt-6 flex flex-col justify-between items-center border-2 border-dark">
+                    <div className="h-full pt-3 md:pt-6 flex flex-col justify-between items-center border-2 border-dark dark:hover:border-light">
                         <div className="text-6xl md:text-8xl px-8">
                             <svg
                                 width="1.3em"

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import useDarkMode from '../hooks/useDarkMode';
 
 import Logo1 from '../images/logo-with-ractangle.svg';
 import Logo2 from '../images/logo-no-ractangle.svg';
@@ -11,12 +12,14 @@ const Navbar = () => {
     const [colorText, setColorText] = useState(
         'text-white font-mono font-medium hidden md:block',
     );
+    const [colorTheme, setTheme] = useDarkMode();
 
     const handleClick = () => {
         setIcon(!icon);
         setIconWordmark(!iconWordmark);
         setColorBgIcon(!colorBgIcon);
         setColorText(!colorText);
+        setTheme(colorTheme);
     };
 
     return (

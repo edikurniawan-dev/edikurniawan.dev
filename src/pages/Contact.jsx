@@ -3,13 +3,13 @@ import React from 'react';
 const Contact = () => {
     return (
         <main className="flex flex-col pt-5 md:pt-10">
-            <h1 className="font-mono text-2xl md:text-3xl text-dark font-bold underline">
+            <h1 className="font-mono text-2xl md:text-3xl text-dark dark:text-light font-bold underline">
                 Contact
             </h1>
             <br />
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 font-sans tracking-wider text-base md:text-lg">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 font-sans tracking-wider text-base md:text-lg text-dark dark:text-light">
                 <div className="flex flex-col justify-between">
-                    <span className=" pb-5">
+                    <span className="pb-5">
                         Contact me if you want to talk more about web
                         development via social media or via form
                     </span>
@@ -27,7 +27,7 @@ const Contact = () => {
                                         paddingTop: '8px',
                                         paddingBottom: '8px',
                                     }}
-                                    className="border-2 border-dark bg-dark text-white hover:bg-light hover:text-dark fab fa-whatsapp"></i>
+                                    className="border-2 border-dark dark:border-light bg-dark dark:bg-light text-white dark:text-dark hover:bg-light dark:hover:bg-dark hover:text-dark dark:hover:text-light fab fa-whatsapp"></i>
                             </a>
                             <h1>+6281350400660</h1>
                         </div>
@@ -44,7 +44,7 @@ const Contact = () => {
                                         paddingTop: '8px',
                                         paddingBottom: '8px',
                                     }}
-                                    className="border-2 border-dark bg-dark text-white hover:bg-light hover:text-dark fab fa-telegram-plane"></i>
+                                    className="border-2 border-dark dark:border-light bg-dark dark:bg-light text-white dark:text-dark hover:bg-light dark:hover:bg-dark hover:text-dark dark:hover:text-light fab fa-telegram-plane"></i>
                             </a>
                             <h1>+6281350400660</h1>
                         </div>
@@ -62,7 +62,7 @@ const Contact = () => {
                                         paddingTop: '8px',
                                         paddingBottom: '8px',
                                     }}
-                                    className="border-2 border-dark  bg-dark text-white hover:bg-light hover:text-dark fa fa-envelope"></i>
+                                    className="border-2 border-dark dark:border-light bg-dark dark:bg-light text-white dark:text-dark hover:bg-light dark:hover:bg-dark hover:text-dark dark:hover:text-light fa fa-envelope"></i>
                             </a>
                             <span>edikurniawan.dev@gmail.com</span>
                         </div>
@@ -80,13 +80,13 @@ const Contact = () => {
                                         paddingTop: '8px',
                                         paddingBottom: '8px',
                                     }}
-                                    className="border-2 border-dark bg-dark text-white hover:bg-light hover:text-dark fa fa-map-marker-alt"></i>
+                                    className="border-2 border-dark dark:border-light bg-dark dark:bg-light text-white dark:text-dark hover:bg-light dark:hover:bg-dark hover:text-dark dark:hover:text-light fa fa-map-marker-alt"></i>
                             </a>
                             <span>Bandar Lampung, Lampung</span>
                         </div>
                     </div>
                     <div className="pt-10 pb-4 space-y-4 flex flex-col items-center">
-                        <span className="text-base md:text-lg font-bold font-mono">
+                        <span className="text-base md:text-lg font-bold font-mono text-dark dark:text-light">
                             Connect with me:
                         </span>
                         <div className="space-x-4">
@@ -102,7 +102,7 @@ const Contact = () => {
                                         paddingTop: '8px',
                                         paddingBottom: '8px',
                                     }}
-                                    className="border-2 border-dark  bg-dark text-white hover:bg-light hover:text-dark fab fa-linkedin-in"></i>
+                                    className="border-2 border-dark dark:border-light bg-dark dark:bg-light text-white dark:text-dark hover:bg-light dark:hover:bg-dark hover:text-dark dark:hover:text-light fab fa-linkedin-in"></i>
                             </a>
                             <a
                                 href="https://github.com/edikurniawan-dev"
@@ -116,7 +116,7 @@ const Contact = () => {
                                         paddingTop: '8px',
                                         paddingBottom: '8px',
                                     }}
-                                    className="border-2 border-dark bg-dark text-white hover:bg-light hover:text-dark fab fa-github"></i>
+                                    className="border-2 border-dark dark:border-light bg-dark dark:bg-light text-white dark:text-dark hover:bg-light dark:hover:bg-dark hover:text-dark dark:hover:text-light fab fa-github"></i>
                             </a>
                             <a
                                 href="https://twitter.com/edikurnia_dev"
@@ -130,7 +130,7 @@ const Contact = () => {
                                         paddingTop: '8px',
                                         paddingBottom: '8px',
                                     }}
-                                    className="border-2 border-dark bg-dark text-white hover:bg-light hover:text-dark fab fa-twitter"></i>
+                                    className="border-2 border-dark dark:border-light bg-dark dark:bg-light text-white dark:text-dark hover:bg-light dark:hover:bg-dark hover:text-dark dark:hover:text-light fab fa-twitter"></i>
                             </a>
                             <a
                                 href="https://www.instagram.com/edi.kurniawan27/"
@@ -144,7 +144,7 @@ const Contact = () => {
                                         paddingTop: '8px',
                                         paddingBottom: '8px',
                                     }}
-                                    className="border-2 border-dark bg-dark text-white hover:bg-light hover:text-dark fab fa-instagram"></i>
+                                    className="border-2 border-dark dark:border-light bg-dark dark:bg-light text-white dark:text-dark hover:bg-light dark:hover:bg-dark hover:text-dark dark:hover:text-light fab fa-instagram"></i>
                             </a>
                         </div>
                     </div>
@@ -182,7 +182,7 @@ const Contact = () => {
                             name="message"
                         />
                     </div>
-                    <button className="font-mono font-bold bg-dark text-light h-9 md:h-12 hover:bg-light hover:text-dark border-2 border-dark">
+                    <button className="font-mono font-bold bg-dark dark:bg-light text-light dark:text-dark h-9 md:h-12 hover:bg-light dark:hover:bg-dark hover:text-dark dark:hover:text-light border-2 border-dark dark:border-light">
                         Send
                     </button>
                 </form>

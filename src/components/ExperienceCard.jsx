@@ -5,7 +5,7 @@ const ExperienceCard = (props) => {
         <div className="flex flex-col sm:flex-row items-center">
             <div className={props.place}>
                 <div className={props.padding}>
-                    <div className="p-6 bg-white">
+                    <div className="p-6 bg-white dark:bg-light">
                         <h3 className="font-bold font-mono text-dark text-xl">
                             {props.companyName}
                         </h3>
@@ -19,7 +19,7 @@ const ExperienceCard = (props) => {
                     </div>
                 </div>
             </div>
-            <div className="bg-dark text-white text-lg w-9 h-9 absolute left-1/2 -translate-y-6 md:-translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+            <div className="bg-dark dark:bg-light text-white dark:text-dark font-bold text-lg w-9 h-9 absolute left-1/2 -translate-y-6 md:-translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
                 {props.number}
             </div>
         </div>

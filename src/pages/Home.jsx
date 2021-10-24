@@ -8,7 +8,7 @@ const Home = () => {
                 <div className="flex md:hidden justify-center w-full mb-8">
                     <img src={Myfoto} className="w-2/3" alt="" />
                 </div>
-                <div className="font-mono flex flex-col md:col-span-2 pb-8 md:pb-16 justify-end text-dark md:space-y-5 pr-0 md:pr-20 xl:pr-40">
+                <div className="font-mono flex flex-col md:col-span-2 pb-8 md:pb-16 justify-end text-dark dark:text-light md:space-y-5 pr-0 md:pr-20 xl:pr-40">
                     <div className="space-y-0 md:space-y-4">
                         <h1 className="text-xl md:text-2xl font-bold">
                             Hello I'm
@@ -37,7 +37,7 @@ const Home = () => {
                         </a> */}
                         <a
                             href="#0"
-                            className="text-white bg-dark py-2 px-4 md:px-8 border-2 border-dark hover:bg-light hover:text-dark">
+                            className="text-white dark:text-dark bg-dark dark:bg-light py-2 px-4 md:px-8 border-2 border-dark dark:border-light hover:bg-light dark:hover:bg-dark hover:text-dark dark:hover:text-light">
                             <i className="fas fa-file-download"></i>
                             &nbsp; Resume
                         </a>
@@ -48,7 +48,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="space-y-4 flex flex-col items-center">
-                <span className="text-base md:text-lg font-bold font-mono">
+                <span className="text-base md:text-lg font-bold font-mono text-dark dark:text-light">
                     Connect with me:
                 </span>
                 <div className="space-x-4">
@@ -64,7 +64,7 @@ const Home = () => {
                                 paddingTop: '8px',
                                 paddingBottom: '8px',
                             }}
-                            className="border-2 border-dark  bg-dark text-white hover:bg-light hover:text-dark fab fa-linkedin-in"></i>
+                            className="border-2 border-dark dark:border-light bg-dark dark:bg-light text-white dark:text-dark hover:bg-light dark:hover:bg-dark hover:text-dark dark:hover:text-light fab fa-linkedin-in"></i>
                     </a>
                     <a
                         href="https://github.com/edikurniawan-dev"
@@ -78,7 +78,7 @@ const Home = () => {
                                 paddingTop: '8px',
                                 paddingBottom: '8px',
                             }}
-                            className="border-2 border-dark bg-dark text-white hover:bg-light hover:text-dark fab fa-github"></i>
+                            className="border-2 border-dark dark:border-light bg-dark dark:bg-light text-white dark:text-dark hover:bg-light dark:hover:bg-dark hover:text-dark dark:hover:text-light fab fa-github"></i>
                     </a>
                     <a
                         href="https://twitter.com/edikurnia_dev"
@@ -92,7 +92,7 @@ const Home = () => {
                                 paddingTop: '8px',
                                 paddingBottom: '8px',
                             }}
-                            className="border-2 border-dark bg-dark text-white hover:bg-light hover:text-dark fab fa-twitter"></i>
+                            className="border-2 border-dark dark:border-light bg-dark dark:bg-light text-white dark:text-dark hover:bg-light dark:hover:bg-dark hover:text-dark dark:hover:text-light fab fa-twitter"></i>
                     </a>
                     <a
                         href="https://www.instagram.com/edi.kurniawan27/"
@@ -106,7 +106,7 @@ const Home = () => {
                                 paddingTop: '8px',
                                 paddingBottom: '8px',
                             }}
-                            className="border-2 border-dark bg-dark text-white hover:bg-light hover:text-dark fab fa-instagram"></i>
+                            className="border-2 border-dark dark:border-light bg-dark dark:bg-light text-white dark:text-dark hover:bg-light dark:hover:bg-dark hover:text-dark dark:hover:text-light fab fa-instagram"></i>
                     </a>
                 </div>
             </div>
