@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
-import Logo from '../images/logo1.svg';
+import Logo1 from '../images/logo-with-ractangle.svg';
+import Logo2 from '../images/logo-no-ractangle.svg';
 
 const Navbar = () => {
     const [icon, setIcon] = useState('fas fa-moon fa-lg text-white');
@@ -23,15 +24,10 @@ const Navbar = () => {
             <nav className="hidden md:flex py-4">
                 <div className="hidden md:block">
                     <NavLink exact to="/">
-                        <img src={Logo} alt="" className="h-10 md:h-12" />
+                        <img src={Logo1} alt="" className="h-10 md:h-12" />
                     </NavLink>
                 </div>
                 <ul className="w-full flex items-end md:items-center justify-around md:justify-end space-x-0 md:space-x-5 lg:space-x-10 font-mono text-xs md:text-lg text-light">
-                    <li className="block md:hidden">
-                        <NavLink exact to="/">
-                            <img src={Logo} alt="" className="h-10 md:h-12" />
-                        </NavLink>
-                    </li>
                     <li>
                         <NavLink className="block" to="/skill">
                             Skill
@@ -96,40 +92,40 @@ const Navbar = () => {
                     className="flex flex-col items-center justify-end md:hidden"
                     exact
                     to="/">
-                    <img src={Logo} alt="" style={{ height: '34px' }} />
+                    <img src={Logo2} alt="" style={{ height: '30px' }} />
                     <span className="text-xs">Home</span>
                 </NavLink>
 
                 <NavLink
-                    className="flex flex-col items-center justify-end md:hidden"
+                    className="flex flex-col items-center justify-end md:hidden text-3xl"
                     to="/skill">
-                    <i className="fas fa-tools fa-2x"></i>
+                    <i className="fas fa-tools"></i>
                     <span className="text-xs">Skill</span>
                 </NavLink>
                 <NavLink
-                    className="flex flex-col items-center justify-end md:hidden"
+                    className="flex flex-col items-center justify-end md:hidden text-3xl"
                     to="/experience">
-                    <i className="fas fa-briefcase fa-2x"></i>
+                    <i className="fas fa-briefcase"></i>
                     <span className="text-xs">Experience</span>
                 </NavLink>
                 <NavLink
-                    className="flex flex-col items-center justify-end md:hidden"
+                    className="flex flex-col items-center justify-end md:hidden text-3xl"
                     to="/portfolio">
-                    <i className="fas fa-image fa-2x"></i>
+                    <i className="fas fa-image"></i>
                     <span className="text-xs">Portfolio</span>
                 </NavLink>
 
                 <NavLink
-                    className="flex flex-col items-center justify-end md:hidden"
+                    className="flex flex-col items-center justify-end md:hidden text-3xl"
                     to="/resume">
-                    <i class="fas fa-id-card fa-2x"></i>
+                    <i className="fas fa-id-card"></i>
                     <span className="text-xs">Resume</span>
                 </NavLink>
 
                 <NavLink
-                    className="flex flex-col items-center justify-end md:hidden"
+                    className="flex flex-col items-center justify-end md:hidden text-3xl"
                     to="/contact">
-                    <i class="fas fa-phone fa-2x"></i>
+                    <i className="fas fa-phone"></i>
                     <span className="text-xs">Contact</span>
                 </NavLink>
             </div>
