@@ -15,7 +15,7 @@ const Portfolio = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-14">
                 <PortfolioCard
                     image={Jaramba}
-                    link="#/portfolio"
+                    // link="#"
                     title="Dashboard Admin Jaramba"
                     description="Dashboard Admin Jaramba is application serves to monitor the location of the bus that is running. In addition to storing route data, drivers, buses and bus travel history."
                 />

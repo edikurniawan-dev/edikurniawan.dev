@@ -29,17 +29,17 @@ const Home = () => {
                         </p>
                     </div>
                     <div className="flex justify-center md:justify-start space-x-6 font-medium text-base md:text-lg pt-5 md:pt-10">
-                        <a
+                        {/* <a
                             href="#0"
-                            className="text-dark bg-gray py-2 px-5 md:px-8 border-2 border-dark hover:bg-dark hover:text-light">
+                            className="text-dark bg-gray py-2 px-4 md:px-8 border-2 border-dark hover:bg-dark hover:text-light">
                             <i className="fas fa-file-download"></i>
                             &nbsp; Resume
-                        </a>
+                        </a> */}
                         <a
                             href="#0"
-                            className="text-white bg-dark py-2 px-5 md:px-8 border-2 border-dark hover:bg-light hover:text-dark">
+                            className="text-white bg-dark py-2 px-4 md:px-8 border-2 border-dark hover:bg-light hover:text-dark">
                             <i className="fas fa-file-download"></i>
-                            &nbsp; Portfolio
+                            &nbsp; Resume
                         </a>
                     </div>
                 </div>

@@ -11,7 +11,7 @@ const Contact = () => {
                 <div className="flex flex-col justify-between">
                     <span className=" pb-5">
                         Contact me if you want to talk more about web
-                        development via social media or the form bellow
+                        development via social media or via form
                     </span>
                     <div className="flex flex-col space-y-4 items-center">
                         <div className="flex flex-col items-center space-y-1">
@@ -148,7 +148,7 @@ const Contact = () => {
                             </a>
                         </div>
                     </div>
-                    <hr />
+                    <hr className="block md:hidden" />
                 </div>
                 <form className="flex flex-col space-y-8 font-bold">
                     <div className="flex flex-col space-y-2">
@@ -182,7 +182,7 @@ const Contact = () => {
                             name="message"
                         />
                     </div>
-                    <button className="bg-dark text-white h-12 hover:bg-light hover:text-dark border-2 border-dark">
+                    <button className="font-mono font-bold bg-dark text-light h-9 md:h-12 hover:bg-light hover:text-dark border-2 border-dark">
                         Send
                     </button>
                 </form>
