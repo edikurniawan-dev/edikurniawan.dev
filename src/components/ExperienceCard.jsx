@@ -2,7 +2,7 @@ import React from 'react';
 
 const ExperienceCard = (props) => {
     return (
-        <div className="flex flex-col sm:flex-row items-center">
+        <div className="flex flex-col lg:flex-row items-center">
             <div className={props.place}>
                 <div className={props.padding}>
                     <div className="p-6 bg-white dark:bg-light">
@@ -19,7 +19,7 @@ const ExperienceCard = (props) => {
                     </div>
                 </div>
             </div>
-            <div className="bg-dark dark:bg-light text-white dark:text-dark font-bold text-lg w-9 h-9 absolute left-1/2 -translate-y-6 md:-translate-y-4 sm:translate-y-0 transform -translate-x-1/2 flex items-center justify-center">
+            <div className="bg-dark dark:bg-light text-white dark:text-dark font-bold text-lg w-9 h-9 absolute left-1/2 -translate-y-6 lg:translate-y-0 transform -translate-x-1/2 flex items-center justify-center border-2 border-dark">
                 {props.number}
             </div>
         </div>
