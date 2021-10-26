@@ -8,15 +8,15 @@ const Home = () => {
                 <div className="flex md:hidden justify-center w-full mb-8">
                     <img src={Myfoto} className="w-2/3" alt="" />
                 </div>
-                <div className="font-mono flex flex-col md:col-span-2 pb-8 md:pb-16 justify-end text-dark dark:text-light md:space-y-5 pr-0 md:pr-20 xl:pr-40">
+                <div className="font-mono flex flex-col md:col-span-2 pb-8 md:pb-16 justify-end text-dark dark:text-light md:space-y-5 pr-0 md:pr-5 lg:pr-20 xl:pr-40">
                     <div className="space-y-0 md:space-y-4">
-                        <h1 className="text-xl md:text-2xl font-bold">
+                        <h1 className="text-xl lg:text-2xl font-bold">
                             Hello I'm
                         </h1>
-                        <h1 className="text-4xl md:text-5xl font-bold">
+                        <h1 className="text-4xl lg:text-5xl font-bold">
                             Edi Kurniawan
                         </h1>
-                        <h1 className="text-xl md:text-2xl font-bold">
+                        <h1 className="text-xl lg:text-2xl font-bold">
                             Web Developer
                         </h1>
                         <p className="text-base pt-2 md:pt-0 md:text-lg font-sans tracking-wider">

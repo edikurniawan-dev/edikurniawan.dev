@@ -7,7 +7,7 @@ const Contact = () => {
                 Contact
             </h1>
             <br />
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 font-sans tracking-wider text-base md:text-lg text-dark dark:text-light">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 font-sans tracking-wider text-base md:text-lg text-dark dark:text-light">
                 <div className="flex flex-col justify-between">
                     <span className="pb-5">
                         Contact me if you want to talk more about web
@@ -148,13 +148,13 @@ const Contact = () => {
                             </a>
                         </div>
                     </div>
-                    <hr className="block md:hidden" />
+                    <hr className="block lg:hidden" />
                 </div>
-                <form className="flex flex-col space-y-8 font-bold">
+                <form className="flex flex-col space-y-8 font-bold font-mono">
                     <div className="flex flex-col space-y-2">
                         <label>Name</label>
                         <input
-                            className="border-2 border-dark h-12"
+                            className="border-2 border-dark h-12 text-dark px-3"
                             type="text"
                             name="user_name"
                         />
@@ -162,7 +162,7 @@ const Contact = () => {
                     <div className="flex flex-col space-y-2">
                         <label>Email</label>
                         <input
-                            className="border-2 border-dark h-12"
+                            className="border-2 border-dark h-12 text-dark px-3"
                             type="email"
                             name="user_email"
                         />
@@ -170,7 +170,7 @@ const Contact = () => {
                     <div className="flex flex-col space-y-2">
                         <label>Subject</label>
                         <input
-                            className="border-2 border-dark h-12"
+                            className="border-2 border-dark h-12 text-dark px-3"
                             type="email"
                             name="user_email"
                         />
@@ -178,11 +178,11 @@ const Contact = () => {
                     <div className="flex flex-col space-y-2">
                         <label>Message</label>
                         <textarea
-                            className="border-2 border-dark h-52"
+                            className="border-2 border-dark h-52 text-dark px-3"
                             name="message"
                         />
                     </div>
-                    <button className="font-mono font-bold bg-dark dark:bg-light text-light dark:text-dark h-9 md:h-12 hover:bg-light dark:hover:bg-dark hover:text-dark dark:hover:text-light border-2 border-dark dark:border-light">
+                    <button className="font-mono font-bold bg-dark dark:bg-light text-light dark:text-dark h-10 md:h-12 hover:bg-light dark:hover:bg-dark hover:text-dark dark:hover:text-light border-2 border-dark dark:border-light">
                         Send
                     </button>
                 </form>

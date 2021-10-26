@@ -8,7 +8,7 @@ const Skill = () => {
                 Skill
             </h1>
             <br />
-            <div className="grid grid-cols-2 lg:grid-cols-6 gap-7 md:gap-10">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-7 md:gap-10">
                 <SkillCard icon="fab fa-html5" iconName="HTML" />
                 <SkillCard icon="fab fa-css3-alt" iconName="CSS" />
                 <SkillCard icon="fab fa-js" iconName="Javascript" />
