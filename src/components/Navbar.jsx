@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 import useDarkMode from '../hooks/useDarkMode';
 
@@ -6,21 +6,7 @@ import Logo1 from '../images/logo-with-ractangle.svg';
 import Logo2 from '../images/logo-no-ractangle.svg';
 
 const Navbar = () => {
-    const [icon, setIcon] = useState('fas fa-moon fa-lg text-white');
-    const [iconWordmark, setIconWordmark] = useState('Dark');
-    const [colorBgIcon, setColorBgIcon] = useState('bg-dark');
-    const [colorText, setColorText] = useState(
-        'text-white font-mono font-medium hidden md:block',
-    );
     const [colorTheme, setTheme] = useDarkMode();
-
-    const handleClick = () => {
-        setIcon(!icon);
-        setIconWordmark(!iconWordmark);
-        setColorBgIcon(!colorBgIcon);
-        setColorText(!colorText);
-        setTheme(colorTheme);
-    };
 
     return (
         <header className="md:container mx-auto md:px-8 lg:px-12 xl:px-16 xl:space-x-16">
@@ -58,33 +44,30 @@ const Navbar = () => {
                     </li>
                     <li
                         className="hidden md:flex flex-col items-center"
-                        onClick={handleClick}>
+                        onClick={() => setTheme(colorTheme)}>
                         <button
                             className={
-                                colorBgIcon
-                                    ? 'bg-dark border-2 border-white py-2 md:py-0'
-                                    : 'bg-light border-2 border-white py-2 md:py-0'
+                                colorTheme === 'light'
+                                    ? 'bg-light border-2 border-white py-2 md:py-0'
+                                    : 'bg-dark border-2 border-white py-2 md:py-0'
                             }>
                             <div className="py-1 px-3 flex items-center justify-center space-x-2">
                                 <i
                                     className={
-                                        icon
-                                            ? 'fas fa-moon fa-lg text-white'
-                                            : 'fas fa-sun fa-lg text-black'
+                                        colorTheme === 'light'
+                                            ? 'fas fa-sun fa-lg text-black'
+                                            : 'fas fa-moon fa-lg text-white'
                                     }></i>
                                 <p
                                     className={
-                                        colorText
-                                            ? 'text-white font-mono font-medium hidden md:block'
-                                            : 'text-black font-mono font-medium hidden md:block'
+                                        colorTheme === 'light'
+                                            ? 'text-black font-mono font-medium hidden md:block'
+                                            : 'text-white font-mono font-medium hidden md:block'
                                     }>
-                                    {iconWordmark ? 'Dark' : 'Light'}
+                                    {colorTheme === 'light' ? 'Light' : 'Dark'}
                                 </p>
                             </div>
                         </button>
-                        <span className="block md:hidden text-xs">
-                            {iconWordmark ? 'Dark' : 'Light'}
-                        </span>
                     </li>
                 </ul>
             </nav>
@@ -135,14 +118,17 @@ const Navbar = () => {
             <div className="fixed md:hidden top-0 right-0">
                 <div
                     className="flex flex-col items-center"
-                    onClick={handleClick}>
-                    <button className={colorBgIcon ? 'bg-dark' : 'bg-light'}>
-                        <div className="p-2 flex items-center justify-center">
+                    onClick={() => setTheme(colorTheme)}>
+                    <button
+                        className={
+                            colorTheme === 'light' ? 'bg-light' : 'bg-dark'
+                        }>
+                        <div className="p-2 flex items- center justify-center">
                             <i
                                 className={
-                                    icon
-                                        ? 'fas fa-moon fa-lg text-white'
-                                        : 'fas fa-sun fa-lg text-black'
+                                    colorTheme === 'light'
+                                        ? 'fas fa-sun fa-lg text-black'
+                                        : 'fas fa-moon fa-lg text-white'
                                 }></i>
                         </div>
                     </button>
