@@ -1,18 +1,21 @@
 import React from 'react';
+import cv1 from '../images/resume.pdf';
+import useWindowDimensions from '../hooks/useWindowDimentions';
 
 const Resume = () => {
+    const { height, width } = useWindowDimensions();
     return (
         <main className="flex flex-col pt-5 md:pt-10">
             <h1 className="font-mono text-2xl md:text-3xl text-dark dark:text-light font-bold underline">
                 Resume
             </h1>
             <br />
-            <div className="flex justify-center w-full items-center">
+            <div className="flex justify-center items-center">
                 <iframe
                     title="resume"
-                    src="https://drive.google.com/file/d/1tPTUPZiu5GYUYsRLO8c2rhvqSUEIyzkr/preview"
-                    width="1920"
-                    height="560"
+                    src={cv1}
+                    width={width}
+                    height={height}
                     allow="autoplay"></iframe>
             </div>
         </main>
