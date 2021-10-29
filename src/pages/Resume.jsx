@@ -1,5 +1,4 @@
 import React from 'react';
-import cv1 from '../images/resume.pdf';
 import useWindowDimensions from '../hooks/useWindowDimentions';
 
 const Resume = () => {
@@ -13,7 +12,7 @@ const Resume = () => {
             <div className="flex justify-center items-center">
                 <iframe
                     title="resume"
-                    src={cv1}
+                    src="https://drive.google.com/file/d/1ZNbrd_UVAgvtOSRa7j87hS-ZrJnwK3zb/preview"
                     width={width}
                     height={height}
                     allow="autoplay"></iframe>
