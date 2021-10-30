@@ -2,9 +2,6 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import useDarkMode from '../hooks/useDarkMode';
 
-import Logo1 from '../images/logo-with-ractangle.svg';
-import Logo2 from '../images/logo-no-ractangle.svg';
-
 const Navbar = () => {
     const [colorTheme, setTheme] = useDarkMode();
 
@@ -13,7 +10,18 @@ const Navbar = () => {
             <nav className="hidden md:flex py-4">
                 <div className="hidden md:block">
                     <NavLink exact to="/">
-                        <img src={Logo1} alt="" className="h-10 md:h-12" />
+                        <svg
+                            className="h-10 md:h-12"
+                            viewBox="0 0 900 900"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                fillRule="evenodd"
+                                clipRule="evenodd"
+                                d="M50 0H0V50V850V900H50H850H900V850V50V0H850H50ZM50 50H100H800H850V100V800V850H800H100H50V800V100V50ZM600 200H300H200V300V409V509V600V700H300H700V600H300V509H600H700V409V300V200H600ZM600 300V409H300V300H600Z"
+                                fill="#0A0A23"
+                            />
+                        </svg>
                     </NavLink>
                 </div>
                 <ul className="w-full flex items-end md:items-center justify-around md:justify-end space-x-0 md:space-x-5 lg:space-x-10 font-mono text-xs md:text-lg text-light">
@@ -78,7 +86,18 @@ const Navbar = () => {
                     className="flex flex-col items-center justify-end md:hidden"
                     exact
                     to="/">
-                    <img src={Logo2} alt="" style={{ height: '30px' }} />
+                    <svg
+                        className="h-7"
+                        viewBox="0 0 500 502"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            fillRule="evenodd"
+                            clipRule="evenodd"
+                            d="M400 209.999V101.039H100V209.999H400ZM100 1.03882H400V0.998779H500L500 1.03882V101.039V209.999L500 309.999H400L100 309.999V401.002H500V501.002L100 501.002H0V401.002V309.999V209.999V101.039V1.03882V1.00186H100V1.03882Z"
+                            fill="white"
+                        />
+                    </svg>
                     <span className="text-xs">Home</span>
                 </NavLink>
 
