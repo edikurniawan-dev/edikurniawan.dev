@@ -14,7 +14,7 @@ const Resume = () => {
                     title="resume"
                     src="https://drive.google.com/file/d/1ZNbrd_UVAgvtOSRa7j87hS-ZrJnwK3zb/preview"
                     width={width}
-                    height={height}
+                    height={height - 250}
                     allow="autoplay"></iframe>
             </div>
         </main>
