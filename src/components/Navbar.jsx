@@ -19,7 +19,7 @@ const Navbar = () => {
                                 fillRule="evenodd"
                                 clipRule="evenodd"
                                 d="M50 0H0V50V850V900H50H850H900V850V50V0H850H50ZM50 50H100H800H850V100V800V850H800H100H50V800V100V50ZM600 200H300H200V300V409V509V600V700H300H700V600H300V509H600H700V409V300V200H600ZM600 300V409H300V300H600Z"
-                                fill="#0A0A23"
+                                fill="#F5F6F7"
                             />
                         </svg>
                     </NavLink>
@@ -56,21 +56,21 @@ const Navbar = () => {
                         <button
                             className={
                                 colorTheme === 'light'
-                                    ? 'bg-light border-2 border-white py-2 md:py-0'
-                                    : 'bg-dark border-2 border-white py-2 md:py-0'
+                                    ? 'bg-light border-2 border-light py-2 md:py-0'
+                                    : 'bg-dark border-2 border-light py-2 md:py-0'
                             }>
                             <div className="py-1 px-3 flex items-center justify-center space-x-2">
                                 <i
                                     className={
                                         colorTheme === 'light'
                                             ? 'fas fa-sun fa-lg text-black'
-                                            : 'fas fa-moon fa-lg text-white'
+                                            : 'fas fa-moon fa-lg text-light'
                                     }></i>
                                 <p
                                     className={
                                         colorTheme === 'light'
                                             ? 'text-black font-mono font-medium hidden md:block'
-                                            : 'text-white font-mono font-medium hidden md:block'
+                                            : 'text-light font-mono font-medium hidden md:block'
                                     }>
                                     {colorTheme === 'light' ? 'Light' : 'Dark'}
                                 </p>
@@ -95,7 +95,7 @@ const Navbar = () => {
                             fillRule="evenodd"
                             clipRule="evenodd"
                             d="M400 209.999V101.039H100V209.999H400ZM100 1.03882H400V0.998779H500L500 1.03882V101.039V209.999L500 309.999H400L100 309.999V401.002H500V501.002L100 501.002H0V401.002V309.999V209.999V101.039V1.03882V1.00186H100V1.03882Z"
-                            fill="white"
+                            fill="#F5F6F7"
                         />
                     </svg>
                     <span className="text-xs">Home</span>
@@ -147,7 +147,7 @@ const Navbar = () => {
                                 className={
                                     colorTheme === 'light'
                                         ? 'fas fa-sun fa-lg text-black'
-                                        : 'fas fa-moon fa-lg text-white'
+                                        : 'fas fa-moon fa-lg text-light'
                                 }></i>
                         </div>
                     </button>
