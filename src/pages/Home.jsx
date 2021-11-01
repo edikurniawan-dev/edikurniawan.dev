@@ -17,7 +17,7 @@ const Home = () => {
                             Edi Kurniawan
                         </h1>
                         <h1 className="text-xl lg:text-2xl font-bold">
-                            Web Developer
+                            a Web Developer
                         </h1>
                         <p className="text-base pt-2 md:pt-0 md:text-lg font-sans tracking-wider">
                             I am a hard worker with experience as a web
