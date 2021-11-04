@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
-    function sendEmail(e) {
+    const form = useRef();
+
+    const sendEmail = (e) => {
         e.preventDefault();
         emailjs
             .sendForm(
@@ -11,14 +15,35 @@ const Contact = () => {
                 e.target,
                 'user_LZaldX7s2kcQzGvNyHpuy',
             )
-            .then((res) => {
-                console.log(res);
-            })
-            .catch((err) => console.log(err));
-    }
+            .then(
+                (result) => {
+                    console.log(result.text);
+                    e.target.reset();
+                    toast.success(result.text + ', Message Sent 👌', {
+                        autoClose: 5000,
+                    });
+                },
+                (error) => {
+                    console.log(error.text);
+                    toast.error('Failed to Send Message 😱', {
+                        autoClose: 5000,
+                    });
+                },
+            );
+    };
 
     return (
         <main className="flex flex-col pt-5 md:pt-10">
+            <ToastContainer
+                toastClassName={() =>
+                    ' relative flex p-1 min-h-10 justify-between items-center cursor-pointer bg-light shadow-lg'
+                }
+                bodyClassName={() =>
+                    'flex items-center text-black font-medium p-4'
+                }
+                position="top-center"
+            />
+
             <h1 className="font-mono text-2xl md:text-3xl text-dark dark:text-light font-bold underline">
                 Contact
             </h1>
@@ -168,13 +193,15 @@ const Contact = () => {
                 </div>
                 <form
                     className="flex flex-col space-y-8 font-bold font-mono"
-                    onSubmit={sendEmail}>
+                    onSubmit={sendEmail}
+                    ref={form}>
                     <div className="flex flex-col space-y-2">
                         <label>Name</label>
                         <input
                             className="border-2 border-dark dark:border-light h-12 text-dark px-3 focus:outline-none"
                             type="text"
                             name="user_name"
+                            required
                         />
                     </div>
                     <div className="flex flex-col space-y-2">
@@ -183,6 +210,7 @@ const Contact = () => {
                             className="border-2 border-dark dark:border-light h-12 text-dark px-3 focus:outline-none"
                             type="email"
                             name="user_email"
+                            required
                         />
                     </div>
                     <div className="flex flex-col space-y-2">
@@ -191,6 +219,7 @@ const Contact = () => {
                             className="border-2 border-dark dark:border-light h-12 text-dark px-3 focus:outline-none"
                             type="text"
                             name="user_subject"
+                            required
                         />
                     </div>
                     <div className="flex flex-col space-y-2">
@@ -198,9 +227,12 @@ const Contact = () => {
                         <textarea
                             className="border-2 border-dark dark:border-light h-52 text-dark px-3 py-3 focus:outline-none"
                             name="user_message"
+                            required
                         />
                     </div>
-                    <button className="font-mono font-bold bg-dark dark:bg-light text-light dark:text-dark h-10 md:h-12 hover:bg-light dark:hover:bg-dark hover:text-dark dark:hover:text-light border-2 border-dark dark:border-light">
+                    <button
+                        className="font-mono font-bold bg-dark dark:bg-light text-light dark:text-dark h-10 md:h-12 hover:bg-light dark:hover:bg-dark hover:text-dark dark:hover:text-light border-2 border-dark dark:border-light"
+                        type="submit">
                         Send
                     </button>
                 </form>
