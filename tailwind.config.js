@@ -1,5 +1,5 @@
 module.exports = {
-    purge: [],
+    purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
     darkMode: 'class', // or 'media' or 'class'
     theme: {
         extend: {
@@ -15,7 +15,10 @@ module.exports = {
         },
     },
     variants: {
-        extend: {},
+        extend: {
+            borderWidth: ['hover', 'focus'],
+            borderStyle: ['hover', 'focus'],
+        },
     },
     plugins: [],
 };
