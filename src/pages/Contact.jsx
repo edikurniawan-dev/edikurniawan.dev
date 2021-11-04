@@ -1,6 +1,22 @@
 import React from 'react';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
+    function sendEmail(e) {
+        e.preventDefault();
+        emailjs
+            .sendForm(
+                'service_j710t24',
+                'template_32mnhrd',
+                e.target,
+                'user_LZaldX7s2kcQzGvNyHpuy',
+            )
+            .then((res) => {
+                console.log(res);
+            })
+            .catch((err) => console.log(err));
+    }
+
     return (
         <main className="flex flex-col pt-5 md:pt-10">
             <h1 className="font-mono text-2xl md:text-3xl text-dark dark:text-light font-bold underline">
@@ -150,7 +166,9 @@ const Contact = () => {
                     </div>
                     <hr className="block lg:hidden" />
                 </div>
-                <form className="flex flex-col space-y-8 font-bold font-mono">
+                <form
+                    className="flex flex-col space-y-8 font-bold font-mono"
+                    onSubmit={sendEmail}>
                     <div className="flex flex-col space-y-2">
                         <label>Name</label>
                         <input
@@ -179,7 +197,7 @@ const Contact = () => {
                         <label>Message</label>
                         <textarea
                             className="border-2 border-dark dark:border-light h-52 text-dark px-3 py-3 focus:outline-none"
-                            name="client_message"
+                            name="user_message"
                         />
                     </div>
                     <button className="font-mono font-bold bg-dark dark:bg-light text-light dark:text-dark h-10 md:h-12 hover:bg-light dark:hover:bg-dark hover:text-dark dark:hover:text-light border-2 border-dark dark:border-light">

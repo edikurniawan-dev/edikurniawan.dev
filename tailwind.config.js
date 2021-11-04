@@ -3,6 +3,14 @@ module.exports = {
     darkMode: 'class', // or 'media' or 'class'
     theme: {
         extend: {
+            fontSize: {
+                xxs: [
+                    '0.7rem',
+                    {
+                        lineHeight: '1.5rem',
+                    },
+                ],
+            },
             screens: {
                 xs: '475px',
             },

@@ -98,40 +98,40 @@ const Navbar = () => {
                             fill="#F5F6F7"
                         />
                     </svg>
-                    <span className="text-xs">Home</span>
+                    <span className="text-xxs">Home</span>
                 </NavLink>
 
                 <NavLink
                     className="flex flex-col items-center justify-end md:hidden text-3xl"
                     to="/skill">
                     <i className="fas fa-tools"></i>
-                    <span className="text-xs">Skill</span>
+                    <span className="text-xxs">Skill</span>
                 </NavLink>
                 <NavLink
                     className="flex flex-col items-center justify-end md:hidden text-3xl"
                     to="/experience">
                     <i className="fas fa-briefcase"></i>
-                    <span className="text-xs">Experience</span>
+                    <span className="text-xxs">Experience</span>
                 </NavLink>
                 <NavLink
                     className="flex flex-col items-center justify-end md:hidden text-3xl"
                     to="/portfolio">
                     <i className="fas fa-image"></i>
-                    <span className="text-xs">Portfolio</span>
+                    <span className="text-xxs">Portfolio</span>
                 </NavLink>
 
                 <NavLink
                     className="flex flex-col items-center justify-end md:hidden text-3xl"
                     to="/resume">
                     <i className="fas fa-id-card"></i>
-                    <span className="text-xs">Resume</span>
+                    <span className="text-xxs">Resume</span>
                 </NavLink>
 
                 <NavLink
                     className="flex flex-col items-center justify-end md:hidden text-3xl"
                     to="/contact">
                     <i className="fas fa-phone"></i>
-                    <span className="text-xs">Contact</span>
+                    <span className="text-xxs">Contact</span>
                 </NavLink>
             </div>
             <div className="fixed md:hidden top-0 right-0">
