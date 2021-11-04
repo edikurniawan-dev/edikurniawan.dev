@@ -154,7 +154,7 @@ const Contact = () => {
                     <div className="flex flex-col space-y-2">
                         <label>Name</label>
                         <input
-                            className="border-2 border-dark h-12 text-dark px-3"
+                            className="border-2 border-dark dark:border-light h-12 text-dark px-3 focus:outline-none"
                             type="text"
                             name="user_name"
                         />
@@ -162,7 +162,7 @@ const Contact = () => {
                     <div className="flex flex-col space-y-2">
                         <label>Email</label>
                         <input
-                            className="border-2 border-dark h-12 text-dark px-3"
+                            className="border-2 border-dark dark:border-light h-12 text-dark px-3 focus:outline-none"
                             type="email"
                             name="user_email"
                         />
@@ -170,16 +170,16 @@ const Contact = () => {
                     <div className="flex flex-col space-y-2">
                         <label>Subject</label>
                         <input
-                            className="border-2 border-dark h-12 text-dark px-3"
-                            type="email"
-                            name="user_email"
+                            className="border-2 border-dark dark:border-light h-12 text-dark px-3 focus:outline-none"
+                            type="text"
+                            name="user_subject"
                         />
                     </div>
                     <div className="flex flex-col space-y-2">
                         <label>Message</label>
                         <textarea
-                            className="border-2 border-dark h-52 text-dark px-3"
-                            name="message"
+                            className="border-2 border-dark dark:border-light h-52 text-dark px-3 py-3 focus:outline-none"
+                            name="client_message"
                         />
                     </div>
                     <button className="font-mono font-bold bg-dark dark:bg-light text-light dark:text-dark h-10 md:h-12 hover:bg-light dark:hover:bg-dark hover:text-dark dark:hover:text-light border-2 border-dark dark:border-light">
