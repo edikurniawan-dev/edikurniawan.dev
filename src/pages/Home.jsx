@@ -25,7 +25,7 @@ const Home = () => {
                             improve my skills regarding web development. My
                             experience is related to web development for about 1
                             year using several technologies to build websites
-                            from clients such as React and Laravel.
+                            from clients request.
                         </p>
                     </div>
                     <div className="flex justify-center md:justify-start space-x-6 font-medium text-base md:text-lg pt-5 md:pt-10">

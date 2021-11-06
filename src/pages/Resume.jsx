@@ -12,7 +12,7 @@ const Resume = () => {
             <div className="flex justify-center items-center">
                 <iframe
                     title="resume"
-                    src="https://drive.google.com/file/d/1ZNbrd_UVAgvtOSRa7j87hS-ZrJnwK3zb/preview"
+                    src="https://drive.google.com/file/d/1rKT5To63JC_uIF3xFvopNXm_zwOEDd2h/preview"
                     width={width}
                     height={height - 300}
                     allow="autoplay"></iframe>
