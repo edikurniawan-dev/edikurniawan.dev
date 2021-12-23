@@ -4,16 +4,16 @@ import ExperienceCard from '../components/ExperienceCard';
 const Experience = () => {
     return (
         <main className="flex flex-col pt-5 md:pt-10">
-            <h1 className="font-mono text-2xl md:text-3xl text-dark dark:text-light font-bold underline">
+            <h1 className="font-mono text-2xl font-bold underline md:text-3xl text-dark dark:text-light">
                 Experience
             </h1>
             <br />
 
-            <div className="-mt-10 md:-mt-0 h-full flex flex-col justify-center">
-                <div className="py-0 lg:py-3 sm:mx-auto w-full px-0 lg:px-2">
-                    <div className="relative text-gray-700 space-y-16 lg:space-y-0">
+            <div className="flex flex-col justify-center h-full -mt-10 md:-mt-0">
+                <div className="w-full px-0 py-0 lg:py-3 sm:mx-auto lg:px-2">
+                    <div className="relative space-y-16 text-gray-700 lg:space-y-0">
                         {/* line vertical */}
-                        <div className="hidden lg:block w-1 bg-dark dark:bg-light opacity-50 absolute h-full left-1/2 transform -translate-x-1/2"></div>
+                        <div className="absolute hidden w-1 h-full transform -translate-x-1/2 opacity-50 lg:block bg-dark dark:bg-light left-1/2"></div>
 
                         <ExperienceCard
                             place="flex justify-start w-full mx-auto items-center"
@@ -30,6 +30,14 @@ const Experience = () => {
                             during="Web Developer | June 2020 - Present"
                             task="Develop a website according to the client's request."
                             number="2"
+                        />
+                        <ExperienceCard
+                            place="flex justify-start w-full mx-auto items-center"
+                            padding="w-full lg:w-1/2 lg:pr-20"
+                            companyName="CV Newus Teknologi"
+                            during="Junior Full-Stack Web Developer | November 2021 - Present"
+                            task="Develop websites both frontend and backend according to client needs."
+                            number="3"
                         />
                     </div>
                 </div>
