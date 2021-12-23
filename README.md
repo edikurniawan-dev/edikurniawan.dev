@@ -1,3 +1,3 @@
 ## Available Online on
 
-https://edikurniawan.pages.dev/
+https://edikurniawan.pages.dev
