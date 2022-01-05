@@ -4,7 +4,7 @@ import SkillCard from '../components/SkillCard';
 const Skill = () => {
     return (
         <main className="flex flex-col pt-5 md:pt-10">
-            <h1 className="font-mono text-2xl md:text-3xl text-dark dark:text-light font-bold underline">
+            <h1 className="font-mono text-2xl font-bold underline md:text-3xl text-dark dark:text-light">
                 Skill
             </h1>
             <br />
@@ -22,8 +22,8 @@ const Skill = () => {
                 <SkillCard icon="fas fa-database" iconName="MySQL" />
 
                 <div className="bg-gray hover:bg-dark text-dark hover:text-light">
-                    <div className="h-full pt-3 md:pt-6 flex flex-col justify-between items-center border-2 border-dark dark:hover:border-light">
-                        <div className="text-6xl md:text-8xl px-8">
+                    <div className="flex flex-col items-center justify-between h-full pt-3 border-2 md:pt-6 border-dark dark:hover:border-light">
+                        <div className="px-8 text-6xl md:text-8xl">
                             <svg
                                 width="1.3em"
                                 height="1em"
@@ -38,7 +38,7 @@ const Skill = () => {
                                 />
                             </svg>
                         </div>
-                        <span className="pb-2 md:pb-5 pt-2 text-lg font-mono">
+                        <span className="pt-2 pb-2 font-mono text-lg md:pb-5">
                             TailwindCSS
                         </span>
                     </div>

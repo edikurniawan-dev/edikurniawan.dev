@@ -8,11 +8,11 @@ import PortfolioCard from '../components/PortfolioCard';
 const Portfolio = () => {
     return (
         <main className="flex flex-col pt-5 md:pt-10">
-            <h1 className="font-mono text-2xl md:text-3xl text-dark dark:text-light font-bold underline">
+            <h1 className="font-mono text-2xl font-bold underline md:text-3xl text-dark dark:text-light">
                 Portfolio
             </h1>
             <br />
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-14">
+            <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 md:gap-14">
                 <PortfolioCard
                     image={Jaramba}
                     link="#"
