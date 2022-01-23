@@ -13,7 +13,7 @@ const Resume = () => {
                 <iframe
                     loading="lazy"
                     title="resume"
-                    src="https://drive.google.com/file/d/1rKT5To63JC_uIF3xFvopNXm_zwOEDd2h/preview"
+                    src="https://drive.google.com/file/d/1ZSd_Y9xnBtL_nSUjMmIEePklriAS-Il7/preview"
                     width={width}
                     height={height - 300}
                     allow="autoplay"></iframe>
@@ -21,7 +21,7 @@ const Resume = () => {
             <div className="flex items-center justify-center">
                 <div className="flex items-center justify-center pt-5 space-x-6 font-mono text-base font-medium md:justify-start md:text-lg">
                     <a
-                        href="https://drive.google.com/uc?id=1rKT5To63JC_uIF3xFvopNXm_zwOEDd2h&export=download"
+                        href="https://drive.google.com/u/2/uc?id=1ZSd_Y9xnBtL_nSUjMmIEePklriAS-Il7&export=download"
                         className="px-4 py-2 text-white border-2 dark:text-dark bg-dark dark:bg-light md:px-8 border-dark dark:border-light hover:bg-light dark:hover:bg-dark hover:text-dark dark:hover:text-light">
                         <i className="fas fa-file-download"></i>
                         &nbsp; Resume

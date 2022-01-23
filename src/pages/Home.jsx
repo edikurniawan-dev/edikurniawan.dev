@@ -30,7 +30,7 @@ const Home = () => {
                     </div>
                     <div className="flex justify-center pt-5 space-x-6 text-base font-medium md:justify-start md:text-lg md:pt-10">
                         <a
-                            href="https://drive.google.com/uc?id=1rKT5To63JC_uIF3xFvopNXm_zwOEDd2h&export=download"
+                            href="https://drive.google.com/u/2/uc?id=1ZSd_Y9xnBtL_nSUjMmIEePklriAS-Il7&export=download"
                             className="px-4 py-2 text-white border-2 dark:text-dark bg-dark dark:bg-light md:px-8 border-dark dark:border-light hover:bg-light dark:hover:bg-dark hover:text-dark dark:hover:text-light">
                             <i className="fas fa-file-download"></i>
                             &nbsp; Resume
