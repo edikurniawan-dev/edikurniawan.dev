@@ -6,8 +6,8 @@ const Navbar = () => {
     const [colorTheme, setTheme] = useDarkMode();
 
     return (
-        <header className="md:container mx-auto md:px-8 lg:px-12 xl:px-16 xl:space-x-16">
-            <nav className="hidden md:flex py-4">
+        <header className="mx-auto md:container md:px-8 lg:px-12 xl:px-16 xl:space-x-16">
+            <nav className="hidden py-4 md:flex">
                 <div className="hidden md:block">
                     <NavLink exact to="/">
                         <svg
@@ -24,12 +24,7 @@ const Navbar = () => {
                         </svg>
                     </NavLink>
                 </div>
-                <ul className="w-full flex items-end md:items-center justify-around md:justify-end space-x-0 md:space-x-5 lg:space-x-10 font-mono text-xs md:text-lg text-light">
-                    <li>
-                        <NavLink className="block" to="/skill">
-                            Skill
-                        </NavLink>
-                    </li>
+                <ul className="flex items-end justify-around w-full space-x-0 font-mono text-xs md:items-center md:justify-end md:space-x-5 lg:space-x-10 md:text-lg text-light">
                     <li>
                         <NavLink className="block" to="/experience">
                             Experience
@@ -46,12 +41,17 @@ const Navbar = () => {
                         </NavLink>
                     </li>
                     <li>
+                        <NavLink className="block" to="/blog">
+                            Blog
+                        </NavLink>
+                    </li>
+                    <li>
                         <NavLink className="block" to="/contact">
                             Contact
                         </NavLink>
                     </li>
                     <li
-                        className="hidden md:flex flex-col items-center"
+                        className="flex-col items-center hidden md:flex"
                         onClick={() => setTheme(colorTheme)}>
                         <button
                             className={
@@ -59,7 +59,7 @@ const Navbar = () => {
                                     ? 'bg-light border-2 border-light py-2 md:py-0'
                                     : 'bg-dark border-2 border-light py-2 md:py-0'
                             }>
-                            <div className="py-1 px-3 flex items-center justify-center space-x-2">
+                            <div className="flex items-center justify-center px-3 py-1 space-x-2">
                                 <i
                                     className={
                                         colorTheme === 'light'
@@ -81,7 +81,7 @@ const Navbar = () => {
             </nav>
 
             {/* grid navbar for phone*/}
-            <div className="grid md:hidden grid-cols-6 text-light pt-2 pb-1">
+            <div className="grid grid-cols-6 pt-2 pb-1 md:hidden text-light">
                 <NavLink
                     className="flex flex-col items-center justify-end md:hidden"
                     exact
@@ -100,41 +100,38 @@ const Navbar = () => {
                     </svg>
                     <span className="text-xxs">Home</span>
                 </NavLink>
-
                 <NavLink
-                    className="flex flex-col items-center justify-end md:hidden text-3xl"
-                    to="/skill">
-                    <i className="fas fa-tools"></i>
-                    <span className="text-xxs">Skill</span>
-                </NavLink>
-                <NavLink
-                    className="flex flex-col items-center justify-end md:hidden text-3xl"
+                    className="flex flex-col items-center justify-end text-3xl md:hidden"
                     to="/experience">
                     <i className="fas fa-briefcase"></i>
                     <span className="text-xxs">Experience</span>
                 </NavLink>
                 <NavLink
-                    className="flex flex-col items-center justify-end md:hidden text-3xl"
+                    className="flex flex-col items-center justify-end text-3xl md:hidden"
                     to="/portfolio">
                     <i className="fas fa-image"></i>
                     <span className="text-xxs">Portfolio</span>
                 </NavLink>
-
                 <NavLink
-                    className="flex flex-col items-center justify-end md:hidden text-3xl"
+                    className="flex flex-col items-center justify-end text-3xl md:hidden"
                     to="/resume">
                     <i className="fas fa-id-card"></i>
                     <span className="text-xxs">Resume</span>
                 </NavLink>
-
                 <NavLink
-                    className="flex flex-col items-center justify-end md:hidden text-3xl"
+                    className="flex flex-col items-center justify-end text-3xl md:hidden"
+                    to="/blog">
+                    <i className="fa-solid fa-newspaper"></i>
+                    <span className="text-xxs">Blog</span>
+                </NavLink>
+                <NavLink
+                    className="flex flex-col items-center justify-end text-3xl md:hidden"
                     to="/contact">
                     <i className="fas fa-phone"></i>
                     <span className="text-xxs">Contact</span>
                 </NavLink>
             </div>
-            <div className="fixed md:hidden top-0 right-0">
+            <div className="fixed top-0 right-0 md:hidden">
                 <div
                     className="flex flex-col items-center"
                     onClick={() => setTheme(colorTheme)}>
@@ -142,7 +139,7 @@ const Navbar = () => {
                         className={
                             colorTheme === 'light' ? 'bg-light' : 'bg-dark'
                         }>
-                        <div className="p-2 flex items- center justify-center">
+                        <div className="flex justify-center px-2 py-4 items- center">
                             <i
                                 className={
                                     colorTheme === 'light'
