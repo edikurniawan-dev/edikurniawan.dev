@@ -2,7 +2,7 @@ import React from 'react';
 
 const ExperienceCard = (props) => {
     return (
-        <div className="flex items-center justify-center py-3 bg-black text-light">
+        <div className="flex items-center justify-center py-3 text-sm bg-black text-light">
             Created with &nbsp;
             <span>
                 <i className="fa-solid fa-heart"></i>

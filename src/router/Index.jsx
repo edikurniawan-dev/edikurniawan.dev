@@ -6,6 +6,7 @@ import Experience from '../pages/Experience';
 import Portfolio from '../pages/Portfolio';
 import Resume from '../pages/Resume';
 import Contact from '../pages/Contact';
+import NotFound from '../pages/NotFound';
 
 const Router = () => {
     return (
@@ -28,6 +29,7 @@ const Router = () => {
             <Route exact path="/contact">
                 <Contact />
             </Route>
+            <Route component={NotFound} />
         </Switch>
     );
 };
