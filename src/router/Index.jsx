@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Home from '../pages/Home';
-import Skill from '../pages/Skill';
+import Blog from '../pages/Blog';
 import Experience from '../pages/Experience';
 import Portfolio from '../pages/Portfolio';
 import Resume from '../pages/Resume';
@@ -13,9 +13,6 @@ const Router = () => {
             <Route exact path="/">
                 <Home />
             </Route>
-            <Route exact path="/skill">
-                <Skill />
-            </Route>
             <Route exact path="/experience">
                 <Experience />
             </Route>
@@ -24,6 +21,9 @@ const Router = () => {
             </Route>
             <Route exact path="/resume">
                 <Resume />
+            </Route>
+            <Route exact path="/blog">
+                <Blog />
             </Route>
             <Route exact path="/contact">
                 <Contact />
