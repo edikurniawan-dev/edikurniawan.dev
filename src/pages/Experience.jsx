@@ -35,7 +35,7 @@ const Experience = () => {
                             place="flex justify-start w-full mx-auto items-center"
                             padding="w-full lg:w-1/2 lg:pr-20"
                             companyName="CV Newus Teknologi"
-                            during="Junior Full-Stack Web Developer | November 2021 - Present"
+                            during="Full-Stack Web Developer | November 2021 - March 2022"
                             task="Develop websites both frontend and backend according to client needs."
                             number="3"
                         />
