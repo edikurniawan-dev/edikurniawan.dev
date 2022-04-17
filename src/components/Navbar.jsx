@@ -72,7 +72,7 @@ const Navbar = () => {
                                             ? 'text-black font-mono font-medium hidden md:block'
                                             : 'text-light font-mono font-medium hidden md:block'
                                     }>
-                                    {colorTheme === 'light' ? 'Light' : 'Dark'}
+                                    {colorTheme === 'light' ? 'Lumos' : 'Nox'}
                                 </p>
                             </div>
                         </button>
