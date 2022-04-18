@@ -7,30 +7,33 @@ import Portfolio from '../pages/Portfolio';
 import Resume from '../pages/Resume';
 import Contact from '../pages/Contact';
 import NotFound from '../pages/NotFound';
+import ScrollToTop from '../components/ScrollToTop';
 
 const Router = () => {
     return (
-        <Switch>
-            <Route exact path="/">
-                <Home />
-            </Route>
-            <Route exact path="/experience">
-                <Experience />
-            </Route>
-            <Route exact path="/portfolio">
-                <Portfolio />
-            </Route>
-            <Route exact path="/resume">
-                <Resume />
-            </Route>
-            <Route exact path="/blog">
-                <Blog />
-            </Route>
-            <Route exact path="/contact">
-                <Contact />
-            </Route>
-            <Route component={NotFound} />
-        </Switch>
+        <ScrollToTop>
+            <Switch>
+                <Route exact path="/">
+                    <Home />
+                </Route>
+                <Route exact path="/experience">
+                    <Experience />
+                </Route>
+                <Route exact path="/portfolio">
+                    <Portfolio />
+                </Route>
+                <Route exact path="/resume">
+                    <Resume />
+                </Route>
+                <Route exact path="/blog">
+                    <Blog />
+                </Route>
+                <Route exact path="/contact">
+                    <Contact />
+                </Route>
+                <Route component={NotFound} />
+            </Switch>
+        </ScrollToTop>
     );
 };
 
