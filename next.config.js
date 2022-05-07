@@ -8,10 +8,10 @@ const nextConfig = {
 const withPWA = require('next-pwa');
 
 module.exports = withPWA({
-    nextConfig,
     pwa: {
         dest: 'public',
         register: true,
         skipWaiting: true,
     },
 });
+module.exports = nextConfig;
