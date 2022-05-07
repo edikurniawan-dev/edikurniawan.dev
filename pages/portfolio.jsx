@@ -1,47 +1,44 @@
 import Layout from '../components/layout';
-import ExperienceCard from '../components/experiencecard';
+import PortfolioCard from '../components/portfoliocard';
+import Jaramba from '../images/portfolio/jaramba.png';
+import PeduliPanti from '../images/portfolio/peduli-panti.png';
+import PelitaBersatu from '../images/portfolio/pelita-bersatu.png';
+import Annazhori from '../images/portfolio/an-nazhori.png';
 
 export default function Experience() {
     return (
         <Layout>
             <div className="flex flex-col pt-5 md:pt-10">
                 <h1 className="font-mono text-2xl font-bold underline md:text-3xl text-dark dark:text-light">
-                    Experience
+                    Portfolio
                 </h1>
                 <br />
-
-                <div className="flex flex-col justify-center h-full -mt-10 md:-mt-0">
-                    <div className="w-full px-0 py-0 lg:py-3 sm:mx-auto">
-                        <div className="relative space-y-16 text-gray-700 lg:space-y-0">
-                            {/* line vertical */}
-                            <div className="absolute hidden w-1 h-full transform -translate-x-1/2 opacity-50 lg:block bg-dark dark:bg-light left-1/2"></div>
-
-                            <ExperienceCard
-                                place="flex justify-start w-full mx-auto items-center"
-                                padding="w-full lg:w-1/2 lg:pr-20"
-                                companyName="PT Banopolis Inovasi Kendara (Intern)"
-                                during="Front-End Web Developer | June 2020 - July 2020"
-                                task="Develop UI website dashboard admin of Jaramba apps. I develope using figma, bootstrap, and sweetalert. This application serves to monitor the location of the bus that is running. In addition to storing route data, drivers, buses and bus travel history."
-                                number="1"
-                            />
-                            <ExperienceCard
-                                place="flex justify-end w-full mx-auto items-center"
-                                padding="w-full lg:w-1/2 lg:pl-20"
-                                companyName="Freeleance"
-                                during="Web Developer | June 2020 - Present"
-                                task="Develop a website according to the client's request."
-                                number="2"
-                            />
-                            <ExperienceCard
-                                place="flex justify-start w-full mx-auto items-center"
-                                padding="w-full lg:w-1/2 lg:pr-20"
-                                companyName="CV Newus Teknologi"
-                                during="Full-Stack Web Developer | November 2021 - March 2022"
-                                task="Develop websites both frontend and backend according to client needs."
-                                number="3"
-                            />
-                        </div>
-                    </div>
+                <br />
+                <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 md:gap-14">
+                    <PortfolioCard
+                        image={Jaramba}
+                        link="#"
+                        title="Dashboard Admin Jaramba"
+                        description="Dashboard Admin Jaramba is application serves to monitor the location of the bus that is running. In addition to storing route data, drivers, buses and bus travel history."
+                    />
+                    <PortfolioCard
+                        image={PeduliPanti}
+                        link="https://github.com/NurulHakim/pedulipanti"
+                        title="Peduli Panti"
+                        description="Peduli Panti is a website to find orphanages that need help in the form of money, food, clothing and more. This website was built using the Laravel framework and MySQL database."
+                    />
+                    <PortfolioCard
+                        image={PelitaBersatu}
+                        link="http://pelitabersatu.com/"
+                        title="Pelita Barsatu"
+                        description="Pelita Barsatu is a company website from Pelita Bersatu Indonesia. This websites were build using the Content Management System, namely WordPress and Elementor."
+                    />
+                    <PortfolioCard
+                        image={Annazhori}
+                        link="http://annazhori.com/"
+                        title="An-Nazhori"
+                        description="An-Nazhori is a company website from Yayasan Pendidikan dan Dakwah Islan An-Nazhori. This websites were build using the Content Management System, namely WordPress and Elementor."
+                    />
                 </div>
             </div>
         </Layout>
