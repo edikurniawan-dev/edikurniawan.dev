@@ -13,12 +13,14 @@ export default function Layout({ title, description, keywords, children }) {
             </Head>
 
             <main className="flex flex-col min-h-screen bg-light dark:bg-dark">
-                <div className="flex flex-col h-full justify-between">
+                <div className="flex flex-col justify-between min-h-screen">
                     <div className="">
                         <div className="fixed inset-x-0 bottom-0 z-50 bg-black border-t-2 md:sticky md:top-0 border-light md:border-none">
                             <Navbar />
                         </div>
-                        {children}
+                        <div className="px-5 mx-auto font-mono md:container md:px-8 md:max-w-6xl 2xl:max-w-7xl">
+                            {children}
+                        </div>
                     </div>
                     <div className="pt-8 pb-16 md:pt-16 md:pb-0">
                         <Footer />
