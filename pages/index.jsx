@@ -74,14 +74,14 @@ export default function Home() {
                             href="https://www.linkedin.com/in/edikurniawan-dev/"
                             target="_blank"
                             rel="noreferrer"
-                            className="social-media-home">
+                            className="social-media">
                             <FontAwesomeIcon icon={faLinkedinIn} />
                         </a>
                         <a
                             href="https://github.com/edikurniawan-dev"
                             target="_blank"
                             rel="noreferrer"
-                            className="social-media-home">
+                            className="social-media">
                             <span>
                                 <FontAwesomeIcon icon={faGithub} />
                             </span>
@@ -90,7 +90,7 @@ export default function Home() {
                             href="https://twitter.com/edikurnia_dev"
                             target="_blank"
                             rel="noreferrer"
-                            className="social-media-home">
+                            className="social-media">
                             <span>
                                 <FontAwesomeIcon icon={faTwitter} />
                             </span>
@@ -99,7 +99,7 @@ export default function Home() {
                             href="https://www.instagram.com/edi.kurniawan27/"
                             target="_blank"
                             rel="noreferrer"
-                            className="social-media-home">
+                            className="social-media">
                             <span className="flex items-center justify-center">
                                 <FontAwesomeIcon icon={faInstagram} />
                             </span>

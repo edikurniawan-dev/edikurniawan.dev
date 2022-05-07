@@ -1,5 +1,4 @@
 import Layout from '../components/layout';
-import ExperienceCard from '../components/experiencecard';
 
 export default function Experience() {
     return (
