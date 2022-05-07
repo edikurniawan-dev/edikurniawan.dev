@@ -29,10 +29,10 @@ export default function Navbar() {
             return (
                 <button
                     onClick={() => setTheme('light')}
-                    className="bg-light border-2 border-light py-2 md:py-0">
+                    className="py-2 border-2 bg-light border-light md:py-0">
                     <div className="flex items-center justify-center px-3 py-1 space-x-2">
                         <FontAwesomeIcon icon={faSun} className="text-black" />
-                        <p className="text-black font-mono font-medium hidden md:block">
+                        <p className="hidden font-mono font-medium text-black md:block">
                             Lumos
                         </p>
                     </div>
@@ -42,10 +42,10 @@ export default function Navbar() {
             return (
                 <button
                     onClick={() => setTheme('dark')}
-                    className="bg-black border-2 border-light py-2 md:py-0">
+                    className="py-2 bg-black border-2 border-light md:py-0">
                     <div className="flex items-center justify-center px-3 py-1 space-x-2">
                         <FontAwesomeIcon icon={faMoon} className="text-light" />
-                        <p className="text-light font-mono font-medium hidden md:block">
+                        <p className="hidden font-mono font-medium text-light md:block">
                             Nox
                         </p>
                     </div>
@@ -78,7 +78,7 @@ export default function Navbar() {
     };
 
     return (
-        <header className="mx-auto md:container md:px-8 md:max-w-6xl 2xl:max-w-7xl font-mono">
+        <header className="mx-auto font-mono md:container md:px-8 md:max-w-6xl 2xl:max-w-7xl">
             <nav className="hidden py-4 md:flex">
                 <Link href="/">
                     <a>
@@ -96,7 +96,12 @@ export default function Navbar() {
                         </svg>
                     </a>
                 </Link>
-                <ul className="flex w-full items-center justify-end md:space-x-5 lg:space-x-10 text-lg text-light">
+                <ul className="flex items-center justify-end w-full text-lg md:space-x-5 lg:space-x-10 text-light">
+                    <li>
+                        <Link href="/resume">
+                            <a>Resume</a>
+                        </Link>
+                    </li>
                     <li>
                         <Link href="/experience">
                             <a>Experience</a>
@@ -108,18 +113,13 @@ export default function Navbar() {
                         </Link>
                     </li>
                     <li>
-                        <Link href="/resume">
-                            <a>Resume</a>
+                        <Link href="/contact">
+                            <a>Contact</a>
                         </Link>
                     </li>
                     <li>
                         <Link href="/blog">
                             <a>Blog</a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="/contact">
-                            <a>Contact</a>
                         </Link>
                     </li>
                     <li className="flex-col items-center hidden md:flex">
@@ -147,8 +147,14 @@ export default function Navbar() {
                         <span className="text-xxs">Home</span>
                     </a>
                 </Link>
+                <Link href="/resume">
+                    <a className="flex flex-col items-center justify-end text-2xl md:hidden">
+                        <FontAwesomeIcon icon={faIdCard} />
+                        <span className="text-xxs">Resume</span>
+                    </a>
+                </Link>
                 <Link href="/experience">
-                    <a className="flex flex-col items-center justify-end text-2xl md:hidden pt-1">
+                    <a className="flex flex-col items-center justify-end pt-1 text-2xl md:hidden">
                         <FontAwesomeIcon icon={faBriefcase} />
                         <span className="text-xxs">Experience</span>
                     </a>
@@ -159,22 +165,16 @@ export default function Navbar() {
                         <span className="text-xxs">Portfolio</span>
                     </a>
                 </Link>
-                <Link href="/resume">
+                <Link href="/contact">
                     <a className="flex flex-col items-center justify-end text-2xl md:hidden">
-                        <FontAwesomeIcon icon={faIdCard} />
-                        <span className="text-xxs">Resume</span>
+                        <FontAwesomeIcon icon={faPhone} />
+                        <span className="text-xxs">Contact</span>
                     </a>
                 </Link>
                 <Link href="/blog">
                     <a className="flex flex-col items-center justify-end text-2xl md:hidden">
                         <FontAwesomeIcon icon={faNewspaper} />
                         <span className="text-xxs">Blog</span>
-                    </a>
-                </Link>
-                <Link href="/contact">
-                    <a className="flex flex-col items-center justify-end text-2xl md:hidden">
-                        <FontAwesomeIcon icon={faPhone} />
-                        <span className="text-xxs">Contact</span>
                     </a>
                 </Link>
             </div>

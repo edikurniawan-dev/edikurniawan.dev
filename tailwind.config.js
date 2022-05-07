@@ -13,7 +13,7 @@ module.exports = {
         extend: {
             fontSize: {
                 xxs: [
-                    '0.7rem',
+                    '10.5px',
                     {
                         lineHeight: '1.5rem',
                     },

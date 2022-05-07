@@ -7,13 +7,15 @@ export default function PortfolioCard({ image, link, title, description }) {
     return (
         <div className="relative w-full">
             <div className="absolute inset-0 z-0 bg-center bg-cover"></div>
-            <Image
-                loader={imageLoader}
-                src={image}
-                alt={title}
-                className="border-2 border-black dark:border-light"
-            />
-            <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center text-white duration-300 opacity-0 bg-dark hover:bg-opacity-90 hover:opacity-100">
+            <div className="h-full border-2 border-black dark:border-light">
+                <Image
+                    loader={imageLoader}
+                    src={image}
+                    alt={title}
+                    layout="responsive"
+                />
+            </div>
+            <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center text-white duration-300 border opacity-0 bg-dark hover:bg-opacity-90 hover:opacity-100">
                 <a
                     href={link}
                     target="_blank"
