@@ -4,6 +4,8 @@ import Jaramba from '../images/portfolio/jaramba.png';
 import PeduliPanti from '../images/portfolio/peduli-panti.png';
 import PelitaBersatu from '../images/portfolio/pelita-bersatu.png';
 import Annazhori from '../images/portfolio/an-nazhori.png';
+import PpdbSmaPerintis from '../images/portfolio/ppdb-smaperintis2.png';
+import SimtaruLampura from '../images/portfolio/simtaru-lampura.png';
 
 export default function Portfolio() {
     return (
@@ -13,6 +15,18 @@ export default function Portfolio() {
             </h1>
             <br />
             <div className="grid grid-cols-1 gap-6 lg:grid-cols-2 md:gap-14">
+                <PortfolioCard
+                    image={SimtaruLampura}
+                    link="https://simtaru-lampura.com/"
+                    title="Simtaru Lampura"
+                    description="Simtaru Lampura is a web application to handle the registration of building permits in the North Lmapung district."
+                />
+                <PortfolioCard
+                    image={PpdbSmaPerintis}
+                    link="https://ppdbsmaperintis2.id/"
+                    title="PPDB SMA Perintis 2"
+                    description="PPDB SMA Perintis 2 is web appllication to handle the registration of new student."
+                />
                 <PortfolioCard
                     image={Jaramba}
                     link="#"
