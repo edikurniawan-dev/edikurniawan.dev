@@ -19,10 +19,12 @@ export default function Layout({ title, description, keywords, children }) {
                             <Navbar />
                         </div>
                         <div className="px-5 mx-auto font-mono md:container md:px-8 md:max-w-6xl 2xl:max-w-7xl">
-                            {children}
+                            <div className="flex flex-col pt-5 md:pt-7">
+                                {children}
+                            </div>
                         </div>
                     </div>
-                    <div className="pt-8 pb-16 md:pt-16 md:pb-0">
+                    <div className="pt-8 pb-16 md:pt-10 md:pb-0">
                         <Footer />
                     </div>
                 </div>
