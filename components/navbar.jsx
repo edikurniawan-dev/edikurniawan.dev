@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import React from 'react';
-import useDarkMode from '../hooks/useDarkMode';
+import React, { useState, useEffect } from 'react';
+import { useTheme } from 'next-themes';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faBriefcase,
@@ -8,10 +8,74 @@ import {
     faIdCard,
     faNewspaper,
     faPhone,
+    faSun,
+    faMoon,
 } from '@fortawesome/free-solid-svg-icons';
 
 export default function Navbar() {
-    // const [colorTheme, setTheme] = useDarkMode();
+    const { systemTheme, theme, setTheme } = useTheme();
+    const [mounted, setMounted] = useState(false);
+
+    useEffect(() => {
+        setMounted(true);
+    }, []);
+
+    const renderThemeChanger = () => {
+        if (!mounted) return null;
+
+        const currentTheme = theme === 'system' ? systemTheme : theme;
+
+        if (currentTheme === 'dark') {
+            return (
+                <button
+                    onClick={() => setTheme('light')}
+                    className="bg-light border-2 border-light py-2 md:py-0">
+                    <div className="flex items-center justify-center px-3 py-1 space-x-2">
+                        <FontAwesomeIcon icon={faSun} className="text-dark" />
+                        <p className="text-dark font-mono font-medium hidden md:block">
+                            Lumos
+                        </p>
+                    </div>
+                </button>
+            );
+        } else {
+            return (
+                <button
+                    onClick={() => setTheme('dark')}
+                    className="bg-dark border-2 border-light py-2 md:py-0">
+                    <div className="flex items-center justify-center px-3 py-1 space-x-2">
+                        <FontAwesomeIcon icon={faMoon} className="text-light" />
+                        <p className="text-light font-mono font-medium hidden md:block">
+                            Nox
+                        </p>
+                    </div>
+                </button>
+            );
+        }
+    };
+    const renderThemeChangerMobile = () => {
+        if (!mounted) return null;
+
+        const currentTheme = theme === 'system' ? systemTheme : theme;
+
+        if (currentTheme === 'dark') {
+            return (
+                <button onClick={() => setTheme('light')} className="bg-light">
+                    <div className="flex justify-center p-2.5 items- center">
+                        <FontAwesomeIcon icon={faSun} className="text-dark" />
+                    </div>
+                </button>
+            );
+        } else {
+            return (
+                <button onClick={() => setTheme('dark')} className="bg-dark">
+                    <div className="flex justify-center p-2.5 items- center">
+                        <FontAwesomeIcon icon={faMoon} className="text-light" />
+                    </div>
+                </button>
+            );
+        }
+    };
 
     return (
         <header className="mx-auto md:container md:px-8 md:max-w-6xl 2xl:max-w-7xl font-mono ">
@@ -58,33 +122,9 @@ export default function Navbar() {
                             <a>Contact</a>
                         </Link>
                     </li>
-                    {/* <li
-                        className="flex-col items-center hidden md:flex"
-                        onClick={() => setTheme(colorTheme)}>
-                        <button
-                            className={
-                                colorTheme === 'light'
-                                    ? 'bg-light border-2 border-light py-2 md:py-0'
-                                    : 'bg-dark border-2 border-light py-2 md:py-0'
-                            }>
-                            <div className="flex items-center justify-center px-3 py-1 space-x-2">
-                                <i
-                                    className={
-                                        colorTheme === 'light'
-                                            ? 'fas fa-sun fa-lg text-black'
-                                            : 'fas fa-moon fa-lg text-light'
-                                    }></i>
-                                <p
-                                    className={
-                                        colorTheme === 'light'
-                                            ? 'text-black font-mono font-medium hidden md:block'
-                                            : 'text-light font-mono font-medium hidden md:block'
-                                    }>
-                                    {colorTheme === 'light' ? 'Lumos' : 'Nox'}
-                                </p>
-                            </div>
-                        </button>
-                    </li> */}
+                    <li className="flex-col items-center hidden md:flex">
+                        {renderThemeChanger()}
+                    </li>
                 </ul>
             </nav>
 
@@ -93,7 +133,7 @@ export default function Navbar() {
                 <Link href="/">
                     <a className="flex flex-col items-center justify-end md:hidden">
                         <svg
-                            className="h-7"
+                            className="h-6"
                             viewBox="0 0 500 502"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -108,55 +148,41 @@ export default function Navbar() {
                     </a>
                 </Link>
                 <Link href="/experience">
-                    <a className="flex flex-col items-center justify-end text-3xl md:hidden">
+                    <a className="flex flex-col items-center justify-end text-2xl md:hidden pt-1">
                         <FontAwesomeIcon icon={faBriefcase} />
                         <span className="text-xxs">Experience</span>
                     </a>
                 </Link>
                 <Link href="/portfolio">
-                    <a className="flex flex-col items-center justify-end text-3xl md:hidden">
+                    <a className="flex flex-col items-center justify-end text-2xl md:hidden">
                         <FontAwesomeIcon icon={faImage} />
                         <span className="text-xxs">Portfolio</span>
                     </a>
                 </Link>
                 <Link href="/resume">
-                    <a className="flex flex-col items-center justify-end text-3xl md:hidden">
+                    <a className="flex flex-col items-center justify-end text-2xl md:hidden">
                         <FontAwesomeIcon icon={faIdCard} />
                         <span className="text-xxs">Resume</span>
                     </a>
                 </Link>
                 <Link href="/blog">
-                    <a className="flex flex-col items-center justify-end text-3xl md:hidden">
+                    <a className="flex flex-col items-center justify-end text-2xl md:hidden">
                         <FontAwesomeIcon icon={faNewspaper} />
                         <span className="text-xxs">Blog</span>
                     </a>
                 </Link>
                 <Link href="/contact">
-                    <a className="flex flex-col items-center justify-end text-3xl md:hidden">
+                    <a className="flex flex-col items-center justify-end text-2xl md:hidden">
                         <FontAwesomeIcon icon={faPhone} />
                         <span className="text-xxs">Contact</span>
                     </a>
                 </Link>
             </div>
-            {/* <div className="fixed top-0 right-0 md:hidden">
-                <div
-                    className="flex flex-col items-center"
-                    onClick={() => setTheme(colorTheme)}>
-                    <button
-                        className={
-                            colorTheme === 'light' ? 'bg-light' : 'bg-dark'
-                        }>
-                        <div className="flex justify-center px-2 py-4 items- center">
-                            <i
-                                className={
-                                    colorTheme === 'light'
-                                        ? 'fas fa-sun fa-lg text-black'
-                                        : 'fas fa-moon fa-lg text-light'
-                                }></i>
-                        </div>
-                    </button>
+            <div className="fixed top-0 right-0 md:hidden">
+                <div className="flex flex-col items-center">
+                    {renderThemeChangerMobile()}
                 </div>
-            </div> */}
+            </div>
         </header>
     );
 }

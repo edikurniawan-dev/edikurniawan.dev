@@ -32,7 +32,7 @@ export default function Home() {
                             </h1>
                         </div>
                     </div>
-                    <div className="pt-8 pb-16 md:pt-16 md:pb-0">
+                    <div className="pt-8 pb-16 md:pt-16 md:pb-0 dark:bg-dark">
                         <div className=""></div>
                         <FontAwesomeIcon icon={faSearch} />
                         <FontAwesomeIcon icon={faAddressCard} />
