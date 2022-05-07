@@ -13,7 +13,7 @@ export default function Navbar() {
                     className="text-red-500 animate-pulse"
                 />
             </span>
-            &nbsp;, Inspired by &nbsp;
+            , Inspired by &nbsp;
             <a
                 href="https://www.freecodecamp.org/"
                 className="flex items-center font-mono underline"

@@ -31,8 +31,8 @@ export default function Navbar() {
                     onClick={() => setTheme('light')}
                     className="bg-light border-2 border-light py-2 md:py-0">
                     <div className="flex items-center justify-center px-3 py-1 space-x-2">
-                        <FontAwesomeIcon icon={faSun} className="text-dark" />
-                        <p className="text-dark font-mono font-medium hidden md:block">
+                        <FontAwesomeIcon icon={faSun} className="text-black" />
+                        <p className="text-black font-mono font-medium hidden md:block">
                             Lumos
                         </p>
                     </div>
@@ -42,7 +42,7 @@ export default function Navbar() {
             return (
                 <button
                     onClick={() => setTheme('dark')}
-                    className="bg-dark border-2 border-light py-2 md:py-0">
+                    className="bg-black border-2 border-light py-2 md:py-0">
                     <div className="flex items-center justify-center px-3 py-1 space-x-2">
                         <FontAwesomeIcon icon={faMoon} className="text-light" />
                         <p className="text-light font-mono font-medium hidden md:block">
@@ -78,7 +78,7 @@ export default function Navbar() {
     };
 
     return (
-        <header className="mx-auto md:container md:px-8 md:max-w-6xl 2xl:max-w-7xl font-mono ">
+        <header className="mx-auto md:container md:px-8 md:max-w-6xl 2xl:max-w-7xl font-mono">
             <nav className="hidden py-4 md:flex">
                 <Link href="/">
                     <a>

@@ -7,7 +7,7 @@ config.autoAddCss = false;
 function MyApp({ Component, pageProps }) {
     return (
         <ThemeProvider enableSystem={true} attribute="class">
-            <Component {...pageProps} />;
+            <Component {...pageProps} />
         </ThemeProvider>
     );
 }
