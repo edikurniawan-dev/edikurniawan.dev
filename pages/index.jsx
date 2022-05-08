@@ -22,6 +22,7 @@ export default function Home() {
                         alt="Edi Kurniawan"
                         src={MyPhoto}
                         layout="responsive"
+                        placeholder="blur"
                         unoptimized
                         priority
                     />
@@ -44,13 +45,13 @@ export default function Home() {
                             developer. I love coding so I study every day to
                             improve my skills regarding web development. My
                             experience is related to web development for about 1
-                            year using several technologies like Laravel,
-                            ReactJS, NodeJS etc to build websites.
+                            year using several technologies like ReactJS,
+                            ExpressJS, Laravel, Livewire etc to build websites.
                         </p>
                     </div>
-                    <div className="pt-10 text-base font-medium md:text-lg">
+                    <div className="pt-10 text-base font-medium text-center md:text-left md:text-lg">
                         <a
-                            href="https://drive.google.com/u/2/uc?id=1ZSd_Y9xnBtL_nSUjMmIEePklriAS-Il7&export=download"
+                            href="https://public.bl.files.1drv.com/y4mFEuBh8QzEThmLs7KIgVnNND3FDxWnCyQ-XZCqEwrJb2cGHZn5WtGzO2NfjE4dRpkeUp6VildHlBUikGzrtPcpwhmy5Zr_s_PqoTvsA_9sO40ySyJ6ExjXJDuATKKlXCkg5rtQxbEz-1lFNJnYVsmlviebRvZdyNTM75eS6f9n6nyoFH3v1lFe-xbSrsTapEJHoSy6RUu_50-V7N3CKo7ms5BVY6Yp71T8wlhTzUqm0s"
                             className="download-resume">
                             <FontAwesomeIcon icon={faDownload} />
                             &nbsp; Resume

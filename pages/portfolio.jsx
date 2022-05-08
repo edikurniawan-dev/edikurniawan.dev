@@ -19,13 +19,13 @@ export default function Portfolio() {
                     image={SimtaruLampura}
                     link="https://simtaru-lampura.com/"
                     title="Simtaru Lampura"
-                    description="Simtaru Lampura is a web application to handle the registration of building permits in the North Lmapung district."
+                    description="Simtaru Lampura is a web application to handle the registration of building permits in the North Lampung district. This website was build using Laravel, Livewire and TailwindCSS, for the database using MySQL"
                 />
                 <PortfolioCard
                     image={PpdbSmaPerintis}
                     link="https://ppdbsmaperintis2.id/"
                     title="PPDB SMA Perintis 2"
-                    description="PPDB SMA Perintis 2 is web appllication to handle the registration of new student."
+                    description="PPDB SMA Perintis 2 is web appllication to handle the registration of new student. This website was build using Laravel, Livewire and Bootstrap, for the database using MySQL"
                 />
                 <PortfolioCard
                     image={Jaramba}

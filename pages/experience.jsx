@@ -36,7 +36,7 @@ export default function Experience() {
                             padding="w-full lg:w-1/2 lg:pr-20"
                             companyName="CV Newus Teknologi"
                             during="Full-Stack Web Developer | November 2021 - March 2022"
-                            task="Develop websites both frontend and backend according to client needs."
+                            task="Develop websites both frontend and backend according to client needs. Some of the websites that I have created are Sistem Informasi Tata Ruang Lampung Utara (Simtaru Lampura) and PPDB SMA Perintis 2."
                             number="3"
                         />
                     </div>

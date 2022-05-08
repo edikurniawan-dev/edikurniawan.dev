@@ -160,7 +160,7 @@ export default function Contact() {
                     <div className="flex flex-col space-y-2">
                         <label>Name</label>
                         <input
-                            className="h-12 px-3 border-2 border-dark dark:border-light dark:text-light text-dark focus:outline-none"
+                            className="h-12 px-3 border-2 border-dark dark:bg-light dark:border-light text-dark focus:outline-none"
                             type="text"
                             name="user_name"
                             required
@@ -169,7 +169,7 @@ export default function Contact() {
                     <div className="flex flex-col space-y-2">
                         <label>Email</label>
                         <input
-                            className="h-12 px-3 border-2 border-dark dark:border-light dark:text-light text-dark focus:outline-none"
+                            className="h-12 px-3 border-2 border-dark dark:bg-light dark:border-light text-dark focus:outline-none"
                             type="email"
                             name="user_email"
                             required
@@ -178,7 +178,7 @@ export default function Contact() {
                     <div className="flex flex-col space-y-2">
                         <label>Subject</label>
                         <input
-                            className="h-12 px-3 border-2 border-dark dark:border-light dark:text-light text-dark focus:outline-none"
+                            className="h-12 px-3 border-2 border-dark dark:bg-light dark:border-light text-dark focus:outline-none"
                             type="text"
                             name="user_subject"
                             required
@@ -187,7 +187,7 @@ export default function Contact() {
                     <div className="flex flex-col space-y-2">
                         <label>Message</label>
                         <textarea
-                            className="px-3 py-3 border-2 border-dark dark:border-light h-52 dark:text-light text-dark focus:outline-none"
+                            className="px-3 py-3 border-2 border-dark dark:bg-light dark:border-light h-52 text-dark focus:outline-none"
                             name="user_message"
                             required
                         />

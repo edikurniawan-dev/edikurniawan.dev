@@ -61,7 +61,7 @@ export default function Navbar() {
         if (currentTheme === 'dark') {
             return (
                 <button onClick={() => setTheme('light')} className="bg-light">
-                    <div className="flex justify-center p-2.5 items- center">
+                    <div className="flex justify-center p-1.5 text-xl items- center">
                         <FontAwesomeIcon icon={faSun} className="text-dark" />
                     </div>
                 </button>
@@ -69,7 +69,7 @@ export default function Navbar() {
         } else {
             return (
                 <button onClick={() => setTheme('dark')} className="bg-dark">
-                    <div className="flex justify-center p-2.5 items- center">
+                    <div className="flex justify-center p-1.5 text-xl items- center">
                         <FontAwesomeIcon icon={faMoon} className="text-light" />
                     </div>
                 </button>
@@ -129,9 +129,9 @@ export default function Navbar() {
             </nav>
 
             {/* grid navbar for phone*/}
-            <div className="grid grid-cols-6 pt-2 pb-1 md:hidden text-light">
+            <div className="grid grid-cols-6 md:hidden text-light">
                 <Link href="/">
-                    <a className="flex flex-col items-center justify-end md:hidden">
+                    <a className="flex flex-col items-center justify-end pt-3 pb-0 md:hidden">
                         <svg
                             className="h-6"
                             viewBox="0 0 500 502"
@@ -148,31 +148,31 @@ export default function Navbar() {
                     </a>
                 </Link>
                 <Link href="/resume">
-                    <a className="flex flex-col items-center justify-end text-2xl md:hidden">
+                    <a className="flex flex-col items-center justify-end pt-3 pb-0 text-2xl md:hidden">
                         <FontAwesomeIcon icon={faIdCard} />
                         <span className="text-xxs">Resume</span>
                     </a>
                 </Link>
                 <Link href="/experience">
-                    <a className="flex flex-col items-center justify-end pt-1 text-2xl md:hidden">
+                    <a className="flex flex-col items-center justify-end pt-3 pb-0 text-2xl md:hidden">
                         <FontAwesomeIcon icon={faBriefcase} />
                         <span className="text-xxs">Experience</span>
                     </a>
                 </Link>
                 <Link href="/portfolio">
-                    <a className="flex flex-col items-center justify-end text-2xl md:hidden">
+                    <a className="flex flex-col items-center justify-end pt-3 pb-0 text-2xl md:hidden">
                         <FontAwesomeIcon icon={faImage} />
                         <span className="text-xxs">Portfolio</span>
                     </a>
                 </Link>
                 <Link href="/contact">
-                    <a className="flex flex-col items-center justify-end text-2xl md:hidden">
+                    <a className="flex flex-col items-center justify-end pt-3 pb-0 text-2xl md:hidden">
                         <FontAwesomeIcon icon={faPhone} />
                         <span className="text-xxs">Contact</span>
                     </a>
                 </Link>
                 <Link href="/blog">
-                    <a className="flex flex-col items-center justify-end text-2xl md:hidden">
+                    <a className="flex flex-col items-center justify-end pt-3 pb-0 text-2xl md:hidden">
                         <FontAwesomeIcon icon={faNewspaper} />
                         <span className="text-xxs">Blog</span>
                     </a>
