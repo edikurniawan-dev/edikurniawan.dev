@@ -4,7 +4,7 @@ import Layout from '../components/layout';
 
 export default function Resume() {
     return (
-        <Layout>
+        <Layout title="Resume | Edi Kurniawan">
             <h1 className="font-mono text-2xl font-bold underline md:text-3xl text-dark dark:text-light">
                 Resume
             </h1>

@@ -3,7 +3,7 @@ import ExperienceCard from '../components/experiencecard';
 
 export default function Experience() {
     return (
-        <Layout>
+        <Layout title="Experience | Edi Kurniawan">
             <h1 className="font-mono text-2xl font-bold underline md:text-3xl text-dark dark:text-light">
                 Experience
             </h1>

@@ -2,7 +2,7 @@ import Layout from '../components/layout';
 
 export default function Blog() {
     return (
-        <Layout>
+        <Layout title="Blog | Edi Kurniawan">
             <h1 className="font-mono text-2xl font-bold underline md:text-3xl text-dark dark:text-light">
                 Blog
             </h1>

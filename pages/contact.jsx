@@ -44,7 +44,7 @@ export default function Contact() {
     };
 
     return (
-        <Layout>
+        <Layout title="Contact | Edi Kurniawan">
             <ToastContainer
                 position="top-center"
                 autoClose={5000}
