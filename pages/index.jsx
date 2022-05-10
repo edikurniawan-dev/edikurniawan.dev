@@ -51,7 +51,7 @@ export default function Home() {
                     </div>
                     <div className="pt-10 text-base font-medium text-center md:text-left md:text-lg">
                         <a
-                            href="https://public.bl.files.1drv.com/y4mFEuBh8QzEThmLs7KIgVnNND3FDxWnCyQ-XZCqEwrJb2cGHZn5WtGzO2NfjE4dRpkeUp6VildHlBUikGzrtPcpwhmy5Zr_s_PqoTvsA_9sO40ySyJ6ExjXJDuATKKlXCkg5rtQxbEz-1lFNJnYVsmlviebRvZdyNTM75eS6f9n6nyoFH3v1lFe-xbSrsTapEJHoSy6RUu_50-V7N3CKo7ms5BVY6Yp71T8wlhTzUqm0s"
+                            href="https://public.bl.files.1drv.com/y4mEwi7nPXGTqgo5-h8ylGu5szFwqTP9gZ5MO7AhTZWTI5UixFXlVqWxI4Z040vrKjnu9m023iOBWUz5Frjai71vidi29hY147byOAsrGqeoMs9GYR2Ciz7hIfRnDr0n1crqXoj_UQFdGVi5UYMmnloPHwXNnZ6PVREBK9_FEYC-DglWllACJ5Aky76WTowarLFrKizV3y6TmXaIrw2NeBv5YAIbOSBdqRc4m2tfxbqH6g"
                             className="download-resume">
                             <FontAwesomeIcon icon={faDownload} />
                             &nbsp; Resume
