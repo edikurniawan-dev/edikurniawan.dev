@@ -14,7 +14,6 @@ export default function Experience() {
                     <div className="relative space-y-16 text-gray-700 lg:space-y-0">
                         {/* line vertical */}
                         <div className="absolute hidden w-1 h-full transform -translate-x-1/2 opacity-50 lg:block bg-dark dark:bg-light left-1/2"></div>
-                        {/* end line vertical */}
 
                         <ExperienceCard
                             place="flex justify-start w-full mx-auto items-center"
