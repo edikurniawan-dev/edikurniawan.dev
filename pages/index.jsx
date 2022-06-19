@@ -31,7 +31,7 @@ export default function Home() {
                     <div className="space-y-6">
                         <div className="space-y-1">
                             <h1 className="text-xl font-bold lg:text-2xl">
-                                Hello I m
+                                Hello I&apos;m
                             </h1>
                             <h1 className="text-4xl font-bold lg:text-5xl">
                                 Edi Kurniawan
