@@ -1,29 +1,20 @@
 import Image from 'next/image';
 import imageLoader from '../src/ImageLoader';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-    faArrowUpRightFromSquare,
-    faSpinner,
-} from '@fortawesome/free-solid-svg-icons';
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 
 export default function PortfolioCard({ image, link, title, description }) {
     return (
         <div className="relative w-full">
             <div className="absolute inset-0 z-0 bg-center bg-cover"></div>
             <div className="relative h-full border-2 border-black dark:border-light">
-                <div className="absolute top-0 z-0 flex items-center justify-center w-full h-full">
-                    <FontAwesomeIcon
-                        icon={faSpinner}
-                        className="animate-spin"
-                    />
-                    &nbsp;Load Image
-                </div>
                 <div className="z-10">
                     <Image
                         loader={imageLoader}
                         src={image}
                         alt={title}
                         layout="responsive"
+                        placeholder="blur"
                         unoptimized
                         priority
                     />

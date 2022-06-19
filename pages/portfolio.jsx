@@ -4,6 +4,7 @@ import Jaramba from '../images/portfolio/jaramba.png';
 import PeduliPanti from '../images/portfolio/peduli-panti.png';
 import PelitaBersatu from '../images/portfolio/pelita-bersatu.png';
 import Annazhori from '../images/portfolio/an-nazhori.png';
+import PersonalSite from '../images/portfolio/personal-site.png';
 import PpdbSmaPerintis from '../images/portfolio/ppdb-smaperintis2.png';
 import SimtaruLampura from '../images/portfolio/simtaru-lampura.png';
 
@@ -28,10 +29,16 @@ export default function Portfolio() {
                     description="PPDB SMA Perintis 2 is web appllication to handle the registration of new student. This website was build using Laravel, Livewire and Bootstrap, for the database using MySQL"
                 />
                 <PortfolioCard
+                    image={PersonalSite}
+                    link="https://edikurniawan.pages.dev/"
+                    title="Personal Website"
+                    description="Develop personal website using NextJS and TailwindCSS"
+                />
+                <PortfolioCard
                     image={Jaramba}
                     link="#"
                     title="Dashboard Admin Jaramba"
-                    description="Dashboard Admin Jaramba is application serves to monitor the location of the bus that is running. In addition to storing route data, drivers, buses and bus travel history."
+                    description="Dashboard Admin Jaramba is application serves to monitor the location of the bus that is running. In addition to storing route data, drivers, buses and bus travel history. This website was build using HTML, CSS, Bootstrap and Native Javascript"
                 />
                 <PortfolioCard
                     image={PeduliPanti}
