@@ -14,14 +14,13 @@ export default function Experience() {
                     <div className="relative space-y-16 text-gray-700 lg:space-y-0">
                         {/* line vertical */}
                         <div className="absolute hidden w-1 h-full transform -translate-x-1/2 opacity-50 lg:block bg-dark dark:bg-light left-1/2"></div>
-
                         <ExperienceCard
                             place="flex justify-start w-full mx-auto items-center"
                             padding="w-full lg:w-1/2 lg:pr-20"
-                            companyName="Freeleance Web Developer"
-                            during="Web Developer | June 2020 - Present"
-                            task="Develop a website according to the client's request. Some of the websites that I created are the company profiles of the Yayasan Pelita Bersatu and Yayasan An-Nazhori."
-                            number="1"
+                            companyName="CV Newus Teknologi"
+                            during="Full-Stack Web Developer | November 2021 - March 2022"
+                            task="Develop websites both frontend and backend according to client needs. Some of the websites that I have created are Sistem Informasi Tata Ruang Lampung Utara (Simtaru Lampura), PPDB SMA Perintis 2 and fix bug website SOP Kabupaten Mahakam Ulu."
+                            number="3"
                         />
                         <ExperienceCard
                             place="flex justify-end w-full mx-auto items-center"
@@ -34,10 +33,10 @@ export default function Experience() {
                         <ExperienceCard
                             place="flex justify-start w-full mx-auto items-center"
                             padding="w-full lg:w-1/2 lg:pr-20"
-                            companyName="CV Newus Teknologi"
-                            during="Full-Stack Web Developer | November 2021 - March 2022"
-                            task="Develop websites both frontend and backend according to client needs. Some of the websites that I have created are Sistem Informasi Tata Ruang Lampung Utara (Simtaru Lampura), PPDB SMA Perintis 2 and fix bug website SOP Kabupaten Mahakam Ulu."
-                            number="3"
+                            companyName="Freeleance Web Developer"
+                            during="Web Developer | June 2020 - Present"
+                            task="Develop a website according to the client's request. Some of the websites that I created are the company profiles of the Yayasan Pelita Bersatu and Yayasan An-Nazhori."
+                            number="1"
                         />
                     </div>
                 </div>
