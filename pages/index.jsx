@@ -44,8 +44,8 @@ export default function Home() {
                         </div>
                         <p className="font-sans text-base tracking-wider md:text-lg">
                             I am a hard worker with experience as a web
-                            developer. I love coding so I study every day to
-                            improve my skills regarding web development. My
+                            developer. I love coding so I learn every day to
+                            improve my skills about web development. My
                             experience is related to web development for about 1
                             year using several technologies like ReactJS,
                             ExpressJS, Laravel, Livewire etc to build websites.
