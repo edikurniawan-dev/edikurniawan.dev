@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import Layout from '../components/layout';
 import ExperienceCard from '../components/experiencecard';
 
@@ -38,6 +40,15 @@ export default function Experience() {
                             task="Develop a website according to the client's request. Some of the websites that I created are the company profiles of the Yayasan Pelita Bersatu and Yayasan An-Nazhori."
                             number="1"
                         />
+                    </div>
+                </div>
+
+                <div className="mt-5">
+                    <hr className="block md:hidden" />
+                    <div className="mt-8 text-center">
+                        <Link href="/resume">
+                            <a className="download-resume">View Resume</a>
+                        </Link>
                     </div>
                 </div>
             </div>

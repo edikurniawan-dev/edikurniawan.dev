@@ -1,11 +1,11 @@
-import Link from 'next/link';
 import React, { useState, useEffect } from 'react';
+import Link from 'next/link';
 import { useTheme } from 'next-themes';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faBriefcase,
     faImage,
-    faIdCard,
     faNewspaper,
     faPhone,
     faSun,
@@ -30,7 +30,7 @@ export default function Navbar() {
                 <button
                     onClick={() => setTheme('light')}
                     className="py-2 border-2 bg-light border-light md:py-0">
-                    <div className="flex items-center justify-center px-3 py-1 space-x-2">
+                    <div className="flex items-center justify-center py-1 space-x-2 px-7">
                         <FontAwesomeIcon icon={faSun} className="text-black" />
                         <p className="hidden font-mono font-medium text-black md:block">
                             Lumos
@@ -43,7 +43,7 @@ export default function Navbar() {
                 <button
                     onClick={() => setTheme('dark')}
                     className="py-2 bg-black border-2 border-light md:py-0">
-                    <div className="flex items-center justify-center px-3 py-1 space-x-2">
+                    <div className="flex items-center justify-center py-1 space-x-2 px-7">
                         <FontAwesomeIcon icon={faMoon} className="text-light" />
                         <p className="hidden font-mono font-medium text-light md:block">
                             Nox
@@ -96,12 +96,7 @@ export default function Navbar() {
                         </svg>
                     </a>
                 </Link>
-                <ul className="flex items-center justify-end w-full text-lg md:space-x-5 lg:space-x-10 text-light">
-                    <li>
-                        <Link href="/resume">
-                            <a>Resume</a>
-                        </Link>
-                    </li>
+                <ul className="flex items-center justify-end w-full text-lg md:space-x-5 lg:space-x-12 text-light">
                     <li>
                         <Link href="/experience">
                             <a>Experience</a>
@@ -113,13 +108,13 @@ export default function Navbar() {
                         </Link>
                     </li>
                     <li>
-                        <Link href="/contact">
-                            <a>Contact</a>
+                        <Link href="/article">
+                            <a>Article</a>
                         </Link>
                     </li>
                     <li>
-                        <Link href="/blog">
-                            <a>Blog</a>
+                        <Link href="/contact">
+                            <a>Contact</a>
                         </Link>
                     </li>
                     <li className="flex-col items-center hidden md:flex">
@@ -129,7 +124,7 @@ export default function Navbar() {
             </nav>
 
             {/* grid navbar for phone*/}
-            <div className="grid grid-cols-6 md:hidden text-light">
+            <div className="grid grid-cols-5 md:hidden gap-x-1 text-light">
                 <Link href="/">
                     <a className="flex flex-col items-center justify-end pt-3 pb-0 md:hidden">
                         <svg
@@ -147,12 +142,6 @@ export default function Navbar() {
                         <span className="text-xxs">Home</span>
                     </a>
                 </Link>
-                <Link href="/resume">
-                    <a className="flex flex-col items-center justify-end pt-3 pb-0 text-2xl md:hidden">
-                        <FontAwesomeIcon icon={faIdCard} />
-                        <span className="text-xxs">Resume</span>
-                    </a>
-                </Link>
                 <Link href="/experience">
                     <a className="flex flex-col items-center justify-end pt-3 pb-0 text-2xl md:hidden">
                         <FontAwesomeIcon icon={faBriefcase} />
@@ -165,16 +154,16 @@ export default function Navbar() {
                         <span className="text-xxs">Portfolio</span>
                     </a>
                 </Link>
+                <Link href="/article">
+                    <a className="flex flex-col items-center justify-end pt-3 pb-0 text-2xl md:hidden">
+                        <FontAwesomeIcon icon={faNewspaper} />
+                        <span className="text-xxs">Article</span>
+                    </a>
+                </Link>
                 <Link href="/contact">
                     <a className="flex flex-col items-center justify-end pt-3 pb-0 text-2xl md:hidden">
                         <FontAwesomeIcon icon={faPhone} />
                         <span className="text-xxs">Contact</span>
-                    </a>
-                </Link>
-                <Link href="/blog">
-                    <a className="flex flex-col items-center justify-end pt-3 pb-0 text-2xl md:hidden">
-                        <FontAwesomeIcon icon={faNewspaper} />
-                        <span className="text-xxs">Blog</span>
                     </a>
                 </Link>
             </div>

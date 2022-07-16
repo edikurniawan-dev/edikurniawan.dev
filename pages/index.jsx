@@ -1,9 +1,11 @@
-import Layout from '../components/layout';
+import Link from 'next/link';
 import Image from 'next/image';
 import ImageLoader from '../src/ImageLoader';
+
+import Layout from '../components/layout';
 import SkillCard from '../components/skillcard';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import {
     faLinkedinIn,
     faGithub,
@@ -50,12 +52,9 @@ export default function Home() {
                         </p>
                     </div>
                     <div className="pt-10 text-base font-medium text-center md:text-left md:text-lg">
-                        <a
-                            href="https://drive.google.com/file/d/1oqiuG4r7bQ-4e3an3tOu_yTY1Sfe7PRL/view?usp=sharing"
-                            className="download-resume">
-                            <FontAwesomeIcon icon={faDownload} />
-                            &nbsp; Resume
-                        </a>
+                        <Link href="/resume">
+                            <a className="download-resume">View Resume</a>
+                        </Link>
                     </div>
                 </div>
                 <div className="hidden w-full md:block justify-self-end">

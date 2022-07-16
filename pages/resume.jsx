@@ -1,6 +1,7 @@
+import Layout from '../components/layout';
+
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Layout from '../components/layout';
 
 export default function Resume() {
     return (

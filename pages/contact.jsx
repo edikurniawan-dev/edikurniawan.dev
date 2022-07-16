@@ -1,8 +1,10 @@
 import React from 'react';
-import Layout from '../components/layout';
 import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
+import Layout from '../components/layout';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faGithub,

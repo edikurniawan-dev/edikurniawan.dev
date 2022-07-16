@@ -1,13 +1,15 @@
-import Layout from '../components/layout';
 import Image from 'next/image';
 import ImageLoader from '../src/ImageLoader';
+
+import Layout from '../components/layout';
+
 import MyPhoto from '../images/under-construction.svg';
 
-export default function Blog() {
+export default function Article() {
     return (
-        <Layout title="Blog | Edi Kurniawan">
+        <Layout title="Articles | Edi Kurniawan">
             <h1 className="font-mono text-2xl font-bold underline md:text-3xl text-dark dark:text-light">
-                Blog
+                Articles
             </h1>
             <br />
 
