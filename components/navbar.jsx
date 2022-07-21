@@ -126,7 +126,7 @@ export default function Navbar() {
             {/* grid navbar for phone*/}
             <div className="grid grid-cols-5 md:hidden gap-x-1 text-light">
                 <Link href="/">
-                    <a className="flex flex-col items-center justify-end pt-3 pb-0 md:hidden">
+                    <a className="flex flex-col items-center justify-end pt-3 pb-3 md:hidden">
                         <svg
                             className="h-6"
                             viewBox="0 0 500 502"
@@ -139,35 +139,31 @@ export default function Navbar() {
                                 fill="#F5F6F7"
                             />
                         </svg>
-                        <span className="font-semibold text-xxs">Home</span>
+                        <span className="text-xs font-bold">Home</span>
                     </a>
                 </Link>
                 <Link href="/experience">
-                    <a className="flex flex-col items-center justify-end pt-3 pb-0 text-2xl md:hidden">
+                    <a className="flex flex-col items-center justify-end pt-3 pb-3 text-2xl md:hidden">
                         <FontAwesomeIcon icon={faBriefcase} />
-                        <span className="font-semibold text-xxs">
-                            Experience
-                        </span>
+                        <span className="text-xs font-bold">Experience</span>
                     </a>
                 </Link>
                 <Link href="/portfolio">
-                    <a className="flex flex-col items-center justify-end pt-3 pb-0 text-2xl md:hidden">
+                    <a className="flex flex-col items-center justify-end pt-3 pb-3 text-2xl md:hidden">
                         <FontAwesomeIcon icon={faImage} />
-                        <span className="font-semibold text-xxs">
-                            Portfolio
-                        </span>
+                        <span className="text-xs font-bold">Portfolio</span>
                     </a>
                 </Link>
                 <Link href="/article">
-                    <a className="flex flex-col items-center justify-end pt-3 pb-0 text-2xl md:hidden">
+                    <a className="flex flex-col items-center justify-end pt-3 pb-3 text-2xl md:hidden">
                         <FontAwesomeIcon icon={faNewspaper} />
-                        <span className="font-semibold text-xxs">Article</span>
+                        <span className="text-xs font-bold">Article</span>
                     </a>
                 </Link>
                 <Link href="/contact">
-                    <a className="flex flex-col items-center justify-end pt-3 pb-0 text-2xl md:hidden">
+                    <a className="flex flex-col items-center justify-end pt-3 pb-3 text-2xl md:hidden">
                         <FontAwesomeIcon icon={faPhone} />
-                        <span className="font-semibold text-xxs">Contact</span>
+                        <span className="text-xs font-bold">Contact</span>
                     </a>
                 </Link>
             </div>
