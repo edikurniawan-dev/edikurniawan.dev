@@ -24,7 +24,7 @@ export default function Article() {
                         priority
                     />
                 </div>
-                <span className="mt-5 font-mono text-xl font-medium md:text-2xl md:mt-10 dark:text-light">
+                <span className="mt-5 font-mono text-xl font-semibold md:text-2xl md:mt-10 dark:text-light">
                     Under Construction
                 </span>
             </div>
