@@ -18,7 +18,7 @@ export default function Home() {
     return (
         <Layout>
             <div className="grid grid-cols-1 md:grid-cols-3">
-                <div className="justify-center w-full px-16 mb-8 md:hidden">
+                <div className="justify-center w-full mb-8 px-14 md:hidden">
                     <Image
                         loader={ImageLoader}
                         alt="Edi Kurniawan"

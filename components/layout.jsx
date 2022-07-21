@@ -25,7 +25,7 @@ export default function Layout({ title, description, keywords, children }) {
                             </div>
                         </div>
                     </div>
-                    <div className="pt-8 pb-[3.9rem] md:pt-10 md:pb-0">
+                    <div className="pt-8 pb-[3.8rem] md:pt-10 md:pb-0">
                         <Footer />
                     </div>
                 </div>
