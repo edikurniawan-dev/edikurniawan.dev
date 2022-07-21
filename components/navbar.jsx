@@ -139,31 +139,39 @@ export default function Navbar() {
                                 fill="#F5F6F7"
                             />
                         </svg>
-                        <span className="text-xs font-bold">Home</span>
+                        <span className="mt-1.5 font-bold text-xxs">Home</span>
                     </a>
                 </Link>
                 <Link href="/experience">
                     <a className="flex flex-col items-center justify-end pt-3 pb-3 text-2xl md:hidden">
                         <FontAwesomeIcon icon={faBriefcase} />
-                        <span className="text-xs font-bold">Experience</span>
+                        <span className="mt-1.5 font-bold text-xxs">
+                            Experience
+                        </span>
                     </a>
                 </Link>
                 <Link href="/portfolio">
                     <a className="flex flex-col items-center justify-end pt-3 pb-3 text-2xl md:hidden">
                         <FontAwesomeIcon icon={faImage} />
-                        <span className="text-xs font-bold">Portfolio</span>
+                        <span className="mt-1.5 font-bold text-xxs">
+                            Portfolio
+                        </span>
                     </a>
                 </Link>
                 <Link href="/article">
                     <a className="flex flex-col items-center justify-end pt-3 pb-3 text-2xl md:hidden">
                         <FontAwesomeIcon icon={faNewspaper} />
-                        <span className="text-xs font-bold">Article</span>
+                        <span className="mt-1.5 font-bold text-xxs">
+                            Article
+                        </span>
                     </a>
                 </Link>
                 <Link href="/contact">
                     <a className="flex flex-col items-center justify-end pt-3 pb-3 text-2xl md:hidden">
                         <FontAwesomeIcon icon={faPhone} />
-                        <span className="text-xs font-bold">Contact</span>
+                        <span className="mt-1.5 font-bold text-xxs">
+                            Contact
+                        </span>
                     </a>
                 </Link>
             </div>
