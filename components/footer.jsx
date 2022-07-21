@@ -4,7 +4,7 @@ import { faFreeCodeCamp } from '@fortawesome/free-brands-svg-icons';
 
 export default function Navbar() {
     return (
-        <div className="flex items-center justify-center py-2 text-sm bg-black md:py-3 text-light">
+        <div className="flex items-center justify-center py-1.5 text-xs bg-black md:text-sm md:py-3 text-light">
             Created with &nbsp;
             <span>
                 <FontAwesomeIcon

@@ -139,31 +139,35 @@ export default function Navbar() {
                                 fill="#F5F6F7"
                             />
                         </svg>
-                        <span className="text-xxs">Home</span>
+                        <span className="font-semibold text-xxs">Home</span>
                     </a>
                 </Link>
                 <Link href="/experience">
                     <a className="flex flex-col items-center justify-end pt-3 pb-0 text-2xl md:hidden">
                         <FontAwesomeIcon icon={faBriefcase} />
-                        <span className="text-xxs">Experience</span>
+                        <span className="font-semibold text-xxs">
+                            Experience
+                        </span>
                     </a>
                 </Link>
                 <Link href="/portfolio">
                     <a className="flex flex-col items-center justify-end pt-3 pb-0 text-2xl md:hidden">
                         <FontAwesomeIcon icon={faImage} />
-                        <span className="text-xxs">Portfolio</span>
+                        <span className="font-semibold text-xxs">
+                            Portfolio
+                        </span>
                     </a>
                 </Link>
                 <Link href="/article">
                     <a className="flex flex-col items-center justify-end pt-3 pb-0 text-2xl md:hidden">
                         <FontAwesomeIcon icon={faNewspaper} />
-                        <span className="text-xxs">Article</span>
+                        <span className="font-semibold text-xxs">Article</span>
                     </a>
                 </Link>
                 <Link href="/contact">
                     <a className="flex flex-col items-center justify-end pt-3 pb-0 text-2xl md:hidden">
                         <FontAwesomeIcon icon={faPhone} />
-                        <span className="text-xxs">Contact</span>
+                        <span className="font-semibold text-xxs">Contact</span>
                     </a>
                 </Link>
             </div>
