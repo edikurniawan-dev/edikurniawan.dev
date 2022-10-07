@@ -17,6 +17,14 @@ export default function Experience() {
                         {/* line vertical */}
                         <div className="absolute hidden w-1 h-full transform -translate-x-1/2 opacity-50 lg:block bg-dark dark:bg-light left-1/2"></div>
                         <ExperienceCard
+                            place="flex justify-end w-full mx-auto items-center"
+                            padding="w-full lg:w-1/2 lg:pl-20"
+                            companyName="PT Kreasi Layanan Medis (KLINIS)"
+                            during="Full-Stack Developer | July 2022 - Present"
+                            task="Develop a website according to company needs."
+                            number="4"
+                        />
+                        <ExperienceCard
                             place="flex justify-start w-full mx-auto items-center"
                             padding="w-full lg:w-1/2 lg:pr-20"
                             companyName="CV Newus Teknologi"
