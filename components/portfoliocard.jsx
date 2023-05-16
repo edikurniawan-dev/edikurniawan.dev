@@ -1,6 +1,4 @@
 import Image from 'next/image';
-import imageLoader from '../src/ImageLoader';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 
@@ -11,7 +9,6 @@ export default function PortfolioCard({ image, link, title, description }) {
             <div className="relative h-full border-2 border-black dark:border-light">
                 <div className="z-10">
                     <Image
-                        loader={imageLoader}
                         src={image}
                         alt={title}
                         layout="responsive"
@@ -26,7 +23,8 @@ export default function PortfolioCard({ image, link, title, description }) {
                     href={link}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex items-center text-md md:text-xl ">
+                    className="flex items-center text-md md:text-xl "
+                >
                     <h1 className="font-mono text-xl font-bold md:text-2xl hover:underline">
                         {title}
                     </h1>

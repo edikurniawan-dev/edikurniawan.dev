@@ -1,5 +1,4 @@
 import Link from 'next/link';
-
 import Layout from '../components/layout';
 import ExperienceCard from '../components/experiencecard';
 

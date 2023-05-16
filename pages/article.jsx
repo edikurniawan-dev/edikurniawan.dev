@@ -1,8 +1,5 @@
 import Image from 'next/image';
-import ImageLoader from '../src/ImageLoader';
-
 import Layout from '../components/layout';
-
 import MyPhoto from '../images/under-construction.svg';
 
 export default function Article() {
@@ -13,16 +10,9 @@ export default function Article() {
             </h1>
             <br />
 
-            {/* <div className="flex flex-col justify-center h-full -mt-10 md:-mt-0"></div> */}
             <div className="flex flex-col items-center mt-16">
                 <div className="w-48 md:w-96">
-                    <Image
-                        loader={ImageLoader}
-                        alt="Edi Kurniawan"
-                        src={MyPhoto}
-                        unoptimized
-                        priority
-                    />
+                    <Image alt="Edi Kurniawan" src={MyPhoto} unoptimized priority />
                 </div>
                 <span className="mt-5 font-mono text-xl font-semibold md:text-2xl md:mt-10 dark:text-light">
                     Under Construction

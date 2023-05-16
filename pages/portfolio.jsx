@@ -1,8 +1,6 @@
 import Link from 'next/link';
-
 import Layout from '../components/layout';
 import PortfolioCard from '../components/portfoliocard';
-
 import Jaramba from '../images/portfolio/jaramba.png';
 import PeduliPanti from '../images/portfolio/peduli-panti.png';
 import PelitaBersatu from '../images/portfolio/pelita-bersatu.png';

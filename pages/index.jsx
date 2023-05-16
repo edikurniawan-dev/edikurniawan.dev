@@ -1,17 +1,9 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import ImageLoader from '../src/ImageLoader';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedinIn, faGithub, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import Layout from '../components/layout';
 import SkillCard from '../components/skillcard';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-    faLinkedinIn,
-    faGithub,
-    faTwitter,
-    faInstagram,
-} from '@fortawesome/free-brands-svg-icons';
 import MyPhoto from '../images/my-photo.png';
 
 export default function Home() {
@@ -20,7 +12,6 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3">
                 <div className="justify-center w-full mb-8 px-14 md:hidden">
                     <Image
-                        loader={ImageLoader}
                         alt="Edi Kurniawan"
                         src={MyPhoto}
                         layout="responsive"
@@ -32,23 +23,16 @@ export default function Home() {
                 <div className="flex flex-col justify-center font-mono md:pl-0 md:col-span-2 text-dark dark:text-light md:space-y-5 lg:pr-20 xl:pr-24">
                     <div className="space-y-6">
                         <div className="space-y-1">
-                            <h1 className="text-xl font-bold lg:text-2xl">
-                                Hello I&apos;m
-                            </h1>
-                            <h1 className="text-4xl font-bold lg:text-5xl">
-                                Edi Kurniawan
-                            </h1>
-                            <h1 className="text-xl font-bold lg:text-2xl">
-                                a Web Developer
-                            </h1>
+                            <h1 className="text-xl font-bold lg:text-2xl">Hello I&apos;m</h1>
+                            <h1 className="text-4xl font-bold lg:text-5xl">Edi Kurniawan</h1>
+                            <h1 className="text-xl font-bold lg:text-2xl">a Web Developer</h1>
                         </div>
                         <p className="font-sans text-base tracking-wider md:text-lg">
-                            I am a hard worker with experience as a web
-                            developer. I love coding so I learn every day to
-                            improve my skills about web development. My
-                            experience is related to web development for about 1
-                            year using several technologies like ReactJS,
-                            ExpressJS, Laravel, Livewire etc to build websites.
+                            I am a hard worker with experience as a web developer. I love coding so
+                            I learn every day to improve my skills about web development. My
+                            experience is related to web development for about 1 year using several
+                            technologies like ReactJS, ExpressJS, Laravel, Livewire etc to build
+                            websites.
                         </p>
                     </div>
                     <div className="pt-10 text-base font-medium text-center md:text-left md:text-lg">
@@ -59,7 +43,6 @@ export default function Home() {
                 </div>
                 <div className="hidden w-full md:block justify-self-end">
                     <Image
-                        loader={ImageLoader}
                         alt="Edi Kurniawan"
                         src={MyPhoto}
                         layout="responsive"
@@ -77,14 +60,16 @@ export default function Home() {
                         href="https://www.linkedin.com/in/edikurniawan-dev/"
                         target="_blank"
                         rel="noreferrer"
-                        className="social-media">
+                        className="social-media"
+                    >
                         <FontAwesomeIcon icon={faLinkedinIn} />
                     </a>
                     <a
                         href="https://github.com/edikurniawan-dev"
                         target="_blank"
                         rel="noreferrer"
-                        className="social-media">
+                        className="social-media"
+                    >
                         <span>
                             <FontAwesomeIcon icon={faGithub} />
                         </span>
@@ -93,7 +78,8 @@ export default function Home() {
                         href="https://twitter.com/edikurnia_dev"
                         target="_blank"
                         rel="noreferrer"
-                        className="social-media">
+                        className="social-media"
+                    >
                         <span>
                             <FontAwesomeIcon icon={faTwitter} />
                         </span>
@@ -102,7 +88,8 @@ export default function Home() {
                         href="https://www.instagram.com/edi.kurniawan27/"
                         target="_blank"
                         rel="noreferrer"
-                        className="social-media">
+                        className="social-media"
+                    >
                         <span className="flex items-center justify-center">
                             <FontAwesomeIcon icon={faInstagram} />
                         </span>

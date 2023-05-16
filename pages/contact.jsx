@@ -1,10 +1,7 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
-import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
-import Layout from '../components/layout';
-
+import { ToastContainer, toast } from 'react-toastify';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faGithub,
@@ -15,6 +12,7 @@ import {
     faWhatsapp,
 } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import Layout from '../components/layout';
 
 export default function Contact() {
     const form = React.createRef();
@@ -22,12 +20,7 @@ export default function Contact() {
     const sendEmail = (e) => {
         e.preventDefault();
         emailjs
-            .sendForm(
-                'service_j710t24',
-                'template_32mnhrd',
-                e.target,
-                'user_LZaldX7s2kcQzGvNyHpuy',
-            )
+            .sendForm('service_j710t24', 'template_32mnhrd', e.target, 'user_LZaldX7s2kcQzGvNyHpuy')
             .then(
                 (result) => {
                     // console.log(result.text);
@@ -65,8 +58,8 @@ export default function Contact() {
             <div className="grid grid-cols-1 gap-8 font-sans text-base tracking-wider lg:grid-cols-2 md:text-lg text-dark dark:text-light">
                 <div className="flex flex-col justify-between">
                     <span className="pb-5">
-                        Contact me if you want to talk more about web
-                        development via social media or via form
+                        Contact me if you want to talk more about web development via social media
+                        or via form
                     </span>
                     <div className="grid grid-cols-1 gap-6">
                         <div className="flex flex-col items-center space-y-1">
@@ -74,11 +67,9 @@ export default function Contact() {
                                 href="https://wa.me/6281350400660"
                                 target="_blank"
                                 rel="noreferrer"
-                                className="social-media">
-                                <FontAwesomeIcon
-                                    icon={faWhatsapp}
-                                    className="px-0.5"
-                                />
+                                className="social-media"
+                            >
+                                <FontAwesomeIcon icon={faWhatsapp} className="px-0.5" />
                             </a>
                             <h1>+6281350400660</h1>
                         </div>
@@ -87,7 +78,8 @@ export default function Contact() {
                                 href="https://t.me/edikurniawan_dev"
                                 target="_blank"
                                 rel="noreferrer"
-                                className="social-media">
+                                className="social-media"
+                            >
                                 <FontAwesomeIcon icon={faTelegram} />
                             </a>
                             <h1>+6281350400660</h1>
@@ -98,7 +90,8 @@ export default function Contact() {
                                 href="mailto:edikurniawan.dev@gmail.com"
                                 target="_blank"
                                 rel="noreferrer"
-                                className="social-media">
+                                className="social-media"
+                            >
                                 <FontAwesomeIcon icon={faEnvelope} />
                             </a>
                             <span>edikurniawan.dev@gmail.com</span>
@@ -109,11 +102,9 @@ export default function Contact() {
                                 href="https://www.google.com/maps/place/Bandar+Lampung,+Kota+Bandar+Lampung,+Lampung/@-5.4068534,105.2817431,13z/data=!4m5!3m4!1s0x2e40da46f3aa6fbf:0x3039d80b220cc40!8m2!3d-5.3971396!4d105.2667887"
                                 target="_blank"
                                 rel="noreferrer"
-                                className="social-media">
-                                <FontAwesomeIcon
-                                    icon={faLocationDot}
-                                    className="px-1"
-                                />
+                                className="social-media"
+                            >
+                                <FontAwesomeIcon icon={faLocationDot} className="px-1" />
                             </a>
                             <span>Bandar Lampung, Lampung</span>
                         </div>
@@ -127,28 +118,32 @@ export default function Contact() {
                                 href="https://www.linkedin.com/in/edikurniawan-dev/"
                                 target="_blank"
                                 rel="noreferrer"
-                                className="social-media">
+                                className="social-media"
+                            >
                                 <FontAwesomeIcon icon={faLinkedinIn} />
                             </a>
                             <a
                                 href="https://github.com/edikurniawan-dev"
                                 target="_blank"
                                 rel="noreferrer"
-                                className="social-media">
+                                className="social-media"
+                            >
                                 <FontAwesomeIcon icon={faGithub} />
                             </a>
                             <a
                                 href="https://twitter.com/edikurnia_dev"
                                 target="_blank"
                                 rel="noreferrer"
-                                className="social-media">
+                                className="social-media"
+                            >
                                 <FontAwesomeIcon icon={faTwitter} />
                             </a>
                             <a
                                 href="https://www.instagram.com/edi.kurniawan27/"
                                 target="_blank"
                                 rel="noreferrer"
-                                className="social-media">
+                                className="social-media"
+                            >
                                 <FontAwesomeIcon icon={faInstagram} />
                             </a>
                         </div>
@@ -158,7 +153,8 @@ export default function Contact() {
                 <form
                     className="flex flex-col space-y-8 font-mono font-bold"
                     onSubmit={sendEmail}
-                    ref={form}>
+                    ref={form}
+                >
                     <div className="flex flex-col space-y-2">
                         <label>Name</label>
                         <input
@@ -196,7 +192,8 @@ export default function Contact() {
                     </div>
                     <button
                         className="h-10 font-mono font-bold border-2 bg-dark dark:bg-light text-light dark:text-dark md:h-12 hover:bg-light dark:hover:bg-dark hover:text-dark dark:hover:text-light border-dark dark:border-light"
-                        type="submit">
+                        type="submit"
+                    >
                         Send
                     </button>
                 </form>

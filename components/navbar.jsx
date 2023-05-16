@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useTheme } from 'next-themes';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faBriefcase,
@@ -29,12 +28,11 @@ export default function Navbar() {
             return (
                 <button
                     onClick={() => setTheme('light')}
-                    className="py-2 border-2 bg-light border-light md:py-0">
+                    className="py-2 border-2 bg-light border-light md:py-0"
+                >
                     <div className="flex items-center justify-center py-1 space-x-2 px-7">
                         <FontAwesomeIcon icon={faSun} className="text-black" />
-                        <p className="hidden font-mono font-medium text-black md:block">
-                            Lumos
-                        </p>
+                        <p className="hidden font-mono font-medium text-black md:block">Lumos</p>
                     </div>
                 </button>
             );
@@ -42,12 +40,11 @@ export default function Navbar() {
             return (
                 <button
                     onClick={() => setTheme('dark')}
-                    className="py-2 bg-black border-2 border-light md:py-0">
+                    className="py-2 bg-black border-2 border-light md:py-0"
+                >
                     <div className="flex items-center justify-center py-1 space-x-2 px-7">
                         <FontAwesomeIcon icon={faMoon} className="text-light" />
-                        <p className="hidden font-mono font-medium text-light md:block">
-                            Nox
-                        </p>
+                        <p className="hidden font-mono font-medium text-light md:block">Nox</p>
                     </div>
                 </button>
             );
@@ -86,7 +83,8 @@ export default function Navbar() {
                             className="h-12"
                             viewBox="0 0 900 900"
                             fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
                             <path
                                 fillRule="evenodd"
                                 clipRule="evenodd"
@@ -117,9 +115,7 @@ export default function Navbar() {
                             <a>Contact</a>
                         </Link>
                     </li>
-                    <li className="flex-col items-center hidden md:flex">
-                        {renderThemeChanger()}
-                    </li>
+                    <li className="flex-col items-center hidden md:flex">{renderThemeChanger()}</li>
                 </ul>
             </nav>
 
@@ -131,7 +127,8 @@ export default function Navbar() {
                             className="h-6"
                             viewBox="0 0 500 502"
                             fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
                             <path
                                 fillRule="evenodd"
                                 clipRule="evenodd"
@@ -145,40 +142,30 @@ export default function Navbar() {
                 <Link href="/experience">
                     <a className="flex flex-col items-center justify-end pt-3 pb-3 text-2xl md:hidden">
                         <FontAwesomeIcon icon={faBriefcase} />
-                        <span className="mt-1.5 font-bold text-xxs">
-                            Experience
-                        </span>
+                        <span className="mt-1.5 font-bold text-xxs">Experience</span>
                     </a>
                 </Link>
                 <Link href="/portfolio">
                     <a className="flex flex-col items-center justify-end pt-3 pb-3 text-2xl md:hidden">
                         <FontAwesomeIcon icon={faImage} />
-                        <span className="mt-1.5 font-bold text-xxs">
-                            Portfolio
-                        </span>
+                        <span className="mt-1.5 font-bold text-xxs">Portfolio</span>
                     </a>
                 </Link>
                 <Link href="/article">
                     <a className="flex flex-col items-center justify-end pt-3 pb-3 text-2xl md:hidden">
                         <FontAwesomeIcon icon={faNewspaper} />
-                        <span className="mt-1.5 font-bold text-xxs">
-                            Article
-                        </span>
+                        <span className="mt-1.5 font-bold text-xxs">Article</span>
                     </a>
                 </Link>
                 <Link href="/contact">
                     <a className="flex flex-col items-center justify-end pt-3 pb-3 text-2xl md:hidden">
                         <FontAwesomeIcon icon={faPhone} />
-                        <span className="mt-1.5 font-bold text-xxs">
-                            Contact
-                        </span>
+                        <span className="mt-1.5 font-bold text-xxs">Contact</span>
                     </a>
                 </Link>
             </div>
             <div className="fixed top-0 right-0 md:hidden">
-                <div className="flex flex-col items-center">
-                    {renderThemeChangerMobile()}
-                </div>
+                <div className="flex flex-col items-center">{renderThemeChangerMobile()}</div>
             </div>
         </header>
     );

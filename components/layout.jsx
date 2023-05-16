@@ -1,5 +1,4 @@
 import Head from 'next/head';
-
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 
@@ -20,9 +19,7 @@ export default function Layout({ title, description, keywords, children }) {
                             <Navbar />
                         </div>
                         <div className="px-5 mx-auto font-mono md:container md:px-8 md:max-w-6xl 2xl:max-w-7xl">
-                            <div className="flex flex-col pt-5 md:pt-7">
-                                {children}
-                            </div>
+                            <div className="flex flex-col pt-5 md:pt-7">{children}</div>
                         </div>
                     </div>
                     <div className="pt-8 pb-[4.2rem] md:pt-10 md:pb-0">
