@@ -6,7 +6,7 @@ on:
             - main
 
 jobs:
-    automation-job:
+    automation-test-job:
         runs-on: ubuntu-latest
 
         steps:
