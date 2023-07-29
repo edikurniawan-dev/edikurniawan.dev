@@ -18,33 +18,33 @@ export default function Experience() {
                         <ExperienceCard
                             place="flex justify-end w-full mx-auto items-center"
                             padding="w-full lg:w-1/2 lg:pl-20"
-                            companyName="PT Kreasi Layanan Medis (KLINIS)"
+                            companyName="PT Solarion Energi Alam"
                             during="Full-Stack Developer | July 2022 - Present"
-                            task="Develop a website according to company needs."
+                            task="Develop PV Monitoring System apps to monitoring solar panel"
                             number="4"
                         />
                         <ExperienceCard
                             place="flex justify-start w-full mx-auto items-center"
                             padding="w-full lg:w-1/2 lg:pr-20"
-                            companyName="CV Newus Teknologi"
-                            during="Full-Stack Web Developer | November 2021 - March 2022"
-                            task="Develop websites both frontend and backend according to client needs. Some of the websites that I have created are Sistem Informasi Tata Ruang Lampung Utara (Simtaru Lampura), PPDB SMA Perintis 2 and fix bug website SOP Kabupaten Mahakam Ulu."
+                            companyName="Dicoding Indonesia"
+                            during="React Developer Fasilitator | August 2022 - January 2023"
+                            task="Guiding IDCamp scholarship participants in the reactjs developer class"
                             number="3"
                         />
                         <ExperienceCard
                             place="flex justify-end w-full mx-auto items-center"
                             padding="w-full lg:w-1/2 lg:pl-20"
-                            companyName="PT Banopolis Inovasi Kendara (Intern)"
-                            during="Front-End Web Developer | June 2020 - July 2020"
-                            task="Develop UI website dashboard admin of Jaramba apps. I develope using figma, bootstrap, and sweetalert. This application serves to monitor the location of the bus that is running. In addition to storing route data, drivers, buses and bus travel history."
+                            companyName="CV Newus Teknologi"
+                            during="Full-Stack Web Developer | November 2021 - March 2022"
+                            task="Develop websites both frontend and backend according to client needs. Some of the websites that I have created are Sistem Informasi Tata Ruang Lampung Utara (Simtaru Lampura), PPDB SMA Perintis 2 and fix bug website SOP Kabupaten Mahakam Ulu."
                             number="2"
                         />
                         <ExperienceCard
                             place="flex justify-start w-full mx-auto items-center"
                             padding="w-full lg:w-1/2 lg:pr-20"
-                            companyName="Freeleance Web Developer"
-                            during="Web Developer | June 2020 - Present"
-                            task="Develop a website according to the client's request. Some of the websites that I created are the company profiles of the Yayasan Pelita Bersatu and Yayasan An-Nazhori."
+                            companyName="PT Banopolis Inovasi Kendara (Intern)"
+                            during="Front-End Web Developer | June 2020 - July 2020"
+                            task="Develop UI website dashboard admin of Jaramba apps. I develope using figma, bootstrap, and sweetalert. This application serves to monitor the location of the bus that is running. In addition to storing route data, drivers, buses and bus travel history."
                             number="1"
                         />
                     </div>
