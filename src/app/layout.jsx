@@ -1,6 +1,8 @@
 import './globals.css';
 import { Poppins } from 'next/font/google';
+
 import Providers from './providers';
+import Navbar from '@/components/Navbar';
 
 const poppins = Poppins({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'] });
 
@@ -13,7 +15,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={poppins.className}>
-        <Providers>{children}</Providers>
+        <Providers>
+          <Navbar />
+          {children}
+        </Providers>
       </body>
     </html>
   );
