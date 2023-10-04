@@ -22,5 +22,7 @@ module.exports = {
   },
   rules: {
     'import/no-extraneous-dependencies': 'off',
+    'react/jsx-props-no-spreading': 'off',
+    'object-curly-newline': 'off',
   },
 };
