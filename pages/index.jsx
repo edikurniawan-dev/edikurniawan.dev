@@ -1,17 +1,17 @@
-import Link from 'next/link';
-import Image from 'next/image';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedinIn, faGithub, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
-import Layout from '../components/layout';
-import SkillCard from '../components/skillcard';
-import MyPhoto from '../images/my-photo.png';
+import Link from "next/link";
+import Image from "next/image";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedinIn, faGithub, faTwitter, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import Layout from "../components/layout";
+import SkillCard from "../components/skillcard";
+import MyPhoto from "../images/my-photo.png";
 
 export default function Home() {
   return (
     <Layout>
       <div className="grid grid-cols-1 md:grid-cols-3">
         <div className="justify-center w-full mb-8 px-14 md:hidden">
-          <Image alt="Edi Kurniawan" src={MyPhoto} layout="responsive" placeholder="blur" unoptimized priority />
+          <Image alt="Edi Kurniawan" src={MyPhoto} placeholder="blur" unoptimized priority />
         </div>
         <div className="flex flex-col justify-center font-mono md:pl-0 md:col-span-2 text-dark dark:text-light md:space-y-5 lg:pr-20 xl:pr-24">
           <div className="space-y-6">
@@ -33,7 +33,7 @@ export default function Home() {
           </div>
         </div>
         <div className="hidden w-full md:block justify-self-end">
-          <Image alt="Edi Kurniawan" src={MyPhoto} layout="responsive" unoptimized priority />
+          <Image alt="Edi Kurniawan" src={MyPhoto} unoptimized priority />
         </div>
       </div>
       <div className="flex flex-col items-center pt-10 space-y-4">
