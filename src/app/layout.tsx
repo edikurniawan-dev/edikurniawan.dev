@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
+import { ThemeProvider } from "@/components/theme-provider";
 
-const inter = Inter({ subsets: ["latin"] });
 const jt_mono = JetBrains_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -14,13 +14,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
-      <body className={`${jt_mono.className} mx-auto flex min-h-dvh max-w-6xl flex-col text-base`}>
-        <Header />
-        <main className="flex grow flex-col px-10">
-          <div className="h-full grow border-x border-dashed px-10 py-5">{children}</div>
-        </main>
-        <Footer />
+    <html lang="en" suppressHydrationWarning>
+      <body className={jt_mono.className}>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <div className="mx-auto flex min-h-dvh max-w-6xl flex-col text-base">
+            <Header />
+            <div className="mx-10 h-full grow border-x border-dashed px-10 py-5">{children}</div>
+            <Footer />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );

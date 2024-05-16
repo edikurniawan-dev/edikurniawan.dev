@@ -97,31 +97,37 @@ export default function Carousel() {
   return (
     <>
       <div className="group mt-10 flex space-x-5 overflow-hidden">
-        <div className="animate-loop-scroll group-hover:paused flex space-x-5">
-          {icons.map((icon) => (
-            <div className="flex h-20 w-40 items-center justify-center rounded-lg border hover:shadow-lg">
+        <div className="group-hover:paused flex animate-loop-scroll space-x-5">
+          {icons.map((icon, i) => (
+            <div key={i} className="flex h-20 w-40 items-center justify-center rounded-lg border hover:shadow-lg">
               {icon.name}
             </div>
           ))}
         </div>
-        <div className="animate-loop-scroll group-hover:paused flex space-x-5" aria-hidden="true">
-          {icons.map((icon) => (
-            <div className="flex h-20 w-40 items-center justify-center rounded-lg border">{icon.name}</div>
+        <div className="group-hover:paused flex animate-loop-scroll space-x-5" aria-hidden="true">
+          {icons.map((icon, i) => (
+            <div key={i} className="flex h-20 w-40 items-center justify-center rounded-lg border">
+              {icon.name}
+            </div>
           ))}
         </div>
       </div>
       <div className="group mt-10 flex space-x-5 overflow-hidden">
-        <div className="animate-loop-scroll2 group-hover:paused flex space-x-5">
+        <div className="group-hover:paused flex animate-loop-scroll2 space-x-5">
           {icons
-            .map((icon) => (
-              <div className="flex h-20 w-40 items-center justify-center rounded-lg border">{icon.name}</div>
+            .map((icon, i) => (
+              <div key={i} className="flex h-20 w-40 items-center justify-center rounded-lg border">
+                {icon.name}
+              </div>
             ))
             .reverse()}
         </div>
-        <div className="animate-loop-scroll2 group-hover:paused flex space-x-5" aria-hidden="true">
+        <div className="group-hover:paused flex animate-loop-scroll2 space-x-5" aria-hidden="true">
           {icons
-            .map((icon) => (
-              <div className="flex h-20 w-40 items-center justify-center rounded-lg border">{icon.name}</div>
+            .map((icon, i) => (
+              <div key={i} className="flex h-20 w-40 items-center justify-center rounded-lg border">
+                {icon.name}
+              </div>
             ))
             .reverse()}
         </div>
