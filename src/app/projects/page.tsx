@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function Projects() {
   const data = [
     {
@@ -33,9 +31,9 @@ export default function Projects() {
 
       <div className="mt-5">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quidem quia quisquam quasi cumque aspernatur
-          explicabo adipisci qui assumenda? Quaerat pariatur quidem ipsam autem consectetur. Minima magnam tempore
-          dolores error!
+          Some of the projects I have worked on throughout my career in web development can be found on this page. Each
+          project showcases my dedication to creating innovative and functional solutions, as well as my commitment to
+          continuous learning and growth in this field.
         </p>
         <div className="mt-5 grid border-y border-l border-dashed md:grid-cols-2 [&>div:nth-child(5)]:border-b-transparent [&>div:nth-child(6)]:border-r [&>div:nth-child(6)]:border-dashed">
           {data.map((data, i) => (

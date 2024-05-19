@@ -1,4 +1,3 @@
-import React from "react";
 import {
   SiAntdesign,
   SiCapacitor,
@@ -97,14 +96,14 @@ export default function Carousel() {
   return (
     <>
       <div className="group mt-10 flex space-x-5 overflow-hidden">
-        <div className="group-hover:paused flex animate-loop-scroll space-x-5">
+        <div className="flex animate-loop-scroll space-x-5 group-hover:paused">
           {icons.map((icon, i) => (
             <div key={i} className="flex h-20 w-40 items-center justify-center rounded-lg border hover:shadow-lg">
               {icon.name}
             </div>
           ))}
         </div>
-        <div className="group-hover:paused flex animate-loop-scroll space-x-5" aria-hidden="true">
+        <div className="flex animate-loop-scroll space-x-5 group-hover:paused" aria-hidden="true">
           {icons.map((icon, i) => (
             <div key={i} className="flex h-20 w-40 items-center justify-center rounded-lg border">
               {icon.name}
@@ -113,7 +112,7 @@ export default function Carousel() {
         </div>
       </div>
       <div className="group mt-10 flex space-x-5 overflow-hidden">
-        <div className="group-hover:paused flex animate-loop-scroll2 space-x-5">
+        <div className="flex animate-loop-scroll2 space-x-5 group-hover:paused">
           {icons
             .map((icon, i) => (
               <div key={i} className="flex h-20 w-40 items-center justify-center rounded-lg border">
@@ -122,7 +121,7 @@ export default function Carousel() {
             ))
             .reverse()}
         </div>
-        <div className="group-hover:paused flex animate-loop-scroll2 space-x-5" aria-hidden="true">
+        <div className="flex animate-loop-scroll2 space-x-5 group-hover:paused" aria-hidden="true">
           {icons
             .map((icon, i) => (
               <div key={i} className="flex h-20 w-40 items-center justify-center rounded-lg border">

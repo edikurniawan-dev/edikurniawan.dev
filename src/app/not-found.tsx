@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import React from "react";
 
 export default function NotFound() {
   return (
@@ -10,9 +9,11 @@ export default function NotFound() {
       </h1>
       <p>What are you looking for dude?</p>
 
-      <Button variant="outline" className="mt-10">
-        <Link href="/">Go back to Home</Link>
-      </Button>
+      <Link href="/">
+        <Button variant="outline" className="mt-10">
+          Go back to Home
+        </Button>
+      </Link>
     </div>
   );
 }

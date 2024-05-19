@@ -1,9 +1,8 @@
 import { IconBrandInertiajs, IconBrandReactjs } from "@irsyadadl/paranoid";
 import Image from "next/image";
-import Carousel from "./components/Carousel";
+import Carousel from "./components/carousel";
 import { SiLaravel, SiNextdotjs, SiNodedotjs, SiReact } from "react-icons/si";
 import Link from "next/link";
-import Tag from "./components/Tag";
 import { Badge } from "@/components/ui/badge";
 
 export default function Home() {
