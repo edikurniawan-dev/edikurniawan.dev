@@ -1,13 +1,11 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono, Source_Sans_3, Roboto } from "next/font/google";
+import { Source_Sans_3 } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { ThemeProvider } from "@/components/theme-provider";
 
-const inter = Inter({ subsets: ["latin"] });
-const jt_mono = JetBrains_Mono({ subsets: ["latin"] });
-const roboto = Source_Sans_3({ subsets: ["latin"] });
+const sourceSans3 = Source_Sans_3({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Edi Kurniawan",
@@ -17,7 +15,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${roboto.className}`}>
+      <body className={`${sourceSans3.className}`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="mx-auto flex min-h-dvh max-w-6xl flex-col text-base">
             <Header />
