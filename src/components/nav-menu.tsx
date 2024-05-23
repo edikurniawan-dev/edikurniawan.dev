@@ -29,19 +29,19 @@ export default function NavMenu() {
         <Link href="/" className="flex items-center">
           Logo
         </Link>
-      </div>
-      <div className="flex gap-1">
-        {menus.map((menu, i) => (
-          <Link
-            key={i}
-            href={menu.href}
-            className={`${pathname === menu.href ? "bg-[hsl(var(--accent))]" : ""} rounded-md`}
-          >
-            <Button variant="ghost" className="text-base">
-              {menu.name}
-            </Button>
-          </Link>
-        ))}
+        <div className="flex gap-1">
+          {menus.map((menu, i) => (
+            <Link
+              key={i}
+              href={menu.href}
+              className={`${pathname === menu.href ? "bg-[hsl(var(--accent))]" : ""} rounded-md`}
+            >
+              <Button variant="ghost" className="text-base">
+                {menu.name}
+              </Button>
+            </Link>
+          ))}
+        </div>
       </div>
       <div className="">
         <ModeToggle />

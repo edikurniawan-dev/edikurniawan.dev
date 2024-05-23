@@ -1,5 +1,3 @@
-import { IconBrandInertiajs, IconBrandReactjs } from "@irsyadadl/paranoid";
-import Image from "next/image";
 import Carousel from "./components/carousel";
 import { SiLaravel, SiNextdotjs, SiNodedotjs, SiReact } from "react-icons/si";
 import Link from "next/link";
@@ -8,10 +6,10 @@ import { Badge } from "@/components/ui/badge";
 export default function Home() {
   return (
     <>
-      <section className="grid grid-cols-2 gap-10">
-        <div className="">
-          <p className="mb-5 text-2xl font-bold">Who am I .....?</p>
-          <div className="mt-4 leading-relaxed">
+      <section className="">
+        <div className="mx-auto flex max-w-4xl items-center gap-10">
+          <p className="mb-5 w-auto items-center text-center text-5xl font-bold">Who am I .....?</p>
+          <div className="flex-1 leading-relaxed">
             I'm <b>Edi Kurniawan</b> a Web Developer with work experience in web application development. I have skills
             in developing web applications using several technologies like{" "}
             <Badge variant="outline">
