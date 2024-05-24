@@ -136,7 +136,10 @@ export default function FormContact() {
             )}
           />
 
-          <div className="flex justify-end">
+          <div className="flex justify-end gap-3">
+            <Button type="button" disabled={isLoading} variant="outline" onClick={() => form.reset()}>
+              Cancel
+            </Button>
             <Button type="submit" disabled={isLoading}>
               Submit
             </Button>
