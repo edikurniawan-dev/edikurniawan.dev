@@ -6,6 +6,7 @@ import {
   SiBootstrap,
   SiCapacitor,
   SiCss3,
+  SiDaisyui,
   SiElementor,
   SiExpress,
   SiFramer,
@@ -20,6 +21,7 @@ import {
   SiMysql,
   SiNextdotjs,
   SiReact,
+  SiRedux,
   SiTailwindcss,
   SiWordpress,
 } from "react-icons/si";
@@ -149,12 +151,13 @@ export default function Projects() {
           link: "https://react.dev/",
         },
         {
-          name: "Eleementor",
+          name: "Elementor",
           icon: <SiElementor />,
           link: "https://react.dev/",
         },
       ],
     },
+
     {
       title: "Indonesia AI Innovation Challenge 2023",
       content:
@@ -275,6 +278,52 @@ export default function Projects() {
         {
           name: "Mongoose",
           icon: <SiMongoose />,
+          link: "https://react.dev/",
+        },
+      ],
+    },
+    {
+      title: "Notes App",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, voluptatibus placeat similique omnis temporibus quis unde fuga asperiores, ipsam dolor nesciunt animi rerum cum? Sapiente omnis nihil eum. Eum, facere",
+      link: "https://notes-app.edikurniawan.dev/",
+      techStacks: [
+        {
+          name: "ReactJS",
+          icon: <SiReact />,
+          link: "https://react.dev/",
+        },
+        {
+          name: "DaisyUI",
+          icon: <SiDaisyui />,
+          link: "https://react.dev/",
+        },
+        {
+          name: "TailwindCSS",
+          icon: <SiTailwindcss />,
+          link: "https://react.dev/",
+        },
+      ],
+    },
+    {
+      title: "Forum App",
+      content:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, voluptatibus placeat similique omnis temporibus quis unde fuga asperiores, ipsam dolor nesciunt animi rerum cum? Sapiente omnis nihil eum. Eum, facere",
+      link: "https://forum-app.edikurniawan.dev/",
+      techStacks: [
+        {
+          name: "ReactJS",
+          icon: <SiReact />,
+          link: "https://react.dev/",
+        },
+        {
+          name: "TailwindCSS",
+          icon: <SiTailwindcss />,
+          link: "https://react.dev/",
+        },
+        {
+          name: "Redux",
+          icon: <SiRedux />,
           link: "https://react.dev/",
         },
       ],
