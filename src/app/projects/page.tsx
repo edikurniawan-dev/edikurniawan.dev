@@ -23,7 +23,10 @@ import {
   SiTailwindcss,
   SiWordpress,
 } from "react-icons/si";
-import { text } from "stream/consumers";
+
+export const metadata = {
+  title: "Projects",
+};
 
 export default function Projects() {
   const projects = [

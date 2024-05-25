@@ -1,6 +1,10 @@
 import ExperienceCard from "./components/experience-card";
 
-export default function page() {
+export const metadata = {
+  title: "Experience",
+};
+
+export default function Experience() {
   const experiences = [
     {
       position: "Front-End Web Developer (Intern)",

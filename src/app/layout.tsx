@@ -10,7 +10,10 @@ import { ThemeProvider } from "@/components/theme-provider";
 const sourceSans3 = Source_Sans_3({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Edi Kurniawan",
+  title: {
+    template: "%s | Edi Kurniawan",
+    default: "Edi Kurniawan",
+  },
   description: "A Web Developer",
 };
 

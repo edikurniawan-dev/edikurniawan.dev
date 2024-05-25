@@ -1,5 +1,9 @@
 import FormContact from "./components/form-contact";
 
+export const metadata = {
+  title: "Contact",
+};
+
 export default function Contact() {
   return (
     <>
