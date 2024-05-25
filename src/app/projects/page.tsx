@@ -157,12 +157,13 @@ export default function Projects() {
           link: "https://wordpress.com/",
         },
         {
-          name: "Eleementor",
+          name: "Elementor",
           icon: <SiElementor />,
           link: "https://elementor.com/",
         },
       ],
     },
+
     {
       title: "Indonesia AI Innovation Challenge 2023",
       content:
