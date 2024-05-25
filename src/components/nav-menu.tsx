@@ -31,9 +31,9 @@ export default function NavMenu() {
   return (
     <>
       <div className="hidden h-full w-full items-center justify-between border-x border-dashed px-10 md:flex">
-        <div className="item-center flex gap-5">
+        <div className="flex items-center gap-5">
           <Link href="/">
-            <Logo className="h-10 w-10 text-[hsl(var(--foreground))]" />
+            <Logo className="h-8 w-8 text-[hsl(var(--foreground))]" />
           </Link>
           <div className="flex gap-1">
             {menus.map((menu, i) => (

@@ -57,9 +57,9 @@ export default function ExperienceCard({
   }
 
   return (
-    <div className="relative flex flex-col items-center lg:flex-row">
+    <div className="relative flex flex-col items-center md:flex-row">
       <div className={cn(experienceCardPlaceVariants({ place }))}>
-        <div className={`${place === "left" ? "lg:pr-8" : "lg:pl-8"} w-full lg:w-1/2`}>
+        <div className={`${place === "left" ? "md:pr-8" : "md:pl-8"} w-full md:w-1/2`}>
           <div className="rounded-md border border-dashed">
             <div className="border-b border-dashed p-5">
               <div className="flex items-center justify-between text-lg font-bold">
@@ -68,7 +68,7 @@ export default function ExperienceCard({
                 <OptionToggle companyWebsite={companyWebsite} companyLinkedin={companyLinkedin} />
               </div>
               <p>{companyName}</p>
-              <div className="flex items-center gap-1">
+              <div className="flex flex-wrap items-center gap-1">
                 <Badge>{durationTime}</Badge>
                 <p className="text-sm"> / {durationText}</p>
               </div>
@@ -80,7 +80,7 @@ export default function ExperienceCard({
         </div>
       </div>
 
-      <div className="absolute left-1/2 flex h-8 w-8 -translate-x-1/2 -translate-y-6 transform items-center justify-center overflow-hidden rounded-md border border-dashed bg-[hsl(var(--background))] font-bold lg:translate-y-0">
+      <div className="absolute left-1/2 flex h-8 w-8 -translate-x-1/2 -translate-y-6 transform items-center justify-center overflow-hidden rounded-md border border-dashed bg-[hsl(var(--background))] font-bold md:translate-y-0">
         {number}
       </div>
     </div>
