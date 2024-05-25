@@ -1,13 +1,12 @@
 import { useTheme } from "next-themes";
-
-import { Button } from "@/components/ui/button";
+import { IconCircleHalf, IconDeviceDesktop, IconMoon, IconSun } from "@irsyadadl/paranoid";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { IconCircleHalf, IconDeviceDesktop, IconMoon, IconSun } from "@irsyadadl/paranoid";
+import { Button } from "@/components/ui/button";
 
 export function ModeToggle() {
   const { setTheme } = useTheme();
@@ -16,7 +15,7 @@ export function ModeToggle() {
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
         <Button variant="ghost" size="icon">
-          <IconCircleHalf className="size-5" />
+          <IconCircleHalf className="size-6 md:size-5" />
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">

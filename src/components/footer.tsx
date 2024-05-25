@@ -1,21 +1,21 @@
 import Link from "next/link";
 import { SiGithub, SiGmail, SiLinkedin } from "react-icons/si";
+import { IconPlus } from "@irsyadadl/paranoid";
 import { Button } from "./ui/button";
-import { IconChevronLgLeft, IconChevronLgRight, IconPlus } from "@irsyadadl/paranoid";
 
 export function Footer() {
   return (
-    <div className="relative h-16 border-y border-dashed px-14">
-      <IconPlus className="absolute -top-2.5 left-[47px] size-5" />
-      <IconPlus className="absolute -top-2.5 right-[47px] size-5" />
+    <div className="relative h-[90px] border-y border-dashed px-5 pb-2.5 sm:h-16 md:px-14 md:pb-0">
+      <IconPlus className="absolute -top-2.5 left-[11px] size-5 md:left-[47px]" />
+      <IconPlus className="absolute -top-2.5 right-[11px] size-5 md:right-[47px]" />
 
-      <IconChevronLgLeft className="absolute -bottom-[6px] left-[51px] size-4 -rotate-45" />
-      <IconChevronLgLeft className="absolute -bottom-[6px] left-[46px] size-4 -rotate-[135deg]" />
-      <IconChevronLgRight className="absolute -bottom-[6px] right-[51px] size-4 rotate-45" />
-      <IconChevronLgRight className="absolute -bottom-[6px] right-[46px] size-4 rotate-[135deg]" />
+      <IconPlus className="absolute -bottom-2.5 left-[11px] size-5 md:left-[47px]" />
+      <IconPlus className="absolute -bottom-2.5 right-[11px] size-5 md:right-[47px]" />
 
-      <div className="flex h-full w-full items-center justify-between border-x border-dashed px-10">
-        <div className="text-[13px]">© 2024 edikurniawan.dev by Edi Kurniawan. All rights reserved.</div>
+      <div className="flex h-full w-full flex-col-reverse items-center justify-center gap-1 border-x border-dashed px-5 md:flex-row md:justify-between md:gap-0 md:px-10">
+        <p className="text-center text-[13px] leading-3">
+          © 2024 edikurniawan.dev by Edi Kurniawan. All rights reserved.
+        </p>
         <div className="flex items-center">
           <Link href="mailto:edikurniawan.dev@gmail.com" target="_blank">
             <Button size="icon" variant="ghost">
