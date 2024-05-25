@@ -1,11 +1,13 @@
 import { Badge, badgeVariants } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import Link from "next/link";
 import {
   SiAntdesign,
   SiBootstrap,
   SiCapacitor,
   SiCss3,
+  SiDaisyui,
   SiElementor,
   SiExpress,
   SiFramer,
@@ -20,12 +22,15 @@ import {
   SiMysql,
   SiNextdotjs,
   SiReact,
+  SiRedux,
   SiTailwindcss,
   SiWordpress,
 } from "react-icons/si";
 
 export const metadata = {
   title: "Projects",
+  description:
+    "Some of the projects I have worked on throughout my career in web development can be found on this page. Each project showcases my dedication to creating innovative and functional solutions, as well as my commitment to continuous learning and growth in this field.",
 };
 
 export default function Projects() {
@@ -39,22 +44,22 @@ export default function Projects() {
         {
           name: "HTML",
           icon: <SiHtml5 />,
-          link: "https://react.dev/",
+          link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
         },
         {
           name: "CSS",
           icon: <SiCss3 />,
-          link: "https://react.dev/",
+          link: "https://developer.mozilla.org/en-US/docs/Web/CSS/",
         },
         {
           name: "Bootstrap",
           icon: <SiBootstrap />,
-          link: "https://react.dev/",
+          link: "https://getbootstrap.com/",
         },
         {
           name: "Javascript",
           icon: <SiJavascript />,
-          link: "https://react.dev/",
+          link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
         },
       ],
     },
@@ -71,17 +76,17 @@ export default function Projects() {
         {
           name: "Livewire",
           icon: <SiLivewire />,
-          link: "https://react.dev/",
+          link: "https://livewire.laravel.com/",
         },
         {
           name: "Bootstrap",
           icon: <SiBootstrap />,
-          link: "https://react.dev/",
+          link: "https://getbootstrap.com/",
         },
         {
           name: "MySQL",
           icon: <SiMysql />,
-          link: "https://react.dev/",
+          link: "https://www.mysql.com/",
         },
       ],
     },
@@ -99,24 +104,24 @@ export default function Projects() {
         {
           name: "Livewire",
           icon: <SiLivewire />,
-          link: "https://react.dev/",
+          link: "https://livewire.laravel.com/",
         },
         {
           name: "TailwindCSS",
           icon: <SiTailwindcss />,
-          link: "https://react.dev/",
+          link: "https://tailwindcss.com/",
         },
         {
           name: "MySQL",
           icon: <SiMysql />,
-          link: "https://react.dev/",
+          link: "https://www.mysql.com/",
         },
       ],
     },
     {
       title: "IVS Member",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, voluptatibus placeat similique omnis temporibus quis unde fuga asperiores, ipsam dolor nesciunt animi rerum cum? Sapiente omnis nihil eum. Eum, facere",
+        "The IVS Member website is dedicated to managing Indonesian Vegan Society (IVS) members and everything in the IVS Member application on the Playstore.",
       link: "https://www.ivsmember.com/",
       techStacks: [
         {
@@ -127,17 +132,17 @@ export default function Projects() {
         {
           name: "Livewire",
           icon: <SiLivewire />,
-          link: "https://react.dev/",
+          link: "https://livewire.laravel.com/",
         },
         {
           name: "Bootstrap",
           icon: <SiBootstrap />,
-          link: "https://react.dev/",
+          link: "https://getbootstrap.com/",
         },
         {
           name: "MySQL",
           icon: <SiMysql />,
-          link: "https://react.dev/",
+          link: "https://www.mysql.com/",
         },
       ],
     },
@@ -149,154 +154,96 @@ export default function Projects() {
         {
           name: "Wordpress",
           icon: <SiWordpress />,
-          link: "https://react.dev/",
+          link: "https://wordpress.com/",
         },
         {
           name: "Eleementor",
           icon: <SiElementor />,
-          link: "https://react.dev/",
+          link: "https://elementor.com/",
         },
       ],
     },
     {
       title: "Indonesia AI Innovation Challenge 2023",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, voluptatibus placeat similique omnis temporibus quis unde fuga asperiores, ipsam dolor nesciunt animi rerum cum? Sapiente omnis nihil eum. Eum, facere",
+        "Indonesia AI Innovation Challenge, AiNOC or Indonesia AI Innovation Challenge 2023 is a challenge to develop and demonstate how human can collaborate with Artificial Intelligence (AI) technologies to overcome challenges and problems as the most recent innovation progression.",
       link: "https://aichallenge-indonesia.id/",
       techStacks: [
         {
           name: "NextJS",
           icon: <SiNextdotjs />,
-          link: "https://react.dev/",
+          link: "https://nextjs.org/",
         },
         {
-          name: "React",
+          name: "ReactJS",
           icon: <SiReact />,
           link: "https://react.dev/",
         },
         {
           name: "Tailwind CSS",
           icon: <SiTailwindcss />,
-          link: "https://react.dev/",
+          link: "https://tailwindcss.com/",
         },
       ],
     },
     {
       title: "Monitoring Solar Panel",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, voluptatibus placeat similique omnis temporibus quis unde fuga asperiores, ipsam dolor nesciunt animi rerum cum? Sapiente omnis nihil eum. Eum, facere",
+        "The PV Monitoring System by SOLARION application is a solution designed to help users efficiently monitor and manage their solar panel systems created by PT Solarion Energi Alam. The main goal of this app is to help users monitor and optimize their solar panel systems. This includes providing updates on system performance, enabling users to monitor electricity production in real-time, and providing suggestions for improvements.",
       link: "https://monitoring.solarion.co/",
       techStacks: [
         {
-          name: "React",
+          name: "ReactJS",
           icon: <SiReact />,
           link: "https://react.dev/",
         },
         {
           name: "Ant Design",
           icon: <SiAntdesign />,
-          link: "https://react.dev/",
+          link: "https://ant.design/",
         },
         {
           name: "Tailwind CSS",
           icon: <SiTailwindcss />,
-          link: "https://react.dev/",
+          link: "https://tailwindcss.com/",
         },
         {
           name: "Framer Motion",
           icon: <SiFramer />,
-          link: "https://react.dev/",
+          link: "https://www.framer.com/motion/",
         },
         {
           name: "Mapbox",
           icon: <SiMapbox />,
-          link: "https://react.dev/",
+          link: "https://www.mapbox.com/",
         },
         {
           name: "ExpressJS",
           icon: <SiExpress />,
-          link: "https://react.dev/",
+          link: "https://expressjs.com/",
         },
         {
           name: "MongoDB",
           icon: <SiMongodb />,
-          link: "https://react.dev/",
+          link: "https://www.mongodb.com/",
         },
         {
           name: "Mongoose",
           icon: <SiMongoose />,
-          link: "https://react.dev/",
+          link: "https://mongoosejs.com/",
         },
       ],
     },
     {
       title: "Monitoring Solar Panel (Mobile)",
       content:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, voluptatibus placeat similique omnis temporibus quis unde fuga asperiores, ipsam dolor nesciunt animi rerum cum? Sapiente omnis nihil eum. Eum, facere",
+        "The PV Monitoring System by SOLARION application is a solution designed to help users efficiently monitor and manage their solar panel systems created by PT Solarion Energi Alam. The main goal of this app is to help users monitor and optimize their solar panel systems. This includes providing updates on system performance, enabling users to monitor electricity production in real-time, and providing suggestions for improvements.",
       link: "https://play.google.com/store/apps/details?id=com.solarion.pvmonitoringsystem&hl=en_US",
       techStacks: [
         {
           name: "Capacitor",
           icon: <SiCapacitor />,
-          link: "https://react.dev/",
-        },
-        {
-          name: "React",
-          icon: <SiReact />,
-          link: "https://react.dev/",
-        },
-        {
-          name: "Ant Design",
-          icon: <SiAntdesign />,
-          link: "https://react.dev/",
-        },
-        {
-          name: "Tailwind CSS",
-          icon: <SiTailwindcss />,
-          link: "https://react.dev/",
-        },
-        {
-          name: "Framer Motion",
-          icon: <SiFramer />,
-          link: "https://react.dev/",
-        },
-        {
-          name: "Mapbox",
-          icon: <SiMapbox />,
-          link: "https://react.dev/",
-        },
-        {
-          name: "ExpressJS",
-          icon: <SiExpress />,
-          link: "https://react.dev/",
-        },
-        {
-          name: "MongoDB",
-          icon: <SiMongodb />,
-          link: "https://react.dev/",
-        },
-        {
-          name: "Mongoose",
-          icon: <SiMongoose />,
-          link: "https://react.dev/",
-        },
-      ],
-    },
-    {
-      title: "Payroll Department ES",
-      content:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, voluptatibus placeat similique omnis temporibus quis unde fuga asperiores, ipsam dolor nesciunt animi rerum cum? Sapiente omnis nihil eum. Eum, facere",
-      link: "https://esd-payroll.os-selnajaya.com/",
-      techStacks: [
-        {
-          name: "Laravel",
-          icon: <SiLaravel />,
-          link: "https://react.dev/",
-        },
-        {
-          name: "InertiaJS",
-          icon: <SiInertia />,
-          link: "https://react.dev/",
+          link: "https://capacitorjs.com/",
         },
         {
           name: "ReactJS",
@@ -306,17 +253,118 @@ export default function Projects() {
         {
           name: "Ant Design",
           icon: <SiAntdesign />,
+          link: "https://ant.design/",
+        },
+        {
+          name: "Tailwind CSS",
+          icon: <SiTailwindcss />,
+          link: "https://tailwindcss.com/",
+        },
+        {
+          name: "Framer Motion",
+          icon: <SiFramer />,
+          link: "https://www.framer.com/motion/",
+        },
+        {
+          name: "Mapbox",
+          icon: <SiMapbox />,
+          link: "https://www.mapbox.com/",
+        },
+        {
+          name: "ExpressJS",
+          icon: <SiExpress />,
+          link: "https://expressjs.com/",
+        },
+        {
+          name: "MongoDB",
+          icon: <SiMongodb />,
+          link: "https://www.mongodb.com/",
+        },
+        {
+          name: "Mongoose",
+          icon: <SiMongoose />,
+          link: "https://mongoosejs.com/",
+        },
+      ],
+    },
+    {
+      title: "Notes App",
+      content: "Final submission in the 'Belajar Fundamental Aplikasi Web dengan React' class at Dicoding",
+      link: "https://notes-app.edikurniawan.dev/",
+      techStacks: [
+        {
+          name: "ReactJS",
+          icon: <SiReact />,
           link: "https://react.dev/",
+        },
+        {
+          name: "DaisyUI",
+          icon: <SiDaisyui />,
+          link: "https://daisyui.com/",
+        },
+        {
+          name: "TailwindCSS",
+          icon: <SiTailwindcss />,
+          link: "https://tailwindcss.com/",
+        },
+      ],
+    },
+    {
+      title: "Forum App",
+      content: "Final submission in the 'Menjadi React Web Developer Expert' class at Dicoding",
+      link: "https://forum-app.edikurniawan.dev/",
+      techStacks: [
+        {
+          name: "ReactJS",
+          icon: <SiReact />,
+          link: "https://react.dev/",
+        },
+        {
+          name: "TailwindCSS",
+          icon: <SiTailwindcss />,
+          link: "https://tailwindcss.com/",
+        },
+        {
+          name: "Redux",
+          icon: <SiRedux />,
+          link: "https://redux.js.org/",
+        },
+      ],
+    },
+    {
+      title: "Payroll Department ES",
+      content: "This website is aimed at the ES department to manage their clients' payroll",
+      link: "https://esd-payroll.os-selnajaya.com/",
+      techStacks: [
+        {
+          name: "Laravel",
+          icon: <SiLaravel />,
+          link: "https://laravelev/",
+        },
+        {
+          name: "InertiaJS",
+          icon: <SiInertia />,
+          link: "https://inertiajs.com/",
+        },
+        {
+          name: "ReactJS",
+          icon: <SiReact />,
+          link: "https://react.dev/",
+        },
+        {
+          name: "Ant Design",
+          icon: <SiAntdesign />,
+          link: "https://ant.design/",
         },
         {
           name: "TaiwindCSS",
           icon: <SiTailwindcss />,
-          link: "https://react.dev/",
+          link: "https://tailwindcss.com/",
         },
         {
           name: "MySQL",
           icon: <SiMysql />,
-          link: "https://react.dev/",
+          link: "https://www.mysql.com/",
         },
       ],
     },
@@ -334,11 +382,20 @@ export default function Projects() {
 
       <div className="mt-5 grid grid-cols-2 gap-5">
         {projects.reverse().map((project, i) => (
-          <div key={i} className="flex flex-col rounded-md border border-dashed p-6 sm:p-8">
+          <div key={i} className="relative flex flex-col rounded-md border border-dashed p-6 sm:p-8">
             <div className="grow">
               <div className="text-lg font-bold">{project.title}</div>
 
-              <p className="mt-2">{project.content}</p>
+              <TooltipProvider>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <p className="mt-2 line-clamp-3">{project.content}</p>
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p className="max-w-96">{project.content}</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
 
               <div className="mt-5 flex flex-wrap gap-1">
                 {project.techStacks.map((tech, j) => (
