@@ -74,9 +74,9 @@ export default function Experience() {
       </p>
 
       <div className="mt-5">
-        <div className="relative space-y-16 lg:space-y-0">
+        <div className="relative space-y-16 md:space-y-0">
           {/* vertical line */}
-          <div className="absolute left-1/2 hidden h-full -translate-x-1/2 transform border-l border-dashed lg:block"></div>
+          <div className="absolute left-1/2 hidden h-full -translate-x-1/2 transform border-l border-dashed md:block"></div>
           {experiences.reverse().map((experience, i) => (
             <ExperienceCard
               key={i}
