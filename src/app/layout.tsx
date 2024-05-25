@@ -14,7 +14,8 @@ export const metadata: Metadata = {
     template: "%s | Edi Kurniawan",
     default: "Edi Kurniawan",
   },
-  description: "A Web Developer",
+  description:
+    "I'm Edi Kurniawan a Web Developer with work experience in web application development. I have skills in developing web applications using several technologies like ReactJS with NextJS as react framework in frontend and Laravel or NodeJS in backend.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

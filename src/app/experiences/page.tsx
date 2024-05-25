@@ -2,6 +2,8 @@ import ExperienceCard from "./components/experience-card";
 
 export const metadata = {
   title: "Experience",
+  description:
+    "The Experience page summarizes my professional journey as a web developer. With over 2 years of experience, I have worked with various technologies such as JavaScript, React, Next.js, Laravel, and Node.js. Each role I have held provides insights into my contributions to previous projects, as well as the skills and achievements I have attained. Explore further to see how my experience can add value to your projects.",
 };
 
 export default function Experience() {
