@@ -1,3 +1,6 @@
+import Link from "next/link";
+import { FaEllipsisVertical, FaLinkedin } from "react-icons/fa6";
+import { TbWorldUpload } from "react-icons/tb";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -5,9 +8,6 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import Link from "next/link";
-import { FaEllipsisVertical, FaLinkedin } from "react-icons/fa6";
-import { TbWorldUpload } from "react-icons/tb";
 
 interface OptionToggleProps {
   companyWebsite: string | null;

@@ -1,6 +1,3 @@
-import { Badge, badgeVariants } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import Link from "next/link";
 import {
   SiAntdesign,
@@ -26,6 +23,9 @@ import {
   SiTailwindcss,
   SiWordpress,
 } from "react-icons/si";
+import { badgeVariants } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 
 export const metadata = {
   title: "Projects",
@@ -381,7 +381,7 @@ export default function Projects() {
         continuous learning and growth in this field.
       </p>
 
-      <div className="mt-5 grid grid-cols-2 gap-5">
+      <div className="mt-5 grid grid-cols-1 gap-5 md:grid-cols-2">
         {projects.reverse().map((project, i) => (
           <div key={i} className="relative flex flex-col rounded-md border border-dashed p-6 sm:p-8">
             <div className="grow">

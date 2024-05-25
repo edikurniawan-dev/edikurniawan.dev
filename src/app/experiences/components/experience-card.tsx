@@ -1,8 +1,8 @@
-import { Badge } from "@/components/ui/badge";
-import { cn } from "@/lib/utils";
-import { cva, type VariantProps } from "class-variance-authority";
 import dayjs from "dayjs";
 import duration from "dayjs/plugin/duration";
+import { cn } from "@/lib/utils";
+import { cva, type VariantProps } from "class-variance-authority";
+import { Badge } from "@/components/ui/badge";
 import { OptionToggle } from "./option-toggle";
 
 dayjs.extend(duration);
