@@ -10,8 +10,12 @@ import { ThemeProvider } from "@/components/theme-provider";
 const sourceSans3 = Source_Sans_3({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Edi Kurniawan",
-  description: "A Web Developer",
+  title: {
+    template: "%s | Edi Kurniawan",
+    default: "Edi Kurniawan",
+  },
+  description:
+    "I'm Edi Kurniawan a Web Developer with work experience in web application development. I have skills in developing web applications using several technologies like ReactJS with NextJS as react framework in frontend and Laravel or NodeJS in backend.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Button } from "./ui/button";
 import { ModeToggle } from "./mode-toggle";
 import { usePathname } from "next/navigation";
+import { Logo } from "./logo";
 
 export default function NavMenu() {
   const pathname = usePathname();
@@ -26,8 +27,8 @@ export default function NavMenu() {
   return (
     <div className="flex h-full w-full items-center justify-between border-x border-dashed px-10">
       <div className="item-center flex gap-5">
-        <Link href="/" className="flex items-center">
-          Logo
+        <Link href="/">
+          <Logo className="h-10 w-10 text-[hsl(var(--foreground))]" />
         </Link>
         <div className="flex gap-1">
           {menus.map((menu, i) => (
