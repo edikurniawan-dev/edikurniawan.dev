@@ -31,7 +31,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
               <IconPlus className="absolute -left-[11px] top-2.5 size-5" />
               <IconPlus className="absolute -right-[11px] top-2.5 size-5" />
             </div>
-            <div className="flex h-full grow flex-col overflow-hidden border-t border-dashed pb-[62px] md:pb-0">
+            <div className="flex h-full grow flex-col overflow-hidden border-t border-dashed pb-[62px] md:border-none md:pb-0">
               <div className="mx-5 h-full grow border-x border-dashed px-5 py-5 md:mx-14 md:px-10">{children}</div>
               <Footer />
             </div>
