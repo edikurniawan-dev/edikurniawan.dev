@@ -136,7 +136,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="grid grid-cols-1 divide-y divide-dashed border border-dashed md:grid-cols-2 md:divide-x md:divide-y-0">
+      <div className="grid grid-cols-1 divide-y divide-dashed rounded-lg border border-dashed md:grid-cols-2 md:divide-x md:divide-y-0">
         <div className="flex h-full flex-col p-5">
           <div className="">
             <div className="flex items-center justify-between text-lg font-bold">IT Developer</div>
