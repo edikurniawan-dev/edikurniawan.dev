@@ -85,3 +85,22 @@
   width: 0;
   height: 0;
 }
+
+.rfm-overlay {
+  --gradient-color: #ffffff !important;
+}
+.dark {
+  .rfm-overlay {
+    --gradient-color: #09090b !important;
+  }
+}
+@media (min-width: 768px) {
+  .rfm-overlay {
+    --gradient-width: 100px !important;
+  }
+  .dark {
+    .rfm-overlay {
+      --gradient-wodth: 100px !important;
+    }
+  }
+}
