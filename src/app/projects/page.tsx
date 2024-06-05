@@ -119,6 +119,24 @@ export default function Projects() {
       ],
     },
     {
+      title: "Laravel Stisla",
+      content:
+        "Laravel Stisla is an admin dashboard template generated from https://demo.getstisla.com/. Stisla it self is a Free Bootstrap Admin Template which will help you to speed up your project and design your own dashboard UI.",
+      link: "https://github.com/edikurniawan-dev/laravel-stisla",
+      techStacks: [
+        {
+          name: "Laravel",
+          icon: <SiLaravel />,
+          link: "https://laravel.com/",
+        },
+        {
+          name: "Bootstrap",
+          icon: <SiBootstrap />,
+          link: "https://getbootstrap.com/",
+        },
+      ],
+    },
+    {
       title: "IVS Member",
       content:
         "The IVS Member website is dedicated to managing Indonesian Vegan Society (IVS) members and everything in the IVS Member application on the Playstore.",
