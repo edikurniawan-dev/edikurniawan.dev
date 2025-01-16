@@ -1,7 +1,11 @@
+"use client";
+
+import React from "react";
 import dayjs from "dayjs";
 import duration from "dayjs/plugin/duration";
 import { cn } from "@/lib/utils";
 import { cva, type VariantProps } from "class-variance-authority";
+import { useEffect, useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { OptionToggle } from "./option-toggle";
 
@@ -24,7 +28,7 @@ interface ExperienceCardProps extends VariantProps<typeof experienceCardPlaceVar
   companyWebsite: string | null;
   companyLinkedin: string | null;
   position: string;
-  duration: Array<number>;
+  duration: Array<string>;
   taskDesc: string;
   number: number;
 }
@@ -39,22 +43,25 @@ export default function ExperienceCard({
   number,
   place,
 }: ExperienceCardProps) {
-  const durationTime =
-    dayjs(duration[0]).format("MMM YYYY") + " - " + (duration[1] ? dayjs(duration[1]).format("MMM YYYY") : "Now");
+  const [currentDate, setCurrentDate] = useState(dayjs());
 
-  const startDate = dayjs(duration[0]);
-  const endDate = dayjs(duration[1] || dayjs());
+  useEffect(() => {
+    setCurrentDate(dayjs());
+  }, []);
 
-  const totalMonths = endDate.diff(startDate, "month") + 1;
-  const years = Math.floor(totalMonths / 12);
-  const months = totalMonths % 12;
+  const startDate = dayjs(duration[0], "YYYY-MM");
+  const endDate = duration[1] !== "now" ? dayjs(duration[1], "YYYY-MM") : currentDate;
 
-  let durationText;
-  if (years > 0) {
-    durationText = `${years} year${years > 1 ? "s" : ""} ${months} month${months > 1 ? "s" : ""}`;
-  } else {
-    durationText = `${months} month${months > 1 ? "s" : ""}`;
-  }
+  const diffInMonths = endDate.diff(startDate, "month") + 1;
+
+  const durationDiff = dayjs.duration(diffInMonths, "months");
+
+  const years = durationDiff.years();
+  const months = durationDiff.months();
+
+  const result = years
+    ? `${years} year${years !== 1 ? "s" : ""} ${months} month${months !== 1 ? "s" : ""}`
+    : `${months} month${months !== 1 ? "s" : ""}`;
 
   return (
     <div className="relative flex flex-col items-center md:flex-row">
@@ -69,8 +76,8 @@ export default function ExperienceCard({
               </div>
               <p>{companyName}</p>
               <div className="flex flex-wrap items-center gap-1">
-                <Badge>{durationTime}</Badge>
-                <p className="text-sm"> / {durationText}</p>
+                <Badge>{`${startDate.format("MMM YYYY")} - ${duration[1] !== "now" ? endDate.format("MMM YYYY") : "Now"}`}</Badge>
+                <p className="text-sm"> / {result}</p>
               </div>
             </div>
             <div className="p-5">

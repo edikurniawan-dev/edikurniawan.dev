@@ -1,5 +1,6 @@
-import { IconPlus } from "@irsyadadl/paranoid";
+import React from "react";
 import NavMenu from "./nav-menu";
+import { IconPlus } from "justd-icons";
 
 export function Header() {
   return (

@@ -1,6 +1,7 @@
+import React from "react";
 import Link from "next/link";
 import { SiGithub, SiGmail, SiLinkedin } from "react-icons/si";
-import { IconPlus } from "@irsyadadl/paranoid";
+import { IconPlus } from "justd-icons";
 import { Button } from "./ui/button";
 
 export function Footer() {

@@ -1,5 +1,6 @@
+import React from "react";
 import { useTheme } from "next-themes";
-import { IconCircleHalf, IconDeviceDesktop, IconMoon, IconSun } from "@irsyadadl/paranoid";
+import { IconCircleHalf, IconDeviceDesktop, IconMoon, IconSun } from "justd-icons";
 import {
   DropdownMenu,
   DropdownMenuContent,

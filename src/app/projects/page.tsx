@@ -1,3 +1,4 @@
+import React from "react";
 import Link from "next/link";
 import {
   SiAntdesign,
@@ -352,13 +353,88 @@ export default function Projects() {
     },
     {
       title: "Payroll Department ES",
-      content: "This website is aimed at the ES department to manage their clients' payroll",
+      content: "This website is aimed at the ES department to manage their clients payroll",
       link: "https://esd-payroll.os-selnajaya.com/",
       techStacks: [
         {
           name: "Laravel",
           icon: <SiLaravel />,
-          link: "https://laravelev/",
+          link: "https://laravel.com/",
+        },
+        {
+          name: "InertiaJS",
+          icon: <SiInertia />,
+          link: "https://inertiajs.com/",
+        },
+        {
+          name: "ReactJS",
+          icon: <SiReact />,
+          link: "https://react.dev/",
+        },
+        {
+          name: "Ant Design",
+          icon: <SiAntdesign />,
+          link: "https://ant.design/",
+        },
+        {
+          name: "TaiwindCSS",
+          icon: <SiTailwindcss />,
+          link: "https://tailwindcss.com/",
+        },
+        {
+          name: "MySQL",
+          icon: <SiMysql />,
+          link: "https://www.mysql.com/",
+        },
+      ],
+    },
+    {
+      title: "Payroll Department TS",
+      content: "This website is aimed at the TS department to manage their clients payroll",
+      link: "https://ts-payroll.os-selnajaya.com/",
+      techStacks: [
+        {
+          name: "Laravel",
+          icon: <SiLaravel />,
+          link: "https://laravel.com/",
+        },
+        {
+          name: "InertiaJS",
+          icon: <SiInertia />,
+          link: "https://inertiajs.com/",
+        },
+        {
+          name: "ReactJS",
+          icon: <SiReact />,
+          link: "https://react.dev/",
+        },
+        {
+          name: "Ant Design",
+          icon: <SiAntdesign />,
+          link: "https://ant.design/",
+        },
+        {
+          name: "TaiwindCSS",
+          icon: <SiTailwindcss />,
+          link: "https://tailwindcss.com/",
+        },
+        {
+          name: "MySQL",
+          icon: <SiMysql />,
+          link: "https://www.mysql.com/",
+        },
+      ],
+    },
+    {
+      title: "SOJP OS Selnajaya",
+      content:
+        "The website is a platform managed by OS Selnajaya, an organization in Indonesia specializing in human resource management for the Technical Intern Training program and the Specified Skilled Worker program in Japan.",
+      link: "https://sojp.os-selnajaya.com/",
+      techStacks: [
+        {
+          name: "Laravel",
+          icon: <SiLaravel />,
+          link: "https://laravel.com/",
         },
         {
           name: "InertiaJS",
@@ -418,14 +494,16 @@ export default function Projects() {
 
               <div className="mt-5 flex flex-wrap gap-1">
                 {project.techStacks.map((tech, j) => (
-                  <Link
+                  <a
                     key={j}
                     href={tech.link}
+                    target="_blank"
+                    rel="noreferrer"
                     className={`${badgeVariants({ variant: "outline" })} flex items-center gap-1`}
                   >
                     {tech.icon}
                     {tech.name}
-                  </Link>
+                  </a>
                 ))}
               </div>
             </div>

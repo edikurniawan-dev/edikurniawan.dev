@@ -1,3 +1,4 @@
+import React from "react";
 import Link from "next/link";
 import Marquee from "react-fast-marquee";
 import { Badge } from "@/components/ui/badge";
@@ -23,8 +24,8 @@ import {
   SiReact,
   SiTailwindcss,
   SiTypescript,
-  SiVisualstudiocode,
 } from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
 
 export default function Home() {
   const icons = [
@@ -89,7 +90,7 @@ export default function Home() {
       name: <SiLaragon className="size-9" />,
     },
     {
-      name: <SiVisualstudiocode className="size-9" />,
+      name: <VscVscode className="size-9" />,
     },
     {
       name: <SiPostman className="size-9" />,
@@ -102,8 +103,8 @@ export default function Home() {
         <div className="mx-auto mt-5 flex flex-col gap-10">
           <p className="w-auto text-5xl font-bold">Who am I .....?</p>
           <div className="max-w-3xl flex-1 leading-relaxed">
-            I'm <b>Edi Kurniawan</b> a Web Developer with work experience in web application development. I have skills
-            in developing web applications using several technologies like{" "}
+            I&apos;m <b>Edi Kurniawan</b> a Web Developer with work experience in web application development. I have
+            skills in developing web applications using several technologies like{" "}
             <Badge variant="outline">
               <Link href="https://react.dev/" target="_blank" className="flex items-center gap-1">
                 <SiReact />
@@ -152,7 +153,7 @@ export default function Home() {
         <div className="flex flex-col p-5">
           <div className="">
             <div className="flex items-center justify-between text-lg font-bold">Payroll Department ES</div>
-            <p>This website is aimed at the ES department to manage their clients' payroll</p>
+            <p>This website is aimed at the ES department to manage their clients payroll</p>
           </div>
           <div className="mt-5 flex grow flex-wrap items-center justify-between">
             <Badge>Recent Projects</Badge>

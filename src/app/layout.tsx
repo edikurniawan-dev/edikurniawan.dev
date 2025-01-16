@@ -1,12 +1,13 @@
 import "./globals.css";
 
 import type { Metadata } from "next";
+import React from "react";
 import { Source_Sans_3 } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
-import { IconPlus } from "@irsyadadl/paranoid";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { IconPlus } from "justd-icons";
 import { ThemeProvider } from "@/components/theme-provider";
 
 const sourceSans3 = Source_Sans_3({ subsets: ["latin"] });
