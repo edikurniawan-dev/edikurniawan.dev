@@ -463,6 +463,24 @@ export default function Projects() {
         },
       ],
     },
+    {
+      title: "Antd Dasboard",
+      content:
+        "This open-source project is a beautiful dashboard styled like ShadCN, built with Ant Design (AntD).",
+      link: "https://antd-dashboard.edikurniawan.dev/",
+      techStacks: [
+        {
+          name: "ReactJS",
+          icon: <SiReact />,
+          link: "https://react.dev/",
+        },
+        {
+          name: "Ant Design",
+          icon: <SiAntdesign />,
+          link: "https://ant.design/",
+        },
+      ],
+    },
   ];
 
   return (
