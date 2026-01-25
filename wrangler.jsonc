@@ -1,0 +1,7 @@
+{
+	"name": "edi-kurniawan",
+	"compatibility_date": "2026-01-25",
+	"assets": {
+		"directory": "./dist"
+	}
+}
