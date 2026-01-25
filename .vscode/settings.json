@@ -1,5 +1,15 @@
 {
-  "prettier.documentSelectors": [
-    "**/*.{js,jsx,ts,tsx,vue,html,css,scss,less,json,md,mdx,graphql,yaml,yml,php}"
-  ]
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "biomejs.biome",
+	"editor.codeActionsOnSave": {
+		"source.organizeImports.biome": "explicit",
+		"source.fixAll.biome": "explicit"
+	},
+
+	"[json]": {
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[astro]": {
+		"editor.defaultFormatter": "astro-build.astro-vscode"
+	}
 }
