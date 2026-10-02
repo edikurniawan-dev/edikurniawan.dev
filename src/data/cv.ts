@@ -44,8 +44,10 @@ export const CV_DATA: CV = {
 	title: "Software Engineer (Web Platforms)",
 	location: "Jakarta, Indonesia",
 	locationLink: "https://www.google.com/maps/place/Jakarta",
-	about: "I am a passionate software engineer with experience in building web applications using modern technologies. I enjoy solving complex problems and continuously learning new skills to improve my craft.",
-	summary: "Experienced Software Engineer with a demonstrated history of working in the information technology and services industry. Skilled in Full Stack Development, Web Applications, and Database Management. Strong engineering professional with a Bachelor's degree focused in Informatics Engineering from Institut Teknologi Sumatera (ITERA).",
+	about:
+		"I am a passionate software engineer with experience in building web applications using modern technologies. I enjoy solving complex problems and continuously learning new skills to improve my craft.",
+	summary:
+		"Experienced Software Engineer with a demonstrated history of working in the information technology and services industry. Skilled in Full Stack Development, Web Applications, and Database Management. Strong engineering professional with a Bachelor's degree focused in Informatics Engineering from Institut Teknologi Sumatera (ITERA).",
 	contact: {
 		email: "contact@edikurniawan.dev",
 		social: [
@@ -68,7 +70,13 @@ export const CV_DATA: CV = {
 				"JavaScript",
 				"React",
 				"mySQL",
+				"PostgreSQL",
 				"Ant Design",
+				"AWS EC2",
+				"AWS S3",
+				"AWS RDS",
+				"AWS CloudWatch",
+				"Docker",
 			],
 		},
 		{
@@ -85,7 +93,13 @@ export const CV_DATA: CV = {
 				"JavaScript",
 				"React",
 				"mySQL",
+				"PostgreSQL",
 				"Ant Design",
+				"AWS EC2",
+				"AWS S3",
+				"AWS RDS",
+				"AWS CloudWatch",
+				"Docker",
 			],
 		},
 		{
@@ -94,12 +108,10 @@ export const CV_DATA: CV = {
 			title: "React Developer Fasilitator Intermediate Level - IDCamp Dicoding",
 			start: "Dec 2023",
 			end: "Mar 2024",
-			description: "Become a fasilitator or mentor for scholarship participants at intermediate level react developer from IDCamp Dicoding.",
+			description:
+				"Become a fasilitator or mentor for scholarship participants at intermediate level react developer from IDCamp Dicoding.",
 			achievements: [],
-			badges: [
-				"JavaScript",
-				"React",
-			],
+			badges: ["JavaScript", "React"],
 		},
 		{
 			company: "Solarion Energi Alam",
@@ -107,7 +119,8 @@ export const CV_DATA: CV = {
 			title: "Full Stack Developer",
 			start: "Jul 2022",
 			end: "Dec 2023",
-			description: "Build and develop apps to monitoring solar panel named PV Monitoring System by SOLARION",
+			description:
+				"Build and develop apps to monitoring solar panel named PV Monitoring System by SOLARION",
 			achievements: [],
 			badges: [
 				"Laravel",
@@ -123,17 +136,14 @@ export const CV_DATA: CV = {
 		{
 			company: "Dicoding Indonesia",
 			link: "https://www.linkedin.com/company/dicoding",
-			title: "React Developer Fasilitator Intermediate and Expert Level - IDCamp Dicoding",
+			title:
+				"React Developer Fasilitator Intermediate and Expert Level - IDCamp Dicoding",
 			start: "Aug 2022",
 			end: "Jan 2023",
-			description: "Become a fasilitator or mentor for scholarship participants at intermediate and expert level react developer from IDCamp Dicoding",
+			description:
+				"Become a fasilitator or mentor for scholarship participants at intermediate and expert level react developer from IDCamp Dicoding",
 			achievements: [],
-			badges: [
-				"JavaScript",
-				"React",
-				"Next.js",
-				"Redux",
-			],
+			badges: ["JavaScript", "React", "Next.js", "Redux"],
 		},
 		{
 			company: "Newus Technology",
@@ -141,7 +151,8 @@ export const CV_DATA: CV = {
 			title: "Full Stack Web Developer",
 			start: "December 2017",
 			end: "July 2021",
-			description: "Develop websites both frontend and backend according to client needs. Some of the websites that I have created are Sistem Informasi Tata Ruang Lampung Utara (Simtaru Lampura), PPDB SMA Perintis 2 and fix bug website SOP Kabupaten Mahakam Ulu.",
+			description:
+				"Develop websites both frontend and backend according to client needs. Some of the websites that I have created are Sistem Informasi Tata Ruang Lampung Utara (Simtaru Lampura), PPDB SMA Perintis 2 and fix bug website SOP Kabupaten Mahakam Ulu.",
 			achievements: [],
 			badges: [
 				"Laravel",
@@ -160,15 +171,10 @@ export const CV_DATA: CV = {
 			title: "FrontEnd Web Developer Intern",
 			start: "Jun 2020",
 			end: "Nov 2020",
-			description: "Develop UI website dashboard admin of Jaramba apps. I develope using figma, bootstrap, and sweetalert. This application serves to monitor the location of the bus that is running. In addition to storing route data, drivers, buses and bus travel history.",
+			description:
+				"Develop UI website dashboard admin of Jaramba apps. I develope using figma, bootstrap, and sweetalert. This application serves to monitor the location of the bus that is running. In addition to storing route data, drivers, buses and bus travel history.",
 			achievements: [],
-			badges: [
-				"HTML",
-				"CSS",
-				"JavaScript",
-				"Bootstrap",
-				"SweetAlert",
-			],
+			badges: ["HTML", "CSS", "JavaScript", "Bootstrap", "SweetAlert"],
 		},
 	],
 	education: [
